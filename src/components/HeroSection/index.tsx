@@ -12,11 +12,11 @@ const HeroSection = () => {
   }
 
   return (
-    <div className="pt-notch relative bg-white overflow-hidden">
+    <div className="pt-notch relative bg-gray-800 overflow-hidden text-white">
       <div className="notch max-w-screen-xl mx-auto ">
-        <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+        <div className="relative z-10 pb-8 bg-gray-800 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-gray-800 transform translate-x-1/2"
             fill="currentColor"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
@@ -34,12 +34,15 @@ const HeroSection = () => {
                       src="/img/logos/workflow-mark-on-white.svg"
                       alt=""
                     />
+                    <h1 className="font-semibold text-xl">
+                      Benavente Peluqueros
+                    </h1>
                   </a>
                   <div className="-mr-2 flex items-center md:hidden">
                     <button
                       type="button"
                       onClick={displayDialog}
-                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                      className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                     >
                       <svg
                         className="h-6 w-6"
@@ -60,10 +63,10 @@ const HeroSection = () => {
               </div>
               <div className="hidden md:block md:ml-10 md:pr-4">
                 <a
-                  href="#"
-                  className="font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                  href="/contact"
+                  className="font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
                 >
-                  Product
+                  Contacto
                 </a>
               </div>
             </nav>
@@ -80,7 +83,7 @@ const HeroSection = () => {
           >
             <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
               <div className="rounded-lg shadow-md">
-                <div className="rounded-lg bg-white shadow-xs overflow-hidden">
+                <div className="rounded-lg bg-gray-800 shadow-xs overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
                       <img
@@ -93,7 +96,7 @@ const HeroSection = () => {
                       <button
                         type="button"
                         onClick={hideDialog}
-                        className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                        className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                       >
                         <svg
                           className="h-6 w-6"
@@ -113,10 +116,10 @@ const HeroSection = () => {
                   </div>
                   <div className="px-2 pt-2 pb-3">
                     <a
-                      href="#"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                      href="/contact"
+                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-100 hover:bg-gray-500 focus:outline-none focus:text-gray-100 focus:bg-gray-50 transition duration-150 ease-in-out"
                     >
-                      Product
+                      Contacto
                     </a>
                   </div>
                 </div>
@@ -126,12 +129,11 @@ const HeroSection = () => {
 
           <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                Data to enrich your
-                <br className="xl:hidden" />
+              <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-50 sm:text-5xl sm:leading-none md:text-6xl">
+                Data to enrich your <br className="xl:hidden" />
                 <span className="text-indigo-600">online business</span>
               </h2>
-              <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
                 lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
                 fugiat aliqua.

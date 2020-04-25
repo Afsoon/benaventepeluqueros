@@ -6,6 +6,8 @@ import HeroSection from '../components/HeroSection'
 import Testimonials from '../components/Testimonials'
 import CTA from '../components/CTA'
 import TeamSection from '../components/TeamSection'
+import Pricing from '../components/Pricing'
+import Banner from '../components/Banner'
 
 const MetaTags = () => (
   <Head>
@@ -54,9 +56,10 @@ const Home = () => {
     <>
       <MetaTags />
       <HeroSection />
-      <CTAImage />
       <TeamSection />
+      <CTAImage />
       <Testimonials />
+      <Pricing />
       <CTA />
       <Footer />
     </>

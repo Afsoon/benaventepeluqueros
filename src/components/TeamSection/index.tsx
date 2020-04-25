@@ -5,7 +5,7 @@ const TeamMember = () => (
     <div className="flex-shrink-0 self-center">
       <img
         className="h-48 w-48 object-cover rounded-full"
-        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+        src="/foto.png"
         alt=""
       />
     </div>
