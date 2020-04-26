@@ -26,8 +26,6 @@ const CTAImage = () => (
             Haz clic en el botón{' '}
             <span className="uppercase font-bold">Pedir Cita</span>, introduce
             tus datos, selecciona una hora y dinos qué tipo de ayuda necesitas.
-            Te guiaremos durante todo el proceso para que obtengas el resultado
-            que deseas.
           </p>
           <div className="mt-8">
             <div className="inline-flex rounded-md shadow">
