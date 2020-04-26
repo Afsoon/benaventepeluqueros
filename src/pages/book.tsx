@@ -353,11 +353,6 @@ const FormContainer = () => {
           </h2>
           {showCorrectMessage ? undefined : (
             <>
-              <p className="mt-4 text-lg leading-6 text-gray-500">
-                Rellene el siguiente formulario para ponerse en contacto con su
-                peluquero. Podrás comunicarle tus dudas antes de reservar una
-                cita.
-              </p>
               <p className="mt-2 text-base text-red-600">
                 Debido a la aplicación del estado de alarma del 14 de Marzo de
                 2020, actualmente solo se puede registrar en la lista de espera.
