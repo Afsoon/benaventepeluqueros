@@ -55,46 +55,39 @@ const MetaTags = () => (
   </Head>
 )
 
-const GridPhotos = () => (
-  <div className="grid grid-cols-8 grid-rows-5 gap-4">
+const keys = Array(80).keys()
+
+const large = new Set([2, 14, 32, 35, 41, 54, 56, 64, 67, 75, 76, 79, 74])
+const medium = new Set([5, 7, 16, 36, 44, 52, 55, 71, 72, 73, 78])
+
+const photos = [...keys].map((number) => {
+  let size = large.has(number + 1)
+    ? 'large'
+    : medium.has(number + 1)
+    ? 'medium'
+    : 'small'
+  return { src: `/optimizedPortfolio/${number + 1}.jpg`, size }
+})
+
+const GridPhotos = () => {
+  const [first, ...rest] = photos.map(({ src, size }, idx) => (
     <Img
-      small
-      src="https://images.unsplash.com/photo-1549236177-77e8271c34b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1233&q=80"
+      small={size === 'small'}
+      medium={size === 'medium'}
+      large={size === 'large'}
+      src={src}
+      key={idx}
     />
-    <Img
-      small
-      src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-    />
-    <Img
-      large
-      src="https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-    />
-    <Img
-      medium
-      src="https://images.unsplash.com/photo-1488282687151-c5e6582e7cf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-    />
-    <Img
-      medium
-      src="https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?ixlib=rb-1.2.1&auto=format&fit=crop&w=1234&q=80"
-    />
-    <Img
-      small
-      src="https://images.unsplash.com/photo-1575880918403-f578c9078302?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80"
-    />
-    <Img
-      small
-      src="https://images.unsplash.com/photo-1582402280754-6f09410d475b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80"
-    />
-    <Img
-      small
-      src="https://images.unsplash.com/photo-1539025137588-9e6395c9396e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-    />
-    <Img
-      small
-      src="https://images.unsplash.com/photo-1553804194-b5d78a4dae56?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80"
-    />
-  </div>
-)
+  ))
+  return (
+    <div className="grid grid-cols-8 grid-rows-5 gap-4">
+      <Img small src="/optimizedPortfolio/portfolio1.png" />
+      {first}
+      <Img large src="/optimizedPortfolio/portfolio2.png" />
+      {rest}
+    </div>
+  )
+}
 
 const Img = ({
   src,
@@ -114,9 +107,10 @@ const Img = ({
     'col-span-2 row-span-2': small,
   })
   return (
-    <figure className={className}>
+    <picture className={className}>
+      <source srcSet={src.replace(/(png|jpg)/g, 'webp')} type="image/webp" />
       <img src={src} alt="" className="w-full h-full object-cover" />
-    </figure>
+    </picture>
   )
 }
 
