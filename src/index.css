@@ -4,6 +4,7 @@
 
 #__next {
   padding-bottom: env(safe-area-inset-bottom);
+  @apply bg-gray-800;
 }
 /* purgecss end ignore */
 

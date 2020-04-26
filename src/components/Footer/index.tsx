@@ -3,17 +3,18 @@ import React from 'react'
 const Footer = () => (
   <div className="bg-gray-800">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div className="flex xl:grid xl:grid-cols-3 xl:gap-8">
+      <div className="notch translate-x-2/3 flex xl:grid xl:grid-cols-3 xl:gap-8">
         <div className="grid grid-cols-2 gap-8 xl:col-span-2">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                Company
+                Empresa
               </h4>
               <ul className="mt-4">
                 <li>
                   <a
-                    href="#"
+                    href="/pricing"
+                    title="Ver lista de precios de la peluqueria"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
                     Precios
@@ -21,7 +22,8 @@ const Footer = () => (
                 </li>
                 <li className="mt-4">
                   <a
-                    href="#"
+                    href="/book"
+                    title="Pedir cita"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
                     Pedir cita
@@ -29,7 +31,8 @@ const Footer = () => (
                 </li>
                 <li className="mt-4">
                   <a
-                    href="#"
+                    href="/work"
+                    title="Ver trabajos realizados"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
                     Trabajos realizados
@@ -59,7 +62,7 @@ const Footer = () => (
           </a>
         </div>
       </div>
-      <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+      <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between notch">
         <div className="flex md:order-2">
           <a
             href="https://www.facebook.com/BenaventePeluqueros"

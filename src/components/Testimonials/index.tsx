@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testimonial = () => (
   <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-gray-900 lg:pr-16">
-    <blockquote className="mt-8 md:flex-grow md:flex md:flex-col">
+    <blockquote className="notch mt-8 md:flex-grow md:flex md:flex-col">
       <div className="relative text-lg leading-7 font-medium text-gray-900 md:flex-grow">
         <svg
           className="absolute top-0 left-0 transform -translate-x-3 -translate-y-6 h-8 w-8 text-indigo-600"
@@ -37,7 +37,7 @@ const Testimonials = () => (
     <div className="max-w-screen-xl mx-auto md:grid md:grid-cols-2 md:px-6 lg:px-8">
       <Testimonial />
       <div className="py-12 px-4 border-t-2 border-indigo-900 sm:px-6 md:py-16 md:pr-0 md:pl-10 md:border-t-0 md:border-l lg:pl-16">
-        <blockquote className="mt-8 md:flex-grow md:flex md:flex-col">
+        <blockquote className="notch mt-8 md:flex-grow md:flex md:flex-col">
           <div className="relative text-lg leading-7 font-medium text-gray-900 md:flex-grow">
             <svg
               className="absolute top-0 left-0 transform -translate-x-3 -translate-y-6 h-8 w-8 text-indigo-600"

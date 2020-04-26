@@ -22,8 +22,8 @@ const Header: React.FunctionComponent<HeaderProps> = ({
   }
   return (
     <div className="pt-notch relative bg-gray-800 pt-6">
-      <nav className="h-16 notch relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
-        <div className="flex items-center flex-1">
+      <nav className="h-16 relative max-w-screen-xl mx-auto flex items-center justify-between px-4 sm:px-6">
+        <div className="notch flex items-center flex-1">
           <div className="flex items-center justify-between w-full md:w-auto">
             <a
               className="flex items-center"
