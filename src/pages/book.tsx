@@ -407,10 +407,10 @@ const Contact = () => {
         />
         <meta
           property="og:image"
-          content="https://benaventepeluqueros.now.sh/seo-image.png"
+          content="https://benaventepeluqueros.now.sh/seo-image.jpg"
         />
-        <meta property="og:image:width" content="484" />
-        <meta property="og:image:height" content="500" />
+        <meta property="og:image:width" content="3360" />
+        <meta property="og:image:height" content="1906" />
         <meta
           property="og:description"
           content="Formulario para pedir cita, con el servicio incluido, en Benavente Peluqueros."
@@ -428,10 +428,11 @@ const Contact = () => {
           name="twitter:description"
           content="Formulario para pedir cita, con el servicio incluido, en Benavente Peluqueros."
         />
-        <link
-          rel="canonical"
-          href="https://benaventepeluqueros.now.sh/contact"
+        <meta
+          name="twitter:image"
+          content="https://benaventepeluqueros.now.sh/seo-image.jpg"
         />
+        <link rel="canonical" href="https://benaventepeluqueros.now.sh/book" />
       </Head>
       <Header showPricing showWork />
       <FormContainer />

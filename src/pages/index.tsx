@@ -34,10 +34,10 @@ const MetaTags = () => (
     <meta property="og:site_name" content="Benavente Peluqueros" />
     <meta
       property="og:image"
-      content="https://benaventepeluqueros.now.sh/seo-image.png"
+      content="https://benaventepeluqueros.now.sh/seo-image.jpg"
     />
-    <meta property="og:image:width" content="484" />
-    <meta property="og:image:height" content="500" />
+    <meta property="og:image:width" content="3360" />
+    <meta property="og:image:height" content="1906" />
     <meta
       property="og:description"
       content="Benavente Peluqueros tú peluqueria unisex de confianza en la ciudad de Leganés."
@@ -51,9 +51,9 @@ const MetaTags = () => (
     />
     <meta
       name="twitter:image"
-      content="https://benaventepeluqueros.now.sh/seo-image.png"
+      content="https://benaventepeluqueros.now.sh/seo-image.jpg"
     />
-    <link rel="canonical" href="https://benaventepeluqueros.now.sh/" />
+    <link rel="canonical" href="https://benaventepeluqueros.now.sh/work" />
   </Head>
 )
 
