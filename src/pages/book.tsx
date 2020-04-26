@@ -114,12 +114,29 @@ const Textarea = ({
 const Form = ({ setShowCorrectMessage }) => {
   const [acceptRGPD, setAcceptRGPD] = useState(false)
   const [clicked, setClickedChecbox] = useState(false)
+  const [showRetry, setShowRetry] = useState(false)
+  const [waitingResponse, setWaitingResponse] = useState(false)
   const { register, handleSubmit, errors } = useForm()
   const classNameBg = acceptRGPD ? 'bg-indigo-600' : 'bg-gray-200'
   const classNameTransition = acceptRGPD ? 'translate-x-5' : 'translate-x-0'
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     if (acceptRGPD) {
-      setShowCorrectMessage(true)
+      try {
+        setWaitingResponse(true)
+        const request = await fetch('/api/email', {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json' },
+        })
+
+        if (request.status === 204) {
+          setShowCorrectMessage(true)
+        } else {
+          setShowRetry(true)
+        }
+      } catch {
+        setShowRetry(true)
+      }
     } else {
       setClickedChecbox(true)
     }
@@ -243,12 +260,18 @@ const Form = ({ setShowCorrectMessage }) => {
         <span className="w-full inline-flex rounded-md shadow-sm">
           <button
             type="submit"
+            disabled={waitingResponse}
             onClick={handleSubmit(onSubmit)}
             className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
           >
             Enviar mensaje
           </button>
         </span>
+        {showRetry && (
+          <p className="mt-2 text-sm text-red-600">
+            Ha habido un error. Intentélo más tarde.
+          </p>
+        )}
       </div>
     </form>
   )
@@ -377,12 +400,15 @@ const Contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Benavente Peluqueros - Pedir cita" />
-        <meta property="og:url" content="https://pelatencasa.now.sh/" />
+        <meta property="og:url" content="https://benaventepeluqueros.now.sh/" />
         <meta
           property="og:site_name"
           content="Benavente Peluqueros - Pedir cita"
         />
-        <meta property="og:image" content="https://.now.sh/seo-image.png" />
+        <meta
+          property="og:image"
+          content="https://benaventepeluqueros.now.sh/seo-image.png"
+        />
         <meta property="og:image:width" content="484" />
         <meta property="og:image:height" content="500" />
         <meta
@@ -390,7 +416,10 @@ const Contact = () => {
           content="Formulario para pedir cita, con el servicio incluido, en Benavente Peluqueros."
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:url" content="https://.now.sh/" />
+        <meta
+          name="twitter:url"
+          content="https://benaventepeluqueros.now.sh/"
+        />
         <meta
           name="twitter:title"
           content="Benavente Peluqueros - Pedir cita"
@@ -399,7 +428,10 @@ const Contact = () => {
           name="twitter:description"
           content="Formulario para pedir cita, con el servicio incluido, en Benavente Peluqueros."
         />
-        <link rel="canonical" href="https://.now.sh/contact" />
+        <link
+          rel="canonical"
+          href="https://benaventepeluqueros.now.sh/contact"
+        />
       </Head>
       <Header showPricing showWork />
       <FormContainer />

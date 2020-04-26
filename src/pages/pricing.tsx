@@ -27,12 +27,15 @@ const MetaTags = () => (
       property="og:title"
       content="Benavente Peluqueros - Lista de precios"
     />
-    <meta property="og:url" content="https://.now.sh/" />
+    <meta property="og:url" content="https://benaventepeluqueros.now.sh/" />
     <meta
       property="og:site_name"
       content="Benavente Peluqueros - Lista de precios"
     />
-    <meta property="og:image" content="https://.now.sh/seo-image.png" />
+    <meta
+      property="og:image"
+      content="https://benaventepeluqueros.now.sh/seo-image.png"
+    />
     <meta property="og:image:width" content="484" />
     <meta property="og:image:height" content="500" />
     <meta
@@ -40,7 +43,7 @@ const MetaTags = () => (
       content="Portafolio de Lista de precios por nuestros técnicos en Benavente Peluqueros."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://.now.sh/" />
+    <meta name="twitter:url" content="https://benaventepeluqueros.now.sh/" />
     <meta
       name="twitter:title"
       content="Benavente Peluqueros - Lista de precios"
@@ -49,15 +52,18 @@ const MetaTags = () => (
       name="twitter:description"
       content="Portafolio de Lista de precios por nuestros técnicos en Benavente Peluqueros."
     />
-    <meta name="twitter:image" content="https://.now.sh/seo-image.png" />
-    <link rel="canonical" href="https://.now.sh/" />
+    <meta
+      name="twitter:image"
+      content="https://benaventepeluqueros.now.sh/seo-image.png"
+    />
+    <link rel="canonical" href="https://benaventepeluqueros.now.sh/" />
   </Head>
 )
 
 const createRow = (service, idx) => {
   const className = idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'
   return (
-    <tr className={className}>
+    <tr key={idx} className={className}>
       <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
         {service.name}
       </td>
@@ -69,8 +75,8 @@ const createRow = (service, idx) => {
 }
 
 const values = [
-  { name: 'Lava + Cortar + Peinar', price: '+25€' },
-  { name: 'Lava + Cortar', price: '+15€' },
+  { name: 'Lava + Cortar + Peinar', price: 'Desde 25€' },
+  { name: 'Lava + Cortar', price: 'Desde 15€' },
 ]
 
 const GridPrices = () => {
@@ -170,8 +176,8 @@ const GridContainer = () => (
         </h2>
         <p className="mt-4 text-lg leading-6 text-gray-500">
           Los servicios cuyo precio aparezca con{' '}
-          <span className="font-bold text-xl text-black">+</span> indican desde,
-          varía en función del tamaño del pelo
+          <span className="font-bold text-xl text-black">desde</span> , varía en
+          función del tamaño del pelo
         </p>
       </div>
       <div className="mt-12">

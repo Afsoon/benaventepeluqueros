@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useStorageState } from 'react-storage-hooks'
 
 const FloatingBottomBanner = () => {
-  const [showBanner, setShowBanner] = useState(true)
+  const [showBanner, setShowBanner] = useStorageState(
+    localStorage,
+    'show',
+    true
+  )
   const closeBanner = () => {
     setShowBanner(false)
   }
+
   return (
     <>
       {showBanner && (
@@ -30,11 +36,11 @@ const FloatingBottomBanner = () => {
                   </span>
                   <p className="ml-3 font-medium text-white truncate">
                     <span className="md:hidden">
-                      ¡Acabamos de anunciar un nuevo producto!
+                      ¡Acabamos de anunciar un nuevo servicio!
                     </span>
                     <span className="hidden md:inline">
                       ¡Buenas noticias! Estamos encantados de anunciar un nuevo
-                      producto.
+                      servicio.
                     </span>
                   </p>
                 </div>
@@ -43,6 +49,7 @@ const FloatingBottomBanner = () => {
                     <a
                       href="https://pelatencasa.now.sh/"
                       target="_blank"
+                      onClick={closeBanner}
                       rel="noopener noreferrer"
                       className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
                     >
@@ -81,4 +88,15 @@ const FloatingBottomBanner = () => {
   )
 }
 
-export default FloatingBottomBanner
+/// HACK TO AVOID SSR
+const isServer = () => typeof window === `undefined`
+
+const NotSSRWrapper = (Component) => {
+  if (isServer()) {
+    return () => <></>
+  } else {
+    return Component
+  }
+}
+
+export default NotSSRWrapper(FloatingBottomBanner)

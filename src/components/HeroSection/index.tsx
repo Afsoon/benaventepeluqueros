@@ -28,13 +28,6 @@ const HeroSection = () => {
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="/img/logos/workflow-mark-on-white.svg"
-                      alt=""
-                    />
-                  </a>
                   <div className="-mr-2 flex items-center md:hidden">
                     <button
                       type="button"
@@ -180,11 +173,14 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="notch lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="/local.png"
-          alt=""
-        />
+        <picture>
+          <source srcSet="/local.webp" type="image/webp" />
+          <img
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            src="/local.png"
+            alt=""
+          />
+        </picture>
       </div>
     </div>
   )

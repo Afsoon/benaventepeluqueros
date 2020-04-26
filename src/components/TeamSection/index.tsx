@@ -3,11 +3,14 @@ import React from 'react'
 const TeamMember = () => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden col-start-2 col-end-2">
     <div className="flex-shrink-0 self-center">
-      <img
-        className="h-48 w-48 object-cover rounded-full"
-        src="/foto.png"
-        alt=""
-      />
+      <picture>
+        <source srcSet="/photo.webp" type="image/webp" />
+        <img
+          className="h-48 w-48 object-cover rounded-full"
+          src="/photo.png"
+          alt=""
+        />
+      </picture>
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">

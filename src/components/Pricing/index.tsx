@@ -25,7 +25,7 @@ const Pricing = () => (
             <div className="rounded-lg shadow-lg overflow-hidden">
               <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                 <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                  + 15€
+                  Desde 15€
                 </div>
                 <p className="mt-5 text-lg leading-7 text-gray-500">
                   Lavar, Cortar
@@ -90,7 +90,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Corte + Secado dirrecional
+                      Corte + Secado direccional
                     </p>
                   </li>
                 </ul>
@@ -99,7 +99,7 @@ const Pricing = () => (
             <div className="mt-4 rounded-lg shadow-lg overflow-hidden lg:mt-0">
               <div className="px-6 py-8 bg-white sm:p-10 sm:pb-6">
                 <div className="mt-4 flex items-baseline text-6xl leading-none font-extrabold">
-                  + 25€
+                  Desde 25€
                 </div>
                 <p className="mt-5 text-lg leading-7 text-gray-500">
                   Lavar + Cortar + Peinar

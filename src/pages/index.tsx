@@ -14,7 +14,7 @@ const MetaTags = () => (
     <title>Benavente Peluqueros - Página de inicio</title>
     <meta
       name="description"
-      content="Servicio online de asistencia a la peluquería con tu peluquero de confianza."
+      content="Benavente Peluqueros tú peluqueria unisex de confianza en la ciudad de Leganés."
     />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
@@ -30,24 +30,30 @@ const MetaTags = () => (
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Benavente Peluqueros" />
-    <meta property="og:url" content="https://.now.sh/" />
+    <meta property="og:url" content="https://benaventepeluqueros.now.sh/" />
     <meta property="og:site_name" content="Benavente Peluqueros" />
-    <meta property="og:image" content="https://.now.sh/seo-image.png" />
+    <meta
+      property="og:image"
+      content="https://benaventepeluqueros.now.sh/seo-image.png"
+    />
     <meta property="og:image:width" content="484" />
     <meta property="og:image:height" content="500" />
     <meta
       property="og:description"
-      content="Servicio online de asistencia a la peluquería con tu peluquero de confianza."
+      content="Benavente Peluqueros tú peluqueria unisex de confianza en la ciudad de Leganés."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://.now.sh/" />
+    <meta name="twitter:url" content="https://benaventepeluqueros.now.sh/" />
     <meta name="twitter:title" content="Benavente Peluqueros" />
     <meta
       name="twitter:description"
-      content="Servicio online de asistencia a la peluquería con tu peluquero de confianza."
+      content="Benavente Peluqueros tú peluqueria unisex de confianza en la ciudad de Leganés."
     />
-    <meta name="twitter:image" content="https://.now.sh/seo-image.png" />
-    <link rel="canonical" href="https://.now.sh/" />
+    <meta
+      name="twitter:image"
+      content="https://benaventepeluqueros.now.sh/seo-image.png"
+    />
+    <link rel="canonical" href="https://benaventepeluqueros.now.sh/" />
   </Head>
 )
 

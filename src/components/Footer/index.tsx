@@ -50,15 +50,20 @@ const Footer = () => (
             Calle Panadés, 22, 28915 Leganés, Madrid
           </p>
           <a
-            href="#"
+            href="https://goo.gl/maps/ecwYBJDidJoS4FBD9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-4 sm:flex sm:max-w-md justify-center"
             title="Mapa que muesta la ubicación del mapa"
           >
-            <img
-              className="h-48 w-48 object-cover rounded-sm"
-              src="/maps.png"
-              alt=""
-            />
+            <picture>
+              <source srcSet="/maps.webp" type="image/webp" />
+              <img
+                className="h-48 w-48 object-cover rounded-sm"
+                src="/maps.png"
+                alt=""
+              />
+            </picture>
           </a>
         </div>
       </div>
