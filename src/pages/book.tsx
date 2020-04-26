@@ -35,7 +35,13 @@ const Input = ({
         {required && <span className="ml-1 text-sm text-red-700">*</span>}
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">
-        <input type={type} id={htmlFor} className={className} ref={innerRef} />
+        <input
+          type={type}
+          id={htmlFor}
+          name={htmlFor}
+          className={className}
+          ref={innerRef}
+        />
         {error && (
           <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
             <svg
@@ -84,7 +90,12 @@ const Textarea = ({
         {required && <span className="ml-1 text-sm text-red-700">*</span>}
       </label>
       <div className="mt-1 relative rounded-md shadow-sm">
-        <textarea id={htmlFor} className={className} ref={innerRef} />
+        <textarea
+          id={htmlFor}
+          name={htmlFor}
+          className={className}
+          ref={innerRef}
+        />
         {error && (
           <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
             <svg
