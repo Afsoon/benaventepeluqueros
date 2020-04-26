@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => (
   <div className="bg-gray-800">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-      <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+      <div className="flex xl:grid xl:grid-cols-3 xl:gap-8">
         <div className="grid grid-cols-2 gap-8 xl:col-span-2">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
@@ -16,7 +16,7 @@ const Footer = () => (
                     href="#"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
-                    About
+                    Precios
                   </a>
                 </li>
                 <li className="mt-4">
@@ -24,7 +24,7 @@ const Footer = () => (
                     href="#"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
-                    Blog
+                    Pedir cita
                   </a>
                 </li>
                 <li className="mt-4">
@@ -32,86 +32,41 @@ const Footer = () => (
                     href="#"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
-                    Jobs
-                  </a>
-                </li>
-                <li className="mt-4">
-                  <a
-                    href="#"
-                    className="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Press
-                  </a>
-                </li>
-                <li className="mt-4">
-                  <a
-                    href="#"
-                    className="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Partners
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="mt-12 md:mt-0">
-              <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
-                Legal
-              </h4>
-              <ul className="mt-4">
-                <li>
-                  <a
-                    href="#"
-                    className="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Claim
-                  </a>
-                </li>
-                <li className="mt-4">
-                  <a
-                    href="#"
-                    className="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Privacy
-                  </a>
-                </li>
-                <li className="mt-4">
-                  <a
-                    href="#"
-                    className="text-base leading-6 text-gray-300 hover:text-white"
-                  >
-                    Terms
+                    Trabajos realizados
                   </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="mt-8 xl:mt-0">
+        <div className="mt-0">
           <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
             Donde nos encontramos
           </h4>
           <p className="mt-4 text-gray-300 text-base leading-6">
-            The latest news, articles, and resources, sent to your inbox weekly.
+            Calle Panadés, 22, 28915 Leganés, Madrid
           </p>
-          <form className="mt-4 sm:flex sm:max-w-md">
-            <input
-              aria-label="Email address"
-              type="email"
-              required
-              className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out"
-              placeholder="Enter your email"
+          <a
+            href="#"
+            className="mt-4 sm:flex sm:max-w-md justify-center"
+            title="Mapa que muesta la ubicación del mapa"
+          >
+            <img
+              className="h-48 w-48 object-cover rounded-sm"
+              src="/maps.png"
+              alt=""
             />
-            <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-              <button className="w-full flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-500 hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
-                Subscribe
-              </button>
-            </div>
-          </form>
+          </a>
         </div>
       </div>
       <div className="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
         <div className="flex md:order-2">
-          <a href="#" className="text-gray-400 hover:text-gray-300">
+          <a
+            href="https://www.facebook.com/BenaventePeluqueros"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-400 hover:text-gray-300"
+          >
             <span className="sr-only">Facebook</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path
@@ -121,7 +76,12 @@ const Footer = () => (
               />
             </svg>
           </a>
-          <a href="#" className="ml-6 text-gray-400 hover:text-gray-300">
+          <a
+            href="https://www.instagram.com/benaventepeluqueros"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-6 text-gray-400 hover:text-gray-300"
+          >
             <span className="sr-only">Instagram</span>
             <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
               <path

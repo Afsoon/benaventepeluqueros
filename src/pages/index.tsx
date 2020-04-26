@@ -62,6 +62,7 @@ const Home = () => {
       <Pricing />
       <CTA />
       <Footer />
+      <Banner />
     </>
   )
 }

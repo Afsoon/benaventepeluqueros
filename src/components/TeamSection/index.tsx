@@ -11,15 +11,17 @@ const TeamMember = () => (
     </div>
     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
       <div className="flex-1">
-        <p className="text-sm leading-5 font-medium text-indigo-600">Blog</p>
+        <p className="text-sm leading-5 font-medium text-indigo-600">
+          Estilista y técnico en color
+        </p>
         <a href="#" className="block">
           <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
-            Boost your conversion rate
+            Fernando Benavente
           </h3>
           <p className="mt-3 text-base leading-6 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            accusantium praesentium eius, ut atque fuga culpa, similique sequi
-            cum eos quis dolorum.
+            Estilista y técnico en color con más de 15 años de experiencia, ha
+            trabajado como técnico de Selective y asesor de imagen de artistas y
+            principales personalidades del espectáculo en Estados Unidos.
           </p>
         </a>
       </div>
@@ -38,8 +40,7 @@ const TeamSection = () => (
           Equipo técnico
         </h2>
         <p className="mt-3 max-w-2xl mx-auto text-xl leading-7 text-gray-500 sm:mt-4">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero
-          labore natus atque, ducimus sed.
+          El técnico que le atenderá en la peluquería
         </p>
       </div>
       <div className="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">

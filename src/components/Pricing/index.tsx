@@ -1,26 +1,25 @@
 import React from 'react'
 
 const Pricing = () => (
-  <div className="bg-gray-900">
+  <div className="bg-gray-800">
     <div className="pt-12 sm:pt-16 lg:pt-24">
       <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto lg:max-w-none">
           <h2 className="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
-            Pricing
+            Precio
           </h2>
           <p className="mt-2 text-3xl leading-9 font-extrabold text-white sm:text-4xl sm:leading-10 lg:text-5xl lg:leading-none">
-            The right price for you, whoever you are
+            El precio correcto para ti
           </p>
           <p className="mt-2 text-xl leading-7 text-gray-300">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum
-            sequi unde repudiandae natus.
+            Los precios más correctos para unos servicios únicos
           </p>
         </div>
       </div>
     </div>
     <div className="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
       <div className="relative">
-        <div className="absolute inset-0 h-3/4 bg-gray-900"></div>
+        <div className="absolute inset-0 h-3/4 bg-gray-800"></div>
         <div className="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-md mx-auto lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5">
             <div className="rounded-lg shadow-lg overflow-hidden">
@@ -29,7 +28,7 @@ const Pricing = () => (
                   + 15€
                 </div>
                 <p className="mt-5 text-lg leading-7 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Lavar, Cortar
                 </p>
               </div>
               <div className="px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
@@ -51,7 +50,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Pariatur quod similique
+                      Asesoramiento personalizado
                     </p>
                   </li>
                   <li className="mt-4 flex items-start">
@@ -71,7 +70,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Sapiente libero doloribus modi nostrum
+                      Lavado + Hidratación del cabello
                     </p>
                   </li>
                   <li className="mt-4 flex items-start">
@@ -91,27 +90,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Vel ipsa esse repudiandae excepturi
-                    </p>
-                  </li>
-                  <li className="mt-4 flex items-start">
-                    <div className="flex-shrink-0">
-                      <svg
-                        className="h-6 w-6 text-green-500"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p className="ml-3 text-base leading-6 text-gray-700">
-                      Itaque cupiditate adipisci quibusdam
+                      Corte + Secado dirrecional
                     </p>
                   </li>
                 </ul>
@@ -123,7 +102,7 @@ const Pricing = () => (
                   + 25€
                 </div>
                 <p className="mt-5 text-lg leading-7 text-gray-500">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Lavar + Cortar + Peinar
                 </p>
               </div>
               <div className="px-6 pt-6 pb-8 bg-gray-50 sm:p-10 sm:pt-6">
@@ -145,7 +124,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Pariatur quod similique
+                      Asesoramiento personalizado
                     </p>
                   </li>
                   <li className="mt-4 flex items-start">
@@ -165,7 +144,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Sapiente libero doloribus modi nostrum
+                      Lavado + Hidratación del cabello
                     </p>
                   </li>
                   <li className="mt-4 flex items-start">
@@ -185,27 +164,7 @@ const Pricing = () => (
                       </svg>
                     </div>
                     <p className="ml-3 text-base leading-6 text-gray-700">
-                      Vel ipsa esse repudiandae excepturi
-                    </p>
-                  </li>
-                  <li className="mt-4 flex items-start">
-                    <div className="flex-shrink-0">
-                      <svg
-                        className="h-6 w-6 text-green-500"
-                        stroke="currentColor"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    </div>
-                    <p className="ml-3 text-base leading-6 text-gray-700">
-                      Itaque cupiditate adipisci quibusdam
+                      Corte + Secado artístico
                     </p>
                   </li>
                 </ul>
