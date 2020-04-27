@@ -7,11 +7,11 @@ export default async function email(req: NextApiRequest, res: NextApiResponse) {
     const request = {
       name: `${body.first_name}${body.lastName ? ' ' + body.lastName : ''}`,
       email: body.email,
-      subject: 'Consulta de peluquería.',
+      subject: 'Lista de espera para la cita.',
       message: `Telefono: ${body.tel}
       Mensaje: ${body.message}`,
       replyTo: '@',
-      accessKey: '5922f3d4-8a81-4f84-b94e-f19a300cd741',
+      accessKey: 'c87812f0-93ac-4d02-9d67-bf72c3655852',
     }
 
     const response = await fetch('https://api.staticforms.xyz/submit', {
