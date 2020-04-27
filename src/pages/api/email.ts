@@ -7,7 +7,9 @@ export default async function email(req: NextApiRequest, res: NextApiResponse) {
     const request = {
       name: `${body.first_name}${body.lastName ? ' ' + body.lastName : ''}`,
       email: body.email,
-      subject: 'Lista de espera para la cita.',
+      subject: `Lista de espera para la cita de ${body.first_name}${
+        body.lastName ? ' ' + body.lastName : ''
+      }.`,
       message: `Telefono: ${body.tel}
       Mensaje: ${body.message}`,
       replyTo: '@',
