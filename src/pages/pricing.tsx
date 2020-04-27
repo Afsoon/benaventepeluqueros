@@ -75,8 +75,21 @@ const createRow = (service, idx) => {
 }
 
 const values = [
-  { name: 'Lava + Cortar + Peinar', price: 'Desde 25€' },
-  { name: 'Lava + Cortar', price: 'Desde 15€' },
+  { name: 'Lavar + Hidratación + Cortar + Secar', price: '15€' },
+  { name: 'Corte caballero', price: '11€' },
+  { name: 'Lavar + Hidratación + Peinar', price: 'Desde 15€' },
+  { name: 'Lavar + Hidratación + Cortar + Peinar', price: 'Desde 25€' },
+  { name: 'Tinte', price: '22€' },
+  { name: 'Tinte sin amoníaco', price: '24€' },
+  { name: 'Tinte ecológico', price: '26€' },
+  { name: 'Decoloración', price: 'Desde 20€' },
+  { name: 'Matices', price: 'Desde 10€' },
+  { name: 'Mechas plata o pincel', price: '35€' },
+  { name: 'Moldeador', price: 'Desde 35€' },
+  { name: 'Recogido', price: '35€' },
+  { name: 'Semi Recogido', price: '25€' },
+  { name: 'Novias', price: 'Pedir presupuesto' },
+  { name: 'Comunión', price: 'Pedir presupuesto' },
 ]
 
 const GridPrices = () => {
@@ -178,6 +191,9 @@ const GridContainer = () => (
           Los servicios cuyo precio aparezca con{' '}
           <span className="font-bold text-xl text-black">desde</span> , varía en
           función del tamaño del pelo
+        </p>
+        <p className="mt-4 text-lg leading-6 text-gray-500">
+          Los miércoles hay un 21% de descuento en servicios técnicos
         </p>
       </div>
       <div className="mt-12">

@@ -58,6 +58,11 @@ const Footer = () => (
           </h4>
           <p className="mt-4 text-gray-300 text-base leading-6">
             Calle Panadés, 22, 28915 Leganés, Madrid
+            <div className="flex flex-col pb-4">
+              <span>Horario de apertura</span>
+              <span>L-V: 10:00 - 19:00</span>
+              <span>S: 10:00 - 14:00</span>
+            </div>
           </p>
           <a
             href="https://goo.gl/maps/ecwYBJDidJoS4FBD9"
