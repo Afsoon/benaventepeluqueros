@@ -28,14 +28,14 @@ const MetaTags = () => (
       property="og:title"
       content="Benavente Peluqueros - Trabajos realizados"
     />
-    <meta property="og:url" content="https://benaventepeluqueros.now.sh/" />
+    <meta property="og:url" content="https://benaventepeluqueros.com/" />
     <meta
       property="og:site_name"
       content="Benavente Peluqueros - Trabajos realizados"
     />
     <meta
       property="og:image"
-      content="https://benaventepeluqueros.now.sh/seo-image.jpg"
+      content="https://benaventepeluqueros.com/seo-image.jpg"
     />
     <meta property="og:image:width" content="3360" />
     <meta property="og:image:height" content="1906" />
@@ -44,7 +44,7 @@ const MetaTags = () => (
       content="Portafolio de trabajos realizados por nuestros técnicos en Benavente Peluqueros."
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://benaventepeluqueros.now.sh/" />
+    <meta name="twitter:url" content="https://benaventepeluqueros.com/" />
     <meta
       name="twitter:title"
       content="Benavente Peluqueros - Trabajos realizados"
@@ -55,9 +55,9 @@ const MetaTags = () => (
     />
     <meta
       name="twitter:image"
-      content="https://benaventepeluqueros.now.sh/seo-image.jpg"
+      content="https://benaventepeluqueros.com/seo-image.jpg"
     />
-    <link rel="canonical" href="https://benaventepeluqueros.now.sh/work" />
+    <link rel="canonical" href="https://benaventepeluqueros.com/work" />
   </Head>
 )
 

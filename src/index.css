@@ -4,7 +4,7 @@
 
 #__next {
   padding-bottom: env(safe-area-inset-bottom);
-  @apply bg-gray-800;
+  @apply bg-gray-800 h-screen;
 }
 /* purgecss end ignore */
 
