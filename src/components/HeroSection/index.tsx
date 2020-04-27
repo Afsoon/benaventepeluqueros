@@ -32,7 +32,7 @@ const HeroSection = () => {
                     <source srcSet="/logo.webp" type="image/webp" />
                     <img
                       className="h-8 w-auto sm:h-10"
-                      src="/logo.png"
+                      src="/logo.jpg"
                       alt=""
                     />
                   </picture>
@@ -100,7 +100,7 @@ const HeroSection = () => {
                         <source srcSet="/logo.webp" type="image/webp" />
                         <img
                           className="h-8 w-auto sm:h-10"
-                          src="/logo.png"
+                          src="/logo.jpg"
                           alt=""
                         />
                       </picture>

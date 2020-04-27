@@ -32,7 +32,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
             >
               <picture>
                 <source srcSet="/logo.webp" type="image/webp" />
-                <img className="h-8 w-auto sm:h-10" src="/logo.png" alt="" />
+                <img className="h-8 w-auto sm:h-10" src="/logo.jpg" alt="" />
               </picture>
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -107,7 +107,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                     <source srcSet="/logo.webp" type="image/webp" />
                     <img
                       className="h-8 w-auto sm:h-10"
-                      src="/logo.png"
+                      src="/logo.jpg"
                       alt=""
                     />
                   </picture>
