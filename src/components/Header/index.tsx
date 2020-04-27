@@ -98,7 +98,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+        <div className="absolute top-0 z-40 inset-x-0 p-2 transition transform origin-top-right md:hidden">
           <div className="rounded-lg shadow-md">
             <div className="rounded-lg bg-gray-800 shadow-xs overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
@@ -156,7 +156,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 )}
                 {showPricing && (
                   <a
-                    href="/contact"
+                    href="/pricing"
                     title="Ver lista de precios de la peluqueria"
                     className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                   >
