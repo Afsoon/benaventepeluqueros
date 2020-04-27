@@ -148,15 +148,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                     Pedir cita
                   </a>
                 )}
-                {showPricing && (
-                  <a
-                    href="/contact"
-                    title="Ver lista de precios de la peluqueria"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
-                  >
-                    Lista de precios
-                  </a>
-                )}
                 {showWork && (
                   <a
                     href="/work"
@@ -164,6 +155,15 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                     className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                   >
                     Trabajos realizados
+                  </a>
+                )}
+                {showPricing && (
+                  <a
+                    href="/contact"
+                    title="Ver lista de precios de la peluqueria"
+                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                  >
+                    Lista de precios
                   </a>
                 )}
               </div>

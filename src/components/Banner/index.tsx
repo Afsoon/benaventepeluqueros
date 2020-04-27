@@ -47,7 +47,7 @@ const FloatingBottomBanner = () => {
                 <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
                   <div className="rounded-md shadow-sm">
                     <a
-                      href="https://pelatencasa.now.sh/"
+                      href="https://soscortarmeelpelo.com/"
                       target="_blank"
                       onClick={closeBanner}
                       rel="noopener noreferrer"

@@ -38,6 +38,16 @@ const Footer = () => (
                     Trabajos realizados
                   </a>
                 </li>
+                <li className="mt-4">
+                  <a
+                    href="https://soscortarmeelpelo.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-base leading-6 text-gray-300 hover:text-white"
+                  >
+                    SOS Cortarme el pelo
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
