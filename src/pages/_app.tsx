@@ -23,12 +23,6 @@ class MyApp extends App {
           <link
             rel="icon"
             type="image/png"
-            sizes="194x194"
-            href="/favicon-194x194.png"
-          />
-          <link
-            rel="icon"
-            type="image/png"
             sizes="192x192"
             href="/android-chrome-192x192.png"
           />
@@ -39,7 +33,15 @@ class MyApp extends App {
             href="/favicon-16x16.png"
           />
           <link rel="manifest" href="/site.webmanifest" />
-          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000" />
+          <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+          <meta
+            name="apple-mobile-web-app-title"
+            content="Benavente Peluqueros"
+          />
+          <meta name="application-name" content="Benavente Peluqueros" />
+          <meta name="msapplication-TileColor" content="#000000" />
+          <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+          <meta name="theme-color" content="#ffffff" />
         </Head>
         <Component {...pageProps} />
       </React.Fragment>

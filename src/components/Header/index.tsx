@@ -34,9 +34,6 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 <source srcSet="/logo.webp" type="image/webp" />
                 <img className="h-8 w-auto sm:h-10" src="/logo.png" alt="" />
               </picture>
-              <h1 className="font-semibold text-xl text-white">
-                Benavente Peluqueros
-              </h1>
             </a>
             <div className="-mr-2 flex items-center md:hidden">
               <button

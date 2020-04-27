@@ -28,6 +28,14 @@ const HeroSection = () => {
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
+                  <picture>
+                    <source srcSet="/logo.webp" type="image/webp" />
+                    <img
+                      className="h-8 w-auto sm:h-10"
+                      src="/logo.png"
+                      alt=""
+                    />
+                  </picture>
                   <div className="-mr-2 flex items-center md:hidden">
                     <button
                       type="button"
@@ -88,11 +96,14 @@ const HeroSection = () => {
                 <div className="rounded-lg bg-gray-800 shadow-xs overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                      <img
-                        className="h-8 w-auto"
-                        src="/img/logos/workflow-mark-on-white.svg"
-                        alt=""
-                      />
+                      <picture>
+                        <source srcSet="/logo.webp" type="image/webp" />
+                        <img
+                          className="h-8 w-auto sm:h-10"
+                          src="/logo.png"
+                          alt=""
+                        />
+                      </picture>
                     </div>
                     <div className="-mr-2">
                       <button
