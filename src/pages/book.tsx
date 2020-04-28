@@ -176,7 +176,13 @@ const Form = ({ setShowCorrectMessage }) => {
         <Input
           htmlFor="last_name"
           labelValue="Apellido(s)"
-          innerRef={register()}
+          innerRef={register({
+            required: {
+              value: true,
+              message: 'El apellido es obligatorio.',
+            },
+          })}
+          required
           error={undefined}
         />
       </div>
@@ -185,17 +191,12 @@ const Form = ({ setShowCorrectMessage }) => {
           htmlFor="email"
           labelValue="Email"
           innerRef={register({
-            required: {
-              value: true,
-              message: 'El email es obligatorio.',
-            },
             pattern: {
               value: emailRegex,
               message: 'El email es invalido.',
             },
           })}
           error={errors.email}
-          required
         />
       </div>
       <div>
