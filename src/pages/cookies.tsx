@@ -72,7 +72,7 @@ const Content = () => (
       </svg>
       <div className="text-center">
         <h2 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 mb-4">
-          Politica de Cookies
+          Política de Cookies
         </h2>
         <button
           type="button"

@@ -44,7 +44,7 @@ const Footer = () => (
                     title="Politica de cookies de Benavente Peluqueros"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
-                    Politica de cookies
+                    Política de cookies
                   </a>
                 </li>
               </ul>
