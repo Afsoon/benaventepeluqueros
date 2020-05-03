@@ -9,6 +9,13 @@ class MyApp extends App {
     return (
       <React.Fragment>
         <Head>
+          <script
+            id="Cookiebot"
+            src="https://consent.cookiebot.com/uc.js"
+            data-cbid="47fcdd48-99a2-45c4-86e5-10e658f2d4e7"
+            data-blockingmode="auto"
+            type="text/javascript"
+          />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

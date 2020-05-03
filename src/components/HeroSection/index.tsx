@@ -33,7 +33,7 @@ const HeroSection = () => {
                     <img
                       className="h-8 w-auto sm:h-10"
                       src="/logo.jpg"
-                      alt=""
+                      alt="Logo de la peluqueria"
                     />
                   </picture>
                   <div className="-mr-2 flex items-center md:hidden">
@@ -62,21 +62,31 @@ const HeroSection = () => {
               <div className="hidden md:block md:ml-10 md:pr-4">
                 <a
                   href="/book"
+                  title="Pedir cita"
                   className="font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
                 >
                   Pedir cita
                 </a>
                 <a
+                  href="/pricing"
+                  title="Ver lista de precios de la peluqueria"
+                  className="ml-8 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
+                >
+                  Lista de precios
+                </a>
+                <a
                   href="/work"
+                  title="Ver trabajos realizados"
                   className="ml-8 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
                 >
                   Trabajos realizados
                 </a>
                 <a
-                  href="/pricing"
+                  href="/contact"
+                  title="Formulario de contacto"
                   className="ml-8 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
                 >
-                  Lista de precios
+                  Contacto
                 </a>
               </div>
             </nav>
@@ -96,14 +106,20 @@ const HeroSection = () => {
                 <div className="rounded-lg bg-gray-800 shadow-xs overflow-hidden">
                   <div className="px-5 pt-4 flex items-center justify-between">
                     <div>
-                      <picture>
-                        <source srcSet="/logo.webp" type="image/webp" />
-                        <img
-                          className="h-8 w-auto sm:h-10"
-                          src="/logo.jpg"
-                          alt=""
-                        />
-                      </picture>
+                      <a
+                        className="flex items-center"
+                        href="/"
+                        title="Ir a página de inicio"
+                      >
+                        <picture>
+                          <source srcSet="/logo.webp" type="image/webp" />
+                          <img
+                            className="h-8 w-auto sm:h-10"
+                            src="/logo.jpg"
+                            alt="Logo de la peluqueria"
+                          />
+                        </picture>
+                      </a>
                     </div>
                     <div className="-mr-2">
                       <button
@@ -130,21 +146,31 @@ const HeroSection = () => {
                   <div className="px-2 pt-2 pb-3">
                     <a
                       href="/book"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-100 hover:bg-gray-500 focus:outline-none focus:text-gray-100 focus:bg-gray-50 transition duration-150 ease-in-out"
+                      title="Pedir cita"
+                      className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                     >
                       Pedir cita
                     </a>
                     <a
+                      href="/pricing"
+                      title="Ver lista de precios de la peluqueria"
+                      className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                    >
+                      Lista de precios
+                    </a>
+                    <a
                       href="/work"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-100 hover:bg-gray-500 focus:outline-none focus:text-gray-100 focus:bg-gray-50 transition duration-150 ease-in-out"
+                      title="Ver trabajos realizados"
+                      className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                     >
                       Trabajos realizados
                     </a>
                     <a
-                      href="/pricing"
-                      className="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-100 hover:bg-gray-500 focus:outline-none focus:text-gray-100 focus:bg-gray-50 transition duration-150 ease-in-out"
+                      href="/contact"
+                      title="Formulario de contacto"
+                      className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                     >
-                      Lista de precios
+                      Contacto
                     </a>
                   </div>
                 </div>

@@ -4,7 +4,7 @@ const Footer = () => (
   <div className="bg-gray-800">
     <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div className="notch translate-x-2/3 flex xl:grid xl:grid-cols-3 xl:gap-8">
-        <div className="grid grid-cols-2 gap-8 xl:col-span-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 xl:col-span-2">
           <div className="md:grid md:grid-cols-2 md:gap-8">
             <div>
               <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
@@ -40,6 +40,22 @@ const Footer = () => (
                 </li>
                 <li className="mt-4">
                   <a
+                    href="/cookies"
+                    title="Politica de cookies de Benavente Peluqueros"
+                    className="text-base leading-6 text-gray-300 hover:text-white"
+                  >
+                    Politica de cookies
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="mt-4 sm:mt-0">
+              <h4 className="text-sm leading-5 font-semibold tracking-wider text-gray-400 uppercase">
+                Otros servicios de la empresa
+              </h4>
+              <ul className="mt-4">
+                <li>
+                  <a
                     href="https://soscortarmeelpelo.com/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -58,12 +74,20 @@ const Footer = () => (
           </h4>
           <p className="mt-4 text-gray-300 text-base leading-6">
             Calle Panadés, 22, 28915 Leganés, Madrid
-            <div className="flex flex-col pb-4">
+          </p>
+          <div className="block md:grid md:grid-cols-2 md:gap-2">
+            <div className="flex text-gray-300 flex-col pb-4">
               <span>Horario de apertura</span>
               <span>L-V: 10:00 - 19:00</span>
               <span>S: 10:00 - 14:00</span>
             </div>
-          </p>
+            <div className="flex text-gray-300 flex-col pb-4">
+              <span>Teléfonos</span>
+              <span>Fijo: 916881810 </span>
+              <span>Móvil: 696242904 </span>
+            </div>
+          </div>
+
           <a
             href="https://goo.gl/maps/ecwYBJDidJoS4FBD9"
             target="_blank"

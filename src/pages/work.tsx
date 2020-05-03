@@ -205,7 +205,7 @@ const Home = () => {
   return (
     <>
       <MetaTags />
-      <Header showBook showPricing />
+      <Header />
       <GridContainer />
       <Footer />
     </>

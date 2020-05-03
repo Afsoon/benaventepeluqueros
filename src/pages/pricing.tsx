@@ -64,10 +64,10 @@ const createRow = (service, idx) => {
   const className = idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'
   return (
     <tr key={idx} className={className}>
-      <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+      <td className="px-1 sm:px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
         {service.name}
       </td>
-      <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+      <td className="sm:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
         {service.price}
       </td>
     </tr>
@@ -90,6 +90,7 @@ const values = [
   { name: 'Semi Recogido', price: '25€' },
   { name: 'Novias', price: 'Pedir presupuesto' },
   { name: 'Comunión', price: 'Pedir presupuesto' },
+  { name: 'Tratamientos', price: 'Pedir presupuesto' },
 ]
 
 const GridPrices = () => {
@@ -100,10 +101,10 @@ const GridPrices = () => {
           <table className="min-w-full">
             <thead>
               <tr>
-                <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                <th className="px-1 sm:px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                   Servicio
                 </th>
-                <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                <th className="sm:px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                   Precio
                 </th>
               </tr>
@@ -206,7 +207,7 @@ const Home = () => {
   return (
     <>
       <MetaTags />
-      <Header showBook showWork />
+      <Header />
       <GridContainer />
       <Footer />
     </>

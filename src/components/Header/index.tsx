@@ -1,17 +1,7 @@
 import React, { useState } from 'react'
 import Transition from '../Transition'
 
-interface HeaderProps {
-  showBook?: boolean
-  showPricing?: boolean
-  showWork?: boolean
-}
-
-const Header: React.FunctionComponent<HeaderProps> = ({
-  showBook,
-  showPricing,
-  showWork,
-}) => {
+const Header = () => {
   const [showDialog, setShowDialog] = useState(false)
   const displayDialog = () => {
     setShowDialog(true)
@@ -32,7 +22,11 @@ const Header: React.FunctionComponent<HeaderProps> = ({
             >
               <picture>
                 <source srcSet="/logo.webp" type="image/webp" />
-                <img className="h-8 w-auto sm:h-10" src="/logo.jpg" alt="" />
+                <img
+                  className="h-8 w-auto sm:h-10"
+                  src="/logo.jpg"
+                  alt="Logo de la peluqueria"
+                />
               </picture>
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -59,33 +53,34 @@ const Header: React.FunctionComponent<HeaderProps> = ({
             </div>
           </div>
           <div className="hidden md:block md:ml-10">
-            {showBook && (
-              <a
-                href="/book"
-                title="Pedir cita"
-                className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
-              >
-                Pedir cita
-              </a>
-            )}
-            {showPricing && (
-              <a
-                href="/pricing"
-                title="Ver lista de precios de la peluqueria"
-                className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
-              >
-                Lista de precios
-              </a>
-            )}
-            {showWork && (
-              <a
-                href="/work"
-                title="Ver trabajos realizados"
-                className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
-              >
-                Trabajos realizados
-              </a>
-            )}
+            <a
+              href="/book"
+              title="Pedir cita"
+              className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
+            >
+              Pedir cita
+            </a>
+            <a
+              href="/pricing"
+              title="Ver lista de precios de la peluqueria"
+              className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
+            >
+              Lista de precios
+            </a>
+            <a
+              href="/work"
+              title="Ver trabajos realizados"
+              className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
+            >
+              Trabajos realizados
+            </a>
+            <a
+              href="/contact"
+              title="Formulario de contacto"
+              className="ml-10 font-medium text-gray-500 hover:text-gray-100 focus:outline-none focus:text-gray-100 transition duration-150 ease-in-out"
+            >
+              Contacto
+            </a>
           </div>
         </div>
       </nav>
@@ -103,14 +98,20 @@ const Header: React.FunctionComponent<HeaderProps> = ({
             <div className="rounded-lg bg-gray-800 shadow-xs overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
-                  <picture>
-                    <source srcSet="/logo.webp" type="image/webp" />
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="/logo.jpg"
-                      alt=""
-                    />
-                  </picture>
+                  <a
+                    className="flex items-center"
+                    href="/"
+                    title="Ir a página de inicio"
+                  >
+                    <picture>
+                      <source srcSet="/logo.webp" type="image/webp" />
+                      <img
+                        className="h-8 w-auto sm:h-10"
+                        src="/logo.jpg"
+                        alt="Logo de la peluqueria"
+                      />
+                    </picture>
+                  </a>
                 </div>
                 <div className="-mr-2">
                   <button
@@ -136,33 +137,34 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3">
-                {showBook && (
-                  <a
-                    href="/book"
-                    title="Pedir cita"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
-                  >
-                    Pedir cita
-                  </a>
-                )}
-                {showWork && (
-                  <a
-                    href="/work"
-                    title="Ver trabajos realizados"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
-                  >
-                    Trabajos realizados
-                  </a>
-                )}
-                {showPricing && (
-                  <a
-                    href="/pricing"
-                    title="Ver lista de precios de la peluqueria"
-                    className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
-                  >
-                    Lista de precios
-                  </a>
-                )}
+                <a
+                  href="/book"
+                  title="Pedir cita"
+                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                >
+                  Pedir cita
+                </a>
+                <a
+                  href="/pricing"
+                  title="Ver lista de precios de la peluqueria"
+                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                >
+                  Lista de precios
+                </a>
+                <a
+                  href="/work"
+                  title="Ver trabajos realizados"
+                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                >
+                  Trabajos realizados
+                </a>
+                <a
+                  href="/contact"
+                  title="Formulario de contacto"
+                  className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
+                >
+                  Contacto
+                </a>
               </div>
             </div>
           </div>

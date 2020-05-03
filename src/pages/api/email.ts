@@ -7,13 +7,13 @@ export default async function email(req: NextApiRequest, res: NextApiResponse) {
     const request = {
       name: `${body.first_name}${body.last_name ? ' ' + body.last_name : ''}`,
       email: body.email || 'fake@email.com',
-      subject: `Lista de espera para la cita de ${body.first_name}${
+      subject: `Formulario de contacto de ${body.first_name}${
         body.last_name ? ' ' + body.last_name : ''
       }.`,
-      message: `Telefono: ${body.tel}
+      message: `Teléfono: ${body.tel}
       Mensaje: ${body.message}`,
       replyTo: '@',
-      accessKey: 'c87812f0-93ac-4d02-9d67-bf72c3655852',
+      accessKey: 'db07dd90-0e7a-49a4-bffe-8a62db8f18a8',
     }
 
     console.log(request)

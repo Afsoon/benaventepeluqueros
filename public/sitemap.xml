@@ -9,6 +9,18 @@
                         </url>
                     
                         <url>
+                            <loc>https://benaventepeluqueros.com/contact</loc>
+                            <priority>0.80</priority>
+                            <changefreq>daily</changefreq>
+                        </url>
+                    
+                        <url>
+                            <loc>https://benaventepeluqueros.com/cookies</loc>
+                            <priority>0.80</priority>
+                            <changefreq>daily</changefreq>
+                        </url>
+                    
+                        <url>
                             <loc>https://benaventepeluqueros.com</loc>
                             <priority>1.00</priority>
                             <changefreq>daily</changefreq>
