@@ -1,4 +1,4 @@
-Sitemap: https://.now.sh/sitemap.xml
+Sitemap: https://benaventepeluqueros.com/sitemap.xml
 
 User-agent: *
 Allow: /*
