@@ -48,6 +48,7 @@ const FloatingBottomBanner = () => {
                   <div className="rounded-md shadow-sm">
                     <a
                       href="https://soscortarmeelpelo.com/"
+                      title="Servicio online de asesoría de la peluquería"
                       target="_blank"
                       onClick={closeBanner}
                       rel="noopener noreferrer"
@@ -62,7 +63,7 @@ const FloatingBottomBanner = () => {
                     type="button"
                     onClick={closeBanner}
                     className="-mr-1 flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500 transition ease-in-out duration-150"
-                    aria-label="Dismiss"
+                    aria-label="Cerrar banner de anuncio"
                   >
                     <svg
                       className="h-6 w-6 text-white"

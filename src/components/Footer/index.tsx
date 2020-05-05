@@ -58,6 +58,7 @@ const Footer = () => (
                   <a
                     href="https://soscortarmeelpelo.com/"
                     target="_blank"
+                    title="Servicio online de asesoría de la peluquería"
                     rel="noopener noreferrer"
                     className="text-base leading-6 text-gray-300 hover:text-white"
                   >
@@ -93,14 +94,14 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 sm:flex sm:max-w-md justify-center"
-            title="Mapa que muesta la ubicación del mapa"
+            title="Link a Google Maps para ir a la peluquería"
           >
             <picture>
               <source srcSet="/maps.webp" type="image/webp" />
               <img
                 className="h-48 w-48 object-cover rounded-sm"
                 src="/maps.png"
-                alt=""
+                alt="Imagen de la localización de la peluquería"
               />
             </picture>
           </a>
@@ -111,6 +112,7 @@ const Footer = () => (
           <a
             href="https://www.facebook.com/BenaventePeluqueros"
             target="_blank"
+            title="Página de Facebook de la peluquería"
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-gray-300"
           >
@@ -126,6 +128,7 @@ const Footer = () => (
           <a
             href="https://www.instagram.com/benaventepeluqueros"
             target="_blank"
+            title="Cuenta de Instagram de la peluquería"
             rel="noopener noreferrer"
             className="ml-6 text-gray-400 hover:text-gray-300"
           >

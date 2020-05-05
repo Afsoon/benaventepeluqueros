@@ -28,18 +28,25 @@ const HeroSection = () => {
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start">
               <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                 <div className="flex items-center justify-between w-full md:w-auto">
-                  <picture>
-                    <source srcSet="/logo.webp" type="image/webp" />
-                    <img
-                      className="h-8 w-auto sm:h-10"
-                      src="/logo.jpg"
-                      alt="Logo de la peluqueria"
-                    />
-                  </picture>
+                  <a
+                    className="flex items-center"
+                    href="/"
+                    title="Ir a página de inicio"
+                  >
+                    <picture>
+                      <source srcSet="/logo.webp" type="image/webp" />
+                      <img
+                        className="h-8 w-auto sm:h-10"
+                        src="/logo.jpg"
+                        alt=""
+                      />
+                    </picture>
+                  </a>
                   <div className="-mr-2 flex items-center md:hidden">
                     <button
                       type="button"
                       onClick={displayDialog}
+                      aria-label="Abrir menu del listado de páginas"
                       className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                     >
                       <svg
@@ -116,7 +123,7 @@ const HeroSection = () => {
                           <img
                             className="h-8 w-auto sm:h-10"
                             src="/logo.jpg"
-                            alt="Logo de la peluqueria"
+                            alt=""
                           />
                         </picture>
                       </a>
@@ -125,6 +132,7 @@ const HeroSection = () => {
                       <button
                         type="button"
                         onClick={hideDialog}
+                        aria-label="Cerrar menu del listado de páginas"
                         className="inline-flex items-center justify-center p-2 rounded-md text-gray-500 hover:text-gray-50 hover:bg-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-50 transition duration-150 ease-in-out"
                       >
                         <svg
@@ -191,6 +199,7 @@ const HeroSection = () => {
                 <div className="rounded-md shadow">
                   <a
                     href="/book"
+                    title="Pedir cita"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Pedir cita
@@ -199,6 +208,7 @@ const HeroSection = () => {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="/work"
+                    title="Ver trabajos realizados"
                     className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 hover:text-indigo-600 hover:bg-indigo-50 focus:outline-none focus:shadow-outline focus:border-indigo-300 transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
                   >
                     Trabajos realizados
@@ -215,7 +225,7 @@ const HeroSection = () => {
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             src="/local.png"
-            alt=""
+            alt="Una foto del interior del local donde se ves los tocadores"
           />
         </picture>
       </div>

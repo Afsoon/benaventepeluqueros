@@ -8,7 +8,7 @@ const TeamMember = () => (
         <img
           className="h-48 w-48 object-cover rounded-full"
           src="/photo.png"
-          alt=""
+          alt="Foto del estilista y técnico Fernando Benavente"
         />
       </picture>
     </div>
@@ -17,7 +17,7 @@ const TeamMember = () => (
         <p className="text-sm leading-5 font-medium text-indigo-600">
           Estilista y técnico en color
         </p>
-        <a href="#" className="block">
+        <div className="block">
           <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
             Fernando Benavente
           </h3>
@@ -26,7 +26,7 @@ const TeamMember = () => (
             trabajado como técnico de Selective y asesor de imagen de artistas y
             principales personalidades del espectáculo en Estados Unidos.
           </p>
-        </a>
+        </div>
       </div>
     </div>
   </div>

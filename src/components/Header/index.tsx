@@ -22,11 +22,7 @@ const Header = () => {
             >
               <picture>
                 <source srcSet="/logo.webp" type="image/webp" />
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="/logo.jpg"
-                  alt="Logo de la peluqueria"
-                />
+                <img className="h-8 w-auto sm:h-10" src="/logo.jpg" alt="" />
               </picture>
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -108,7 +104,7 @@ const Header = () => {
                       <img
                         className="h-8 w-auto sm:h-10"
                         src="/logo.jpg"
-                        alt="Logo de la peluqueria"
+                        alt=""
                       />
                     </picture>
                   </a>

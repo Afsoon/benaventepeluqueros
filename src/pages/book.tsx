@@ -77,7 +77,11 @@ const FormContainer = () => (
         <p className="mt-4 text-lg leading-6 text-gray-500">
           Para citas para un tratamiento, novias o comuniones por favor
           llamenós, al 916881810 o 696242904, o rellene el{' '}
-          <a href="/contact" className="underline">
+          <a
+            href="/contact"
+            title="Ir al formulario de contacto"
+            className="underline"
+          >
             formulario de contacto
           </a>{' '}
           indicando su motivo de la consulta.

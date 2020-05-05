@@ -179,6 +179,7 @@ const Pricing = () => (
             <div className="mt-6 rounded-md shadow lg:mt-0 lg:ml-10 lg:flex-shrink-0">
               <a
                 href="/pricing"
+                title="Ir a la página de listado de precios"
                 className="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-700 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
               >
                 Ver listado de precios

@@ -76,9 +76,13 @@ const Content = () => (
         </h2>
         <button
           type="button"
+          aria-label="Renovar o cambiar el consimiento de las cookies"
           className="mb-4 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
         >
-          <a href="javascript: Cookiebot.renew()">
+          <a
+            title="Renovar o cambiar consimiento de cookies"
+            href="javascript: Cookiebot.renew()"
+          >
             Renovar o cambiar su consetimiento de cookies.
           </a>
         </button>
