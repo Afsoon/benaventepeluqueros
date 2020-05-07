@@ -53,7 +53,7 @@ const MetaTags = () => (
       name="twitter:image"
       content="https://benaventepeluqueros.com/seo-image.jpg"
     />
-    <link rel="canonical" href="https://benaventepeluqueros.com/work" />
+    <link rel="canonical" href="https://benaventepeluqueros.com/" />
   </Head>
 )
 
