@@ -15,7 +15,7 @@ const globby = require('globby');
                 .replace('pages', '')
                 .replace('.tsx', '')
                 .replace('.mdx', '');
-            const route = path === '/index' ? '' : path;
+            const route = path === '/index' ? '/' : path;
             return `<url>
         <loc>${`https://benaventepeluqueros.com${route}`}</loc>
         <priority>${route === '' ? '1.00' : '0.80'}</priority>
