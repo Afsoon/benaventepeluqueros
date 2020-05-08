@@ -193,9 +193,6 @@ const GridContainer = () => (
           <span className="font-bold text-xl text-black">desde</span> , varía en
           función del tamaño del pelo
         </p>
-        <p className="mt-4 text-lg leading-6 text-gray-500">
-          Los miércoles hay un 21% de descuento en servicios técnicos
-        </p>
       </div>
       <div className="mt-12">
         <GridPrices />
