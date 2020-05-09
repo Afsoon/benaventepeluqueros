@@ -258,17 +258,15 @@ const HeroSection = () => {
             sizes="(max-width: 767px) 100vw, 767px"
             srcSet="
 /local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
-/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_674.png 674w,
-/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_767.png 767w"
+/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_674.png 674w"
           />
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
             sizes="(max-width: 2333px) 60vw, 1400px"
             srcSet="
 /local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w,
-/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png 951w,
-/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_1400.png 1400w"
-            src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_1400.png"
+/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png 951w"
+            src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png"
             alt="Una foto del interior del local donde se ves los tocadores"
           />
         </picture>
