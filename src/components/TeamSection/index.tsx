@@ -8,33 +8,27 @@ const TeamMember = () => (
           media="(max-width: 767px)"
           sizes="(max-width: 767px) 100vw, 767px"
           srcSet="
-            /team_responsive/photo_ahi2md_ar_1_1,c_fill,g_auto__c_scale,w_200.webp 200w,
-            /team_responsive/photo_ahi2md_ar_1_1,c_fill,g_auto__c_scale,w_767.webp 767w"
+            /team_responsive/photo_ahi2md_ar_1_1,c_fill,g_auto__c_scale,w_200.webp 200w"
           type="image/webp"
         />
         <source
           sizes="(max-width: 2333px) 60vw, 1400px"
           srcSet="
-            /team_responsive/photo_ahi2md_ar_4_3,c_fill,g_auto__c_scale,w_461.webp 461w,
-            /team_responsive/photo_ahi2md_ar_4_3,c_fill,g_auto__c_scale,w_1236.webp 1236w,
-            /team_responsive/photo_ahi2md_ar_4_3,c_fill,g_auto__c_scale,w_1400.webp 1400w"
+            /team_responsive/photo_ahi2md_ar_4_3,c_fill,g_auto__c_scale,w_461.webp 461w"
           type="image/webp"
         />
         <source
           media="(max-width: 767px)"
           sizes="(max-width: 767px) 100vw, 767px"
           srcSet="
-            /team_responsive/photo_gane4g_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
-            /team_responsive/photo_gane4g_ar_1_1,c_fill,g_auto__c_scale,w_767.png 767w"
+            /team_responsive/photo_gane4g_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w"
         />
         <img
           className="h-48 w-48 object-cover rounded-full"
           sizes="(max-width: 2333px) 60vw, 1400px"
           srcSet="
-            /team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w,
-            /team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_1221.png 1221w,
-            /team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_1400.png 1400w"
-          src="/team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_1400.png"
+            /team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w"
+          src="/team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png"
           alt="Foto del estilista y técnico Fernando Benavente"
         />
       </picture>

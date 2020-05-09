@@ -23,17 +23,15 @@ const Header = () => {
               <picture>
                 <source
                   srcSet="
-/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w,
-/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_150.webp 150w"
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w"
                   type="image/webp"
                 />
                 <img
                   className="h-8 w-auto sm:h-10"
                   sizes="(max-width: 150px) 100vw, 150px"
                   srcSet="
-/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w,
-/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg 150w"
-                  src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg"
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
+                  src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
                   alt=""
                 />
               </picture>
@@ -115,17 +113,15 @@ const Header = () => {
                     <picture>
                       <source
                         srcSet="
-/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w,
-/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_150.webp 150w"
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w"
                         type="image/webp"
                       />
                       <img
                         className="h-8 w-auto sm:h-10"
                         sizes="(max-width: 150px) 100vw, 150px"
                         srcSet="
-/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w,
-/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg 150w"
-                        src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg"
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
+                        src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
                         alt=""
                       />
                     </picture>
