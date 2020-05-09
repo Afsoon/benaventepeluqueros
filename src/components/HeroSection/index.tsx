@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import Transition from '../Transition'
 
 const HeroSection = () => {
-  const [showDialog, setShowDialog] = useState(false)
+  const [showDialog, setShowDialog] = React.useState(false)
   const displayDialog = () => {
     setShowDialog(true)
   }

@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { useStorageState } from 'react-storage-hooks'
 
 const FloatingBottomBanner = () => {

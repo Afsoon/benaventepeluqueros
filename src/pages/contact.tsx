@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from 'react'
+import * as React from 'react'
 import { useForm } from 'react-hook-form'
 import Head from 'next/head'
 import Footer from '../components/Footer'
@@ -118,10 +118,10 @@ const Textarea = ({
 }
 
 const Form = ({ setShowCorrectMessage }) => {
-  const [acceptRGPD, setAcceptRGPD] = useState(false)
-  const [clicked, setClickedChecbox] = useState(false)
-  const [showRetry, setShowRetry] = useState(false)
-  const [waitingResponse, setWaitingResponse] = useState(false)
+  const [acceptRGPD, setAcceptRGPD] = React.useState(false)
+  const [clicked, setClickedChecbox] = React.useState(false)
+  const [showRetry, setShowRetry] = React.useState(false)
+  const [waitingResponse, setWaitingResponse] = React.useState(false)
   const { register, handleSubmit, errors } = useForm()
   const classNameBg = acceptRGPD ? 'bg-indigo-600' : 'bg-gray-200'
   const classNameTransition = acceptRGPD ? 'translate-x-5' : 'translate-x-0'
@@ -300,7 +300,7 @@ const MessageCorrect = () => (
 )
 
 const FormContainer = () => {
-  const [showCorrectMessage, setShowCorrectMessage] = useState(false)
+  const [showCorrectMessage, setShowCorrectMessage] = React.useState(false)
   return (
     <div className="bg-gray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
       <div className="relative max-w-xl mx-auto">

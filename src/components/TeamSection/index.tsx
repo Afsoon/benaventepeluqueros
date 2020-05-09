@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 const TeamMember = () => (
   <div className="flex flex-col rounded-lg shadow-lg overflow-hidden col-start-2 col-end-2">
