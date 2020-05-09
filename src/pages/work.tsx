@@ -112,10 +112,22 @@ const Img = ({
     'col-span-4 row-span-3': medium,
     'col-span-2 row-span-2': small,
   })
+
+  let hAndW = classnames({
+    '': true,
+    'w-mobile-md h-mobile-lg sm:w-tablet-md sm:h-tablet-lg md:w-desktop-md md:h-desktop-lg': large,
+    'w-mobile-md h-mobile-md sm:w-tablet-md sm:h-tablet-md md:w-desktop-md md:h-desktop-md': medium,
+    'w-mobile-sm h-mobile-sm sm:w-tablet-sm sm:h-tablet-sm md:w-desktop-sm md:h-desktop-sm': small,
+  })
   return (
     <picture className={className}>
       <source srcSet={src.replace(/(png|jpg)/g, 'webp')} type="image/webp" />
-      <img src={src} alt="" className="w-full h-full object-cover" />
+      <img
+        src={src}
+        alt=""
+        className={`${hAndW} object-cover`}
+        loading="lazy"
+      />
     </picture>
   )
 }
