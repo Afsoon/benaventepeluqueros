@@ -97,10 +97,13 @@ const Footer = () => (
             title="Link a Google Maps para ir a la peluquería"
           >
             <picture>
-              <source srcSet="/maps.webp" type="image/webp" />
+              <source
+                srcSet="/maps_responsive/maps_tgiqjg_ar_1_1,c_fill,g_auto__c_scale,w_200.webp"
+                type="image/webp"
+              />
               <img
                 className="h-48 w-48 object-cover rounded-sm"
-                src="/maps.png"
+                src="/maps_responsive/maps_l6h1cz_ar_1_1,c_fill,g_auto__c_scale,w_604.png"
                 alt="Imagen de la localización de la peluquería"
               />
             </picture>

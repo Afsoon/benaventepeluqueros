@@ -34,10 +34,19 @@ const HeroSection = () => {
                     title="Ir a página de inicio"
                   >
                     <picture>
-                      <source srcSet="/logo.webp" type="image/webp" />
+                      <source
+                        srcSet="
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w,
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_150.webp 150w"
+                        type="image/webp"
+                      />
                       <img
                         className="h-8 w-auto sm:h-10"
-                        src="/logo.jpg"
+                        sizes="(max-width: 150px) 100vw, 150px"
+                        srcSet="
+                        /logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w,
+                        /logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg 150w"
+                        src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg"
                         alt=""
                       />
                     </picture>
@@ -119,10 +128,19 @@ const HeroSection = () => {
                         title="Ir a página de inicio"
                       >
                         <picture>
-                          <source srcSet="/logo.webp" type="image/webp" />
+                          <source
+                            srcSet="
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w,
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_150.webp 150w"
+                            type="image/webp"
+                          />
                           <img
                             className="h-8 w-auto sm:h-10"
-                            src="/logo.jpg"
+                            sizes="(max-width: 150px) 100vw, 150px"
+                            srcSet="
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w,
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg 150w"
+                            src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_150.jpg"
                             alt=""
                           />
                         </picture>
@@ -221,10 +239,40 @@ const HeroSection = () => {
       </div>
       <div className="notch lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <picture>
-          <source srcSet="/local.webp" type="image/webp" />
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 767px) 100vw, 767px"
+            srcSet="
+/local_responsive/local_zkbdrr_ar_1_1,c_fill,g_auto__c_scale,w_200.webp 200w,
+/local_responsive/local_zkbdrr_ar_1_1,c_fill,g_auto__c_scale,w_659.webp 659w,
+/local_responsive/local_zkbdrr_ar_1_1,c_fill,g_auto__c_scale,w_767.webp 767w"
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 2333px) 60vw, 1400px"
+            srcSet="
+/local_responsive/local_zkbdrr_ar_4_3,c_fill,g_auto__c_scale,w_461.webp 461w,
+/local_responsive/local_zkbdrr_ar_4_3,c_fill,g_auto__c_scale,w_973.webp 973w,
+/local_responsive/local_zkbdrr_ar_4_3,c_fill,g_auto__c_scale,w_1400.webp 1400w"
+            type="image/webp"
+          />
+
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 767px) 100vw, 767px"
+            srcSet="
+/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
+/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_674.png 674w,
+/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_767.png 767w"
+          />
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-            src="/local.png"
+            sizes="(max-width: 2333px) 60vw, 1400px"
+            srcSet="
+/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w,
+/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png 951w,
+/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_1400.png 1400w"
+            src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_1400.png"
             alt="Una foto del interior del local donde se ves los tocadores"
           />
         </picture>
