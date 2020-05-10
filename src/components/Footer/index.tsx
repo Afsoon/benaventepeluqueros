@@ -102,8 +102,8 @@ const Footer = () => (
                 type="image/webp"
               />
               <img
-                className="h-48 w-48 object-cover rounded-sm"
-                src="/maps_responsive/maps_l6h1cz_ar_1_1,c_fill,g_auto__c_scale,w_200.png"
+                className="h-48 w-48 object-cover rounded-sm lazyload"
+                data-src="/maps_responsive/maps_l6h1cz_ar_1_1,c_fill,g_auto__c_scale,w_200.png"
                 alt="Imagen de la localización de la peluquería"
               />
             </picture>

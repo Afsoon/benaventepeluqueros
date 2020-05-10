@@ -117,11 +117,11 @@ const Header = () => {
                         type="image/webp"
                       />
                       <img
-                        className="h-8 w-auto sm:h-10"
+                        className="h-8 w-auto sm:h-10 lazyload"
                         sizes="(max-width: 150px) 100vw, 150px"
-                        srcSet="
+                        data-srcset="
 /logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
-                        src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
+                        data-src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
                         alt=""
                       />
                     </picture>

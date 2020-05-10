@@ -132,11 +132,11 @@ const HeroSection = () => {
                             type="image/webp"
                           />
                           <img
-                            className="h-8 w-auto sm:h-10"
+                            className="h-8 w-auto sm:h-10 lazyload"
                             sizes="(max-width: 150px) 100vw, 150px"
-                            srcSet="
+                            data-srcset="
 /logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
-                            src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
+                            data-src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
                             alt=""
                           />
                         </picture>
@@ -256,17 +256,17 @@ const HeroSection = () => {
           <source
             media="(max-width: 767px)"
             sizes="(max-width: 767px) 100vw, 767px"
-            srcSet="
+            data-srcset="
 /local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
 /local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_674.png 674w"
           />
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full lazyload"
             sizes="(max-width: 2333px) 60vw, 1400px"
-            srcSet="
+            data-srcset="
 /local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w,
 /local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png 951w"
-            src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png"
+            data-src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png"
             alt="Una foto del interior del local donde se ves los tocadores"
           />
         </picture>

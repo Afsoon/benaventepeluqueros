@@ -20,15 +20,15 @@ const TeamMember = () => (
         <source
           media="(max-width: 767px)"
           sizes="(max-width: 767px) 100vw, 767px"
-          srcSet="
+          data-srcset="
             /team_responsive/photo_gane4g_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w"
         />
         <img
-          className="h-48 w-48 object-cover rounded-full"
+          className="h-48 w-48 object-cover rounded-full lazyload"
           sizes="(max-width: 2333px) 60vw, 1400px"
-          srcSet="
+          data-srcset="
             /team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w"
-          src="/team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png"
+          data-src="/team_responsive/photo_gane4g_ar_4_3,c_fill,g_auto__c_scale,w_461.png"
           alt="Foto del estilista y técnico Fernando Benavente"
         />
       </picture>
