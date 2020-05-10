@@ -257,16 +257,12 @@ const HeroSection = () => {
             media="(max-width: 767px)"
             sizes="(max-width: 767px) 100vw, 767px"
             data-srcset="
-/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_200.png 200w,
-/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_674.png 674w"
+/local_responsive/local_tz6sy8_ar_1_1,c_fill,g_auto__c_scale,w_399.png 399w"
           />
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full lazyload"
             sizes="(max-width: 2333px) 60vw, 1400px"
-            data-srcset="
-/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_461.png 461w,
-/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png 951w"
-            data-src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_951.png"
+            data-src="/local_responsive/local_tz6sy8_ar_4_3,c_fill,g_auto__c_scale,w_839.png"
             alt="Una foto del interior del local donde se ves los tocadores"
           />
         </picture>

@@ -14,6 +14,7 @@ class MyApp extends App {
             src="https://consent.cookiebot.com/uc.js"
             data-cbid="47fcdd48-99a2-45c4-86e5-10e658f2d4e7"
             type="text/javascript"
+            data-blockingmode="auto"
           />
           <link
             rel="apple-touch-icon"
