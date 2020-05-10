@@ -84,8 +84,8 @@ const Footer = () => (
             </div>
             <div className="flex text-gray-300 flex-col pb-4">
               <span>Teléfonos</span>
-              <span>Fijo: 916881810 </span>
-              <span>Móvil: 696242904 </span>
+              <a href="tel:916881810">Fijo: 91 688 18 10 </a>
+              <a href="tel:696242904">Móvil: 696 242 904 </a>
             </div>
           </div>
 
