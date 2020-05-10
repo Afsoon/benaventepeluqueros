@@ -58,8 +58,10 @@ const MetaTags = () => (
       content="https://benaventepeluqueros.com/seo-image.jpg"
     />
     <link rel="canonical" href="https://benaventepeluqueros.com/work" />
-    <script type="application/ld+json">
-      {JSON.stringify({
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: `{
         '@context': 'https://schema.org',
         '@type': 'HairSalon',
         image: ['https://benaventepeluqueros.com/logo.webp'],
@@ -102,8 +104,9 @@ const MetaTags = () => (
             closes: '14:00',
           },
         ],
-      })}
-    </script>
+      }`,
+      }}
+    />
   </Head>
 )
 
