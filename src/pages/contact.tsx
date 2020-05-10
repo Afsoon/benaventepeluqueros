@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from 'react'
+import * as React from 'react'
 import { useForm } from 'react-hook-form'
 import Head from 'next/head'
 import Footer from '../components/Footer'
@@ -118,10 +118,10 @@ const Textarea = ({
 }
 
 const Form = ({ setShowCorrectMessage }) => {
-  const [acceptRGPD, setAcceptRGPD] = useState(false)
-  const [clicked, setClickedChecbox] = useState(false)
-  const [showRetry, setShowRetry] = useState(false)
-  const [waitingResponse, setWaitingResponse] = useState(false)
+  const [acceptRGPD, setAcceptRGPD] = React.useState(false)
+  const [clicked, setClickedChecbox] = React.useState(false)
+  const [showRetry, setShowRetry] = React.useState(false)
+  const [waitingResponse, setWaitingResponse] = React.useState(false)
   const { register, handleSubmit, errors } = useForm()
   const classNameBg = acceptRGPD ? 'bg-indigo-600' : 'bg-gray-200'
   const classNameTransition = acceptRGPD ? 'translate-x-5' : 'translate-x-0'
@@ -300,7 +300,7 @@ const MessageCorrect = () => (
 )
 
 const FormContainer = () => {
-  const [showCorrectMessage, setShowCorrectMessage] = useState(false)
+  const [showCorrectMessage, setShowCorrectMessage] = React.useState(false)
   return (
     <div className="bg-gray-50 py-16 px-4 overflow-hidden sm:px-6 lg:px-8 lg:py-24">
       <div className="relative max-w-xl mx-auto">
@@ -399,7 +399,7 @@ const Contact = () => {
         <title>Benavente Peluqueros - Contacto</title>
         <meta
           name="description"
-          content="Formulario de contacto de la peluqueria, para pedir presupuesto o preguntar dudas."
+          content="Formulario de contacto de la peluqueria, para pedir presupuesto para novias, comuniones o tratamientiento de peluquería o preguntar dudas."
         />
         <meta name="robots" content="index, follow" />
         <meta name="msapplication-TileColor" content="#00aba9" />
@@ -420,7 +420,7 @@ const Contact = () => {
         <meta property="og:image:height" content="1906" />
         <meta
           property="og:description"
-          content="Formulario de contacto de la peluqueria, para pedir presupuesto o preguntar dudas."
+          content="Formulario de contacto de la peluqueria, para pedir presupuesto para novias, comuniones o tratamientiento de peluquería o preguntar dudas."
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://benaventepeluqueros.com/" />
@@ -430,13 +430,66 @@ const Contact = () => {
         />
         <meta
           name="twitter:description"
-          content="Formulario de contacto de la peluqueria, para pedir presupuesto o preguntar dudas."
+          content="Formulario de contacto de la peluqueria, para pedir presupuesto para novias, comuniones o tratamientiento de peluquería o preguntar dudas."
         />
         <meta
           name="twitter:image"
           content="https://benaventepeluqueros.com/seo-image.jpg"
         />
         <link rel="canonical" href="https://benaventepeluqueros.com/contact" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HairSalon',
+            image: ['https://benaventepeluqueros.com/logo.webp'],
+            '@id': 'https://benaventepeluqueros.com/leganesZarza',
+            name: 'Benavente Peluqueros',
+            description:
+              'Peluquería unisex en el barrio de Zarzaquemada, Leganés',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Calle Panades, 22',
+              addressLocality: 'Leganés',
+              addressRegion: 'ES-MD',
+              postalCode: '28915',
+              addressCountry: 'ES',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 40.337487,
+              longitude: -3.7559442,
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '4,1',
+              reviewCount: '11',
+            },
+            url: 'https://benaventepeluqueros.com/',
+            telephone: '+34916881810',
+            email: 'benaventepeluqueros@gmail.com',
+            priceRange: '$$',
+            openingHoursSpecification: [
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: [
+                  'Monday',
+                  'Tuesday',
+                  'Wednesday',
+                  'Thursday',
+                  'Friday',
+                ],
+                opens: '10:00',
+                closes: '19:00',
+              },
+              {
+                '@type': 'OpeningHoursSpecification',
+                dayOfWeek: 'Saturday',
+                opens: '10:00',
+                closes: '14:00',
+              },
+            ],
+          })}
+        </script>
       </Head>
       <Header />
       <FormContainer />

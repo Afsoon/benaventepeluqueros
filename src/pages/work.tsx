@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Head from 'next/head'
 import classnames from 'classnames'
 import Footer from '../components/Footer'
@@ -58,6 +58,52 @@ const MetaTags = () => (
       content="https://benaventepeluqueros.com/seo-image.jpg"
     />
     <link rel="canonical" href="https://benaventepeluqueros.com/work" />
+    <script type="application/ld+json">
+      {JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'HairSalon',
+        image: ['https://benaventepeluqueros.com/logo.webp'],
+        '@id': 'https://benaventepeluqueros.com/leganesZarza',
+        name: 'Benavente Peluqueros',
+        description: 'Peluquería unisex en el barrio de Zarzaquemada, Leganés',
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Calle Panades, 22',
+          addressLocality: 'Leganés',
+          addressRegion: 'ES-MD',
+          postalCode: '28915',
+          addressCountry: 'ES',
+        },
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: 40.337487,
+          longitude: -3.7559442,
+        },
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: '4,1',
+          reviewCount: '11',
+        },
+        url: 'https://benaventepeluqueros.com/',
+        telephone: '+34916881810',
+        email: 'benaventepeluqueros@gmail.com',
+        priceRange: '$$',
+        openingHoursSpecification: [
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+            opens: '10:00',
+            closes: '19:00',
+          },
+          {
+            '@type': 'OpeningHoursSpecification',
+            dayOfWeek: 'Saturday',
+            opens: '10:00',
+            closes: '14:00',
+          },
+        ],
+      })}
+    </script>
   </Head>
 )
 
@@ -112,10 +158,22 @@ const Img = ({
     'col-span-4 row-span-3': medium,
     'col-span-2 row-span-2': small,
   })
+
+  let hAndW = classnames({
+    '': true,
+    'w-mobile-md h-mobile-lg sm:w-tablet-md sm:h-tablet-lg md:w-desktop-md md:h-desktop-lg': large,
+    'w-mobile-md h-mobile-md sm:w-tablet-md sm:h-tablet-md md:w-desktop-md md:h-desktop-md': medium,
+    'w-mobile-sm h-mobile-sm sm:w-tablet-sm sm:h-tablet-sm md:w-desktop-sm md:h-desktop-sm': small,
+  })
   return (
     <picture className={className}>
       <source srcSet={src.replace(/(png|jpg)/g, 'webp')} type="image/webp" />
-      <img src={src} alt="" className="w-full h-full object-cover" />
+      <img
+        data-src={src}
+        alt=""
+        className={`${hAndW} object-cover lazyload`}
+        loading="lazy"
+      />
     </picture>
   )
 }

@@ -1,11 +1,11 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { useEffect, useState } from 'react'
+import * as React from 'react'
 
 //Change for React Helmet https://github.com/zeit/next.js/issues/9766
 
 const HeadAsync = () => {
-  const [ready, setReady] = useState(false)
-  useEffect(() => setReady(true), [])
+  const [ready, setReady] = React.useState(false)
+  React.useEffect(() => setReady(true), [])
 
   return (
     <>
@@ -33,6 +33,17 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `if (!('loading' in HTMLImageElement.prototype)) {
+          let script = document.createElement("script");
+          script.async = true;
+          script.src =
+            "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js";
+          document.body.appendChild(script);
+        }`,
+          }}
+        ></script>
         <script
           async
           defer

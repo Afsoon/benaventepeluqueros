@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 const Testimonial = () => (
   <div className="py-12 px-4 sm:px-6 md:flex md:flex-col md:py-16 md:pl-0 md:pr-10 md:border-r md:border-gray-900 lg:pr-16">

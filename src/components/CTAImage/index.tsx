@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Container from '../Container'
 
 const CTAImage = () => (
@@ -6,11 +6,36 @@ const CTAImage = () => (
     <Container>
       <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <picture>
-          <source srcSet="/cta-image.webp" type="image/webp" />
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 767px) 100vw, 767px"
+            srcSet="
+          /cta_responsive/cta-image_hanbek_ar_1_1,c_fill,g_auto__c_scale,w_200.webp 200w,
+          /cta_responsive/cta-image_hanbek_ar_1_1,c_fill,g_auto__c_scale,w_671.webp 671w,
+          /cta_responsive/cta-image_hanbek_ar_1_1,c_fill,g_auto__c_scale,w_767.webp 767w"
+            type="image/webp"
+          />
+          <source
+            sizes="(max-width: 2333px) 60vw, 1400px"
+            srcSet="
+          /cta_responsive/cta-image_hanbek_ar_4_3,c_fill,g_auto__c_scale,w_461.webp 461w,
+          /cta_responsive/cta-image_hanbek_ar_4_3,c_fill,g_auto__c_scale,w_878.webp 878w,
+          /cta_responsive/cta-image_hanbek_ar_4_3,c_fill,g_auto__c_scale,w_1296.webp 1296w,
+          /cta_responsive/cta-image_hanbek_ar_4_3,c_fill,g_auto__c_scale,w_1333.webp 1333w"
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 767px)"
+            sizes="(max-width: 767px) 100vw, 767px"
+            data-srcset="
+/cta_responsive/cta-image_yisioz_ar_1_1,c_fill,g_auto__c_scale,w_475.jpg 475w"
+          />
           <img
-            className="w-full h-full object-cover"
-            src="/cta-image.jpg"
+            className="w-full h-full object-cover lazyload"
+            sizes="(max-width: 2333px) 60vw, 1400px"
+            data-src="/cta_responsive/cta-image_yisioz_ar_4_3,c_fill,g_auto__c_scale,w_886.jpg"
             alt="Peluquero haciedo unas ondas a una clienta"
+            loading="lazy"
           />
         </picture>
       </div>

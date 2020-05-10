@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import Transition from '../Transition'
 
 const Header = () => {
-  const [showDialog, setShowDialog] = useState(false)
+  const [showDialog, setShowDialog] = React.useState(false)
   const displayDialog = () => {
     setShowDialog(true)
   }
@@ -21,8 +21,19 @@ const Header = () => {
               title="Ir a página de inicio"
             >
               <picture>
-                <source srcSet="/logo.webp" type="image/webp" />
-                <img className="h-8 w-auto sm:h-10" src="/logo.jpg" alt="" />
+                <source
+                  srcSet="
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w"
+                  type="image/webp"
+                />
+                <img
+                  className="h-8 w-auto sm:h-10"
+                  sizes="(max-width: 150px) 100vw, 150px"
+                  srcSet="
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
+                  src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
+                  alt=""
+                />
               </picture>
             </a>
             <div className="-mr-2 flex items-center md:hidden">
@@ -100,10 +111,17 @@ const Header = () => {
                     title="Ir a página de inicio"
                   >
                     <picture>
-                      <source srcSet="/logo.webp" type="image/webp" />
+                      <source
+                        srcSet="
+/logo_responsive/logo_opbske_ar_1_1,c_fill,g_auto__c_scale,w_50.webp 50w"
+                        type="image/webp"
+                      />
                       <img
-                        className="h-8 w-auto sm:h-10"
-                        src="/logo.jpg"
+                        className="h-8 w-auto sm:h-10 lazyload"
+                        sizes="(max-width: 150px) 100vw, 150px"
+                        data-srcset="
+/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg 50w"
+                        data-src="/logo_responsive/logo_jdfygw_ar_1_1,c_fill,g_auto__c_scale,w_50.jpg"
                         alt=""
                       />
                     </picture>
