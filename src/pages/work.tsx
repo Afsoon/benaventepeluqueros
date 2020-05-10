@@ -123,9 +123,9 @@ const Img = ({
     <picture className={className}>
       <source srcSet={src.replace(/(png|jpg)/g, 'webp')} type="image/webp" />
       <img
-        src={src}
+        data-src={src}
         alt=""
-        className={`${hAndW} object-cover`}
+        className={`${hAndW} object-cover lazyload`}
         loading="lazy"
       />
     </picture>

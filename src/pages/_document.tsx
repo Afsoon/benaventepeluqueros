@@ -34,6 +34,17 @@ class MyDocument extends Document {
           <NextScript />
         </body>
         <script
+          dangerouslySetInnerHTML={{
+            __html: `if (!('loading' in HTMLImageElement.prototype)) {
+          let script = document.createElement("script");
+          script.async = true;
+          script.src =
+            "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js";
+          document.body.appendChild(script);
+        }`,
+          }}
+        ></script>
+        <script
           async
           defer
           src="https://cdn.simpleanalytics.io/hello.js"
