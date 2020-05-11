@@ -79,13 +79,17 @@ const Footer = () => (
           <div className="block md:grid md:grid-cols-2 md:gap-2">
             <div className="flex text-gray-300 flex-col pb-4">
               <span>Horario de apertura</span>
-              <span>L-V: 10:00 - 19:00</span>
-              <span>S: 10:00 - 14:00</span>
+              <span className="py-2">L-V: 10:00 - 19:00</span>
+              <span className="pt-2 pb-4">S: 10:00 - 14:00</span>
             </div>
             <div className="flex text-gray-300 flex-col pb-4">
               <span>Teléfonos</span>
-              <a href="tel:916881810">Fijo: 91 688 18 10 </a>
-              <a href="tel:696242904">Móvil: 696 242 904 </a>
+              <a href="tel:916881810" className="py-2">
+                Fijo: 91 688 18 10{' '}
+              </a>
+              <a href="tel:696242904" className="pt-2 pb-4">
+                Móvil: 696 242 904{' '}
+              </a>
             </div>
           </div>
 
