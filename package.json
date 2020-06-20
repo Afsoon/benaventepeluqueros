@@ -1,5 +1,5 @@
 {
-  "name": "pokebuilder",
+  "name": "benaventepeluqueros",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "jest"
   },
   "engines": {
-    "node": "12.4"
+    "node": "12.16"
   },
   "browserslist": [
     ">0.3%",
