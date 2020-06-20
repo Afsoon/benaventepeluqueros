@@ -87,9 +87,10 @@ const FormContainer = () => (
           indicando su motivo de la consulta.
         </p>
         <p className="mt-2 text-base text-red-600">
-          Debido a los cambios aplicados al estado de alarma, para poder acudir
-          al salón se requiere cita previa. Si cree tener sintómas relacionados
-          con el COVID-19, por favor cancele y no acude a su cita.
+          Debido a la nueva normativa aprobada,{' '}
+          <b>el uso de mascarilla es obligatoria para acudir a la cita</b>. Si
+          antes de la cita presenta <b>sintomas compatibles con el COVID-19</b>,
+          por favor cancele la cita o llamenos.
         </p>
       </div>
       <div className="mt-12">
