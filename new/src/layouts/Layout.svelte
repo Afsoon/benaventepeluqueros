@@ -1,27 +1,17 @@
 <script>
-  export let templateHtml, settings;
+  import Header from '../components/Header.svelte';
+  export let templateHtml;
 </script>
 
 <style>
-  :global(h1) {
-    font-style: italic;
-  }
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 1rem;
-  }
-
-  :root {
-    --balloon-color: #06395a;
-    --balloon-font-size: 14px;
-  }
 </style>
 
 <svelte:head>
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/balloon-css/balloon.min.css" />
+  <link rel="stylesheet" href="/index.css" />
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 </svelte:head>
-<div class="container">
+
+<div class="h-screen w-screen bg-black-lighter flex flex-col md:flex-row overflow-hidden">
+  <Header hydrate-client={{}} />
   {@html templateHtml}
 </div>
