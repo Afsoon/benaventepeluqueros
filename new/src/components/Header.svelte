@@ -31,36 +31,41 @@
         </svg>
       </button>
     </div>
-    <nav class="hidden text-white-dark md:flex md:pt-16 md:flex-col md:items-center">
+    <nav class="hidden whitespace-no-wrap text-white-dark md:flex md:pt-16 md:flex-col md:items-start">
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900 text-white-light">
-        Analytics
+        Inicio
       </a>
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-        Engagement
+        Sobre Nosotros
       </a>
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-        Security
+        ¿Por qué elegirnos?
       </a>
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-        Integrations
+        Precios
       </a>
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-        Automations
+        Gallería
       </a>
       <a
         href="#1"
         class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-        Reports
+        Testimonios
+      </a>
+      <a
+        href="#1"
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        Pedir cita
       </a>
     </nav>
     <div class="hidden md:inline-block md:mt-auto md:text-white-gray">
@@ -104,32 +109,37 @@
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900 text-white-light">
-                  Analytics
+                  Inicio
                 </a>
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-                  Engagement
+                  Sobre Nosotros
                 </a>
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-                  Security
+                  ¿Por qué elegirnos?
                 </a>
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-                  Integrations
+                  Precios
                 </a>
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-                  Automations
+                  Gallería
                 </a>
                 <a
                   href="#1"
                   class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
-                  Reports
+                  Testimonios
+                </a>
+                <a
+                  href="#1"
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  Pedir cita
                 </a>
               </nav>
             </div>

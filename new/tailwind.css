@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.randome {
-  background-color: aliceblue;
+.grid-rows-auto {
+  grid-auto-rows: 1fr;
 }

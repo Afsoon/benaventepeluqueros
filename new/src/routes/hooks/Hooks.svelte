@@ -1,6 +1,4 @@
 <script>
-  import HookDetail from '../../components/HookDetail.svelte';
-
   export let data;
 </script>
 
@@ -16,8 +14,6 @@
 </svelte:head>
 
 <a href="/">&LeftArrow; Home</a>
-
-<HookDetail {...data} />
 
 <img
   src="https://elderguide.com/images/elderjs-hooks-v100.png"
