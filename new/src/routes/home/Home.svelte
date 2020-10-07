@@ -9,14 +9,24 @@
 </svelte:head>
 
 <main class="w-full flex flex-wrap overflow-y-auto">
-  <div class="w-full h-64 bg-black-lighter">HELLO</div>
+  <div class="w-full relative bg-black-lighter text-white-light px-16 py-16">
+    <h3 class="w-64 text-xl">Wear your hair with prider</h3>
+    <h1 class="md:pl-16 pt-16 text-3xl md:text-6xl leading-none">
+      Benavente
+      <span class="block w-full">
+        <span class="font-light uppercase tabular-nums text-base"><sup class="">1</sup>
+          /
+          <sub class="mr-2">7</sub></span>
+        Peluqueros</span>
+    </h1>
+  </div>
   <div class="w-full bg-white-lighter flex flex-col md:flex-row md:flex-wrap">
     <img
       src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       alt=""
       class="w-full md:w-1/2 object-cover" />
     <div class="w-full md:w-1/2 px-16 py-16">
-      <h6 class="font-light uppercase"><sup class="">2</sup> / <sub class="mr-2">7</sub> About us</h6>
+      <h6 class="font-light uppercase tabular-nums"><sup class="">2</sup> / <sub class="mr-2">7</sub> About us</h6>
       <h2 class="pt-4 text-4xl font-bold tracking-wider">Beautiful hair is a process</h2>
       <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -48,7 +58,7 @@
       class="w-full md:w-1/2 object-cover" />
   </div>
   <div class="w-full px-16 py-16 relative bg-white-gray">
-    <h6 class="font-light uppercase"><sup class="">3</sup> / <sub class="mr-2">7</sub> Why Choose Us</h6>
+    <h6 class="font-light uppercase tabular-nums"><sup class="">3</sup> / <sub class="mr-2">7</sub> Why Choose Us</h6>
     <h2 class="pt-4 text-4xl font-bold tracking-wider">Choose the hair that suits your lifestyle and needs</h2>
     <div class="pt-4 flex flex-col md:flex-row">
       <p class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
@@ -57,7 +67,25 @@
       </p>
     </div>
   </div>
-  <div class="w-full h-64 bg-black-dark">Pricing</div>
+  <div class="w-full bg-black-lighter text-white-light px-16 py-16">
+    <h6 class="font-light uppercase tabular-nums"><sup class="">4</sup> / <sub class="mr-2">7</sub>Pricing</h6>
+    <h2 class="pt-4 text-4xl font-bold tracking-wider">Exemplary prices for individual hair styling needs</h2>
+    <ul class="pt-16 grid gap-8 grid-cols-1 grid-flow-row tabular-nums md:grid-cols-2">
+      <li class="flex w-full border-white-dark border-b">
+        <span>Simple Haircut</span>
+        <span class="ml-auto">$12</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b"><span>Extensions</span> <span class="ml-auto">$32</span></li>
+      <li class="flex w-full border-white-dark border-b"><span>Styling</span> <span class="ml-auto">$19</span></li>
+      <li class="flex w-full border-white-dark border-b"><span>Perms</span> <span class="ml-auto">$42</span></li>
+      <li class="flex w-full border-white-dark border-b"><span>Braiding</span> <span class="ml-auto">$34</span></li>
+      <li class="flex w-full border-white-dark border-b">
+        <span>Color Correction</span>
+        <span class="ml-auto">$85</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b"><span>Hair Plugs</span> <span class="ml-auto">$99</span></li>
+    </ul>
+  </div>
   <div
     class="w-full text-white-light bg-black-lighter grid grid-cols-1 grid-rows-auto content-center items-center md:grid-cols-3 md:grid-rows-3">
     <img
@@ -65,7 +93,7 @@
       src="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
     <div class="px-8 py-8">
-      <h6 class="font-light uppercase"><sup class="">5</sup> / <sub class="mr-2">7</sub> Gallery</h6>
+      <h6 class="font-light uppercase tabular-nums"><sup class="">5</sup> / <sub class="mr-2">7</sub> Gallery</h6>
       <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
@@ -113,6 +141,60 @@
     </div>
   </div>
   <div class="w-full h-64 bg-black-dark">Testimonials</div>
-  <div class="w-full h-64 bg-black-lighter">Book a visit</div>
-  <footer>Footer information</footer>
+  <div class="w-full bg-black-lighter text-white-light px-16 pt-16 pb-32">
+    <h6 class="font-light uppercase tabular-nums"><sup class="">7</sup> / <sub class="mr-2">7</sub>Book a visit</h6>
+    <h2 class="pt-4 text-4xl font-bold tracking-wider">Book your visit now Lorem ipsum dolor mit samet</h2>
+    <div class="grid gric-cols-1 grid-rows-4 md:grid-cols-2  md:grid-rows-2 place-items-center">
+      <div class="place-self-start flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="10 0 24 32"><path
+            d="M20.261 29.087c-3.685 0-7.303-3.031-10.752-9.007-2.963-5.13-3.982-9.31-3.029-12.419.858-2.803 3.093-3.89 3.827-4.246.078-.039.14-.067.179-.09a3.015 3.015 0 011.462-.412c.715 0 1.299.329 1.644.926l2.275 3.943c.604 1.044.176 2.121-1.143 2.884l-1.377.796c-1.037.598.133 3.743 1.25 5.68.832 1.44 3.154 4.58 4.295 3.924l1.377-.795c1.293-.748 2.479-.572 3.07.453l2.275 3.941c.656 1.136-.061 2.343-1.107 2.947-.04.023-.096.062-.168.11-.553.375-2.02 1.365-4.078 1.365zM11.947 3.733c-.335 0-.72.109-1.052.303a6.008 6.008 0 01-.23.115c-.724.353-2.647 1.288-3.402 3.75-.883 2.885.111 6.844 2.956 11.769 3.246 5.624 6.719 8.597 10.042 8.597 1.808 0 3.076-.857 3.619-1.224.094-.063.166-.111.217-.142.482-.277 1.273-1.02.807-1.826l-2.275-3.941c-.375-.652-1.072-.658-1.949-.154l-1.378.796a1.469 1.469 0 01-.746.198c-2.089 0-4.563-4.24-4.667-4.422-.131-.225-3.156-5.528-.951-6.801l1.377-.795c.637-.367 1.3-.973.843-1.764L12.88 4.249c-.2-.348-.505-.516-.933-.516z" /></svg>
+        <span class="text-2xl">+65 512 125 151</span>
+      </div>
+      <div class="flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="0 -4 48 60"><g
+            fill="none"
+            stroke="#FFF"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10">
+            <path d="M47 20.9V47H1V20.9" />
+            <path d="M8.1 25.7V1h31.8v24.7" />
+            <path d="M1 20.9l23 15.4 23-15.4M39.9 15.4l7.1 5.5M1 20.9l7.1-5.5" />
+          </g>
+          <path
+            d="M28.5 22.9c-1.6.9-3.3 1.2-5.2 1.2-4.8 0-8.9-3.5-8.9-9.2 0-6.1 4.2-11.3 10.7-11.3 5.1 0 8.5 3.6 8.5 8.5 0 4.4-2.5 7-5.2 7-1.2 0-2.3-.8-2.2-2.6h-.1c-1 1.7-2.4 2.6-4.1 2.6-1.7 0-3.2-1.4-3.2-3.7 0-3.6 2.9-7 7-7 1.3 0 2.4.3 3.1.6l-1 5.3c-.4 2.2-.1 3.3.9 3.3 1.5 0 3.2-2 3.2-5.4C32 8 29.4 5 24.9 5 20.1 5 16 8.8 16 14.7c0 4.9 3.2 7.9 7.5 7.9 1.7 0 3.2-.4 4.4-1l.6 1.3zm-1.6-12.7c-.3-.1-.8-.2-1.5-.2-2.6 0-4.7 2.4-4.7 5.3 0 1.3.6 2.2 1.9 2.2 1.7 0 3.3-2.2 3.6-4l.7-3.3z" /></svg>
+        <span class="text-2xl">noreply@envato.com</span>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim.
+      </p>
+      <button class="px-4 py-4 uppercase border-white-light border-2 border-solid">Book a Visit</button>
+    </div>
+  </div>
+  <footer class="w-full border-t border-white-dark text-white-light mx-16 pt-16 pb-4 flex flex-wrap">
+    <div class="w-full flex flex-col md:flex-row pb-20">
+      <div class="pr-32 pb-16 md:pb-0">
+        <h4 class="text-xl font-medium">Call us now</h4>
+        <span class="text-3xl pt-16">+00 740 540 00</span>
+      </div>
+      <div class="flex flex-col pb-8 md:pb-0">
+        <h4 class="text-xl font-medium">Opening hours:</h4>
+        <div class="flex flex-col pt-4"><span class="font-bold">Monday - Friday</span> <span>10AM - 8PM</span></div>
+        <div class="flex flex-col pt-4"><span class="font-bold">Saturday</span> <span>10AM - 2PM</span></div>
+      </div>
+      <div class="flex flex-col md:ml-auto">
+        <h4 class="text-xl font-medium">Localization</h4>
+        <span class="pt-4">Level 13,</span>
+        <span class="pt-2 text-sm">2 Elizabeth St,</span>
+        <span class="pt-2 text-sm">Melbourne, Victoria 30</span>
+        <span class="pt-2 text-sm">Australia</span>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center md:flex-row">
+      <span>© 2020 Benavente Peluqueros</span>
+      <div class="pt-2 md:pt-0 md:ml-auto">Iconos de redes sociales</div>
+    </div>
+  </footer>
 </main>

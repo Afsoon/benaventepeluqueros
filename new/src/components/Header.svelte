@@ -11,7 +11,7 @@
 </script>
 
 <header class="relative bg-black-lighter md:flex-auto md:h-full md:px-8">
-  <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:flex-col md:h-full">
+  <div class="flex justify-between items-center px-4 pt-6 pb-4 sm:px-6 md:flex-col md:h-full">
     <div class="">
       <a href="#1" class="flex md:px-4 md:py-4">
         <img
