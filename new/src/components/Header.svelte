@@ -77,7 +77,7 @@
     <div
       in:scale={{ duration: 200, start: 0.95, easing: cubicIn }}
       out:scale={{ duration: 200, start: 0.95, easing: cubicOut }}
-      class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+      class="absolute top-0 inset-x-0 z-20 p-2 transition transform origin-top-right md:hidden">
       <div class="rounded-lg shadow-lg">
         <div class="rounded-lg shadow-xs bg-black-dark text-white-dark divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5 space-y-6">
