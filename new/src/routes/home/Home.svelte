@@ -8,17 +8,38 @@
   <title>Benavente Peluqueros: Home</title>
 </svelte:head>
 
-<main class="w-full flex flex-wrap overflow-y-auto">
-  <div class="w-full relative bg-black-lighter text-white-light px-16 py-16">
-    <h3 class="w-64 text-xl">Wear your hair with prider</h3>
-    <h1 class="md:pl-16 pt-16 text-3xl md:text-6xl leading-none">
-      Benavente
-      <span class="block w-full">
-        <span class="font-light uppercase tabular-nums text-base"><sup class="">1</sup>
-          /
-          <sub class="mr-2">7</sub></span>
-        Peluqueros</span>
-    </h1>
+<main class="w-full flex flex-wrap overflow-y-auto overflow-x-hidden">
+  <div class="w-full relative bg-black-lighter text-white-light">
+    <div class="absolute origin-top-left top-0 left-0 w-full pl-4 pt-8 md:pl-16 md:pt-16 text-xl z-10">
+      <h3>Wear your hair with prider</h3>
+      <h1 class="absolute md:pl-16 pt-16 text-3xl md:text-6xl leading-none inline-block uppercase tracking-widest">
+        Benavente
+        <span class="block w-full">
+          <span class="font-light uppercase tabular-nums text-base tracking-normal"><sup class="">1</sup>
+            /
+            <sub class="mr-2">7</sub></span>
+          Peluqueros</span>
+      </h1>
+    </div>
+    <svg class="absolute top-0 left-1/2 h-full transform -translate-x-1/6 z-0" fill="none" viewBox="0 0 640 784">
+      <defs>
+        <pattern
+          id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047"
+          x="0"
+          y="0"
+          width="20"
+          height="20"
+          patternUnits="userSpaceOnUse">
+          <rect x="0" y="0" width="3" height="3" class="text-white-dark" fill="currentColor" />
+        </pattern>
+      </defs>
+      <rect x="0" class="h-full w-1/3" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+    </svg>
+    <img class="float-right w-1/2" src="/images/start-photo.jpg" alt="" />
+    <div class="hidden md:block absolute origin-bottom-left bottom-0 left-0  pl-16 pb-16 text-lg">
+      <span> Quanto mitrae valiando petreum</span>
+      <a href="#1" alt="" class="underline ml-4 pb-2">more details</a>
+    </div>
   </div>
   <div class="w-full bg-white-lighter flex flex-col md:flex-row md:flex-wrap">
     <img
