@@ -31,40 +31,41 @@
         </svg>
       </button>
     </div>
-    <nav class="hidden whitespace-no-wrap text-white-dark md:flex md:pt-16 md:flex-col md:items-start">
+    <nav
+      class="hidden font-montserrat font-semibold whitespace-no-wrap text-white-dark md:flex md:pt-16 md:flex-col md:items-start">
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900 text-white-light">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light">
         Inicio
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         Sobre Nosotros
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         ¿Por qué elegirnos?
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         Precios
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         Gallería
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         Testimonios
       </a>
       <a
         href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
         Pedir cita
       </a>
     </nav>
@@ -119,40 +120,40 @@
               </div>
             </div>
             <div>
-              <nav class="grid grid-cols-1 gap-7">
+              <nav class="grid grid-cols-1 gap-7 font-montserrat font-semibold">
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900 text-white-light">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light">
                   Inicio
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   Sobre Nosotros
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   ¿Por qué elegirnos?
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   Precios
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   Gallería
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   Testimonios
                 </a>
                 <a
                   href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 font-medium text-gray-900">
+                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
                   Pedir cita
                 </a>
               </nav>

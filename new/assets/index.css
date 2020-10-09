@@ -874,7 +874,7 @@ video {
 }
 
 .prose {
-  color: #4a5568;
+  color: #181818;
   max-width: 65ch;
 }
 
@@ -2105,7 +2105,7 @@ video {
 }
 
 .prose {
-  color: #4a5568;
+  color: #181818;
   max-width: 65ch;
 }
 
@@ -6808,6 +6808,14 @@ video {
 
 .font-mono {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-cormorant {
+  font-family: Cormorant Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-montserrat {
+  font-family: Montserrat, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .font-hairline {
@@ -22983,6 +22991,117 @@ video {
   grid-auto-rows: 1fr;
 }
 
+/* montserrat-300 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: local('Montserrat Light'), local('Montserrat-Light'),
+    url('/fonts/montserrat-v15-latin-300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/montserrat-v15-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('/fonts/montserrat-v15-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/montserrat-v15-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500italic - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  src: local('Montserrat Medium Italic'), local('Montserrat-MediumItalic'),
+    url('/fonts/montserrat-v15-latin-500italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/montserrat-v15-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-600 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('/fonts/montserrat-v15-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/montserrat-v15-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-700 - latin */
+
+@font-face {
+  font-family: 'Montserrat';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url('/fonts/montserrat-v15-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/montserrat-v15-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cormorant-garamond-500 - latin */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'),
+    url('/fonts/cormorant-garamond-v9-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/cormorant-garamond-v9-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cormorant-garamond-600 - latin */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: local('Cormorant Garamond SemiBold'), local('CormorantGaramond-SemiBold'),
+    url('/fonts/cormorant-garamond-v9-latin-600.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/cormorant-garamond-v9-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* cormorant-garamond-700 - latin */
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: local('Cormorant Garamond Bold'), local('CormorantGaramond-Bold'),
+    url('/fonts/cormorant-garamond-v9-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/fonts/cormorant-garamond-v9-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -23013,7 +23132,7 @@ video {
   }
 
   .sm\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -24244,7 +24363,7 @@ video {
   }
 
   .sm\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -28947,6 +29066,14 @@ video {
 
   .sm\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .sm\:font-cormorant {
+    font-family: Cormorant Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .sm\:font-montserrat {
+    font-family: Montserrat, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .sm\:font-hairline {
@@ -45083,7 +45210,7 @@ video {
   }
 
   .md\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -46314,7 +46441,7 @@ video {
   }
 
   .md\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -51017,6 +51144,14 @@ video {
 
   .md\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .md\:font-cormorant {
+    font-family: Cormorant Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .md\:font-montserrat {
+    font-family: Montserrat, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .md\:font-hairline {
@@ -67153,7 +67288,7 @@ video {
   }
 
   .lg\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -68384,7 +68519,7 @@ video {
   }
 
   .lg\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -73087,6 +73222,14 @@ video {
 
   .lg\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .lg\:font-cormorant {
+    font-family: Cormorant Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .lg\:font-montserrat {
+    font-family: Montserrat, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .lg\:font-hairline {
@@ -89223,7 +89366,7 @@ video {
   }
 
   .xl\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -90454,7 +90597,7 @@ video {
   }
 
   .xl\:prose {
-    color: #4a5568;
+    color: #181818;
     max-width: 65ch;
   }
 
@@ -95157,6 +95300,14 @@ video {
 
   .xl\:font-mono {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
+
+  .xl\:font-cormorant {
+    font-family: Cormorant Garamond, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .xl\:font-montserrat {
+    font-family: Montserrat, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 
   .xl\:font-hairline {

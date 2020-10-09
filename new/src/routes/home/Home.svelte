@@ -11,11 +11,13 @@
 <main class="w-full flex flex-wrap overflow-y-auto overflow-x-hidden">
   <div class="w-full relative bg-black-lighter text-white-light">
     <div class="absolute origin-top-left top-0 left-0 w-full pl-4 pt-8 md:pl-16 md:pt-16 text-xl z-10">
-      <h3>Wear your hair with prider</h3>
-      <h1 class="absolute md:pl-16 pt-16 text-3xl md:text-6xl leading-none inline-block uppercase tracking-widest">
+      <h3 class="font-cormorant font-medium">Wear your hair with prider</h3>
+      <h1
+        class="font-cormorant font font-medium absolute md:pl-16 pt-16 text-3xl md:text-6xl leading-none inline-block uppercase tracking-widest">
         Benavente
         <span class="block w-full">
-          <span class="font-light uppercase tabular-nums text-base tracking-normal"><sup class="">1</sup>
+          <span class="font-semibold font-montserrat uppercase tabular-nums text-base tracking-normal"><sup
+              class="">1</sup>
             /
             <sub class="mr-2">7</sub></span>
           Peluqueros</span>
@@ -36,9 +38,10 @@
       <rect x="0" class="h-full w-1/3" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
     </svg>
     <img class="float-right w-1/2" src="/images/start-photo.jpg" alt="" />
-    <div class="hidden md:block absolute origin-bottom-left bottom-0 left-0  pl-16 pb-16 text-lg">
+    <div
+      class="hidden md:font-montserrat md:font-semibold md:block absolute origin-bottom-left bottom-0 left-0  pl-16 pb-16 text-lg">
       <span> Quanto mitrae valiando petreum</span>
-      <a href="#1" alt="" class="underline ml-4 pb-2">more details</a>
+      <a href="#1" alt="" class="font-montserrat underline ml-4 pb-2">more details</a>
     </div>
   </div>
   <div class="w-full bg-white-lighter flex flex-col md:flex-row md:flex-wrap">
@@ -47,24 +50,31 @@
       alt=""
       class="w-full md:w-1/2 object-cover" />
     <div class="w-full md:w-1/2 px-16 py-16">
-      <h6 class="font-light uppercase tabular-nums"><sup class="">2</sup> / <sub class="mr-2">7</sub> About us</h6>
-      <h2 class="pt-4 text-4xl font-bold tracking-wider">Beautiful hair is a process</h2>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+      <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
+        <sup class="">2</sup>
+        /
+        <sub class="mr-2">7</sub>
+        About us
+      </h6>
+      <h2 class="font-cormorant font-bold pt-4 text-4xl">Beautiful hair is a process</h2>
+      <p class="pt-4 font-montserrat font-bold prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua.
       </p>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="pt-4 font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Tortor condimentum lacinia quis vel eros donec ac odio. In vitae turpis massa sed elementum.
         Sagittis vitae et leo duis ut diam quam nulla.
       </p>
     </div>
     <div class="w-full md:w-1/2 px-16 py-16">
-      <h2 class="pt-4 text-4xl font-bold tracking-wider">Beautiful hair is a process lorem dolor omnia</h2>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
+      <h2 class="pt-4 font-cormorant font-bold text-4xl tracking-normal">
+        Beautiful hair is a process lorem dolor omnia
+      </h2>
+      <p class="pt-4 font-montserrat font-bold prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
       </p>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="pt-4 font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
@@ -79,32 +89,60 @@
       class="w-full md:w-1/2 object-cover" />
   </div>
   <div class="w-full px-16 py-16 relative bg-white-gray">
-    <h6 class="font-light uppercase tabular-nums"><sup class="">3</sup> / <sub class="mr-2">7</sub> Why Choose Us</h6>
-    <h2 class="pt-4 text-4xl font-bold tracking-wider">Choose the hair that suits your lifestyle and needs</h2>
+    <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
+      <sup class="">3</sup>
+      /
+      <sub class="mr-2">7</sub>
+      Why Choose Us
+    </h6>
+    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
+      Choose the hair that suits your lifestyle and needs
+    </h2>
     <div class="pt-4 flex flex-col md:flex-row">
-      <p class="prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
       </p>
     </div>
   </div>
   <div class="w-full bg-black-lighter text-white-light px-16 py-16">
-    <h6 class="font-light uppercase tabular-nums"><sup class="">4</sup> / <sub class="mr-2">7</sub>Pricing</h6>
-    <h2 class="pt-4 text-4xl font-bold tracking-wider">Exemplary prices for individual hair styling needs</h2>
+    <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
+      <sup class="">4</sup>
+      /
+      <sub class="mr-2">7</sub>Pricing
+    </h6>
+    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
+      Exemplary prices for individual hair styling needs
+    </h2>
     <ul class="pt-16 grid gap-8 grid-cols-1 grid-flow-row tabular-nums md:grid-cols-2">
       <li class="flex w-full border-white-dark border-b">
-        <span>Simple Haircut</span>
-        <span class="ml-auto">$12</span>
+        <span class="font-cormorant font-semibold">Simple Haircut</span>
+        <span class="font-montserrat font-semibold ml-auto">$12</span>
       </li>
-      <li class="flex w-full border-white-dark border-b"><span>Extensions</span> <span class="ml-auto">$32</span></li>
-      <li class="flex w-full border-white-dark border-b"><span>Styling</span> <span class="ml-auto">$19</span></li>
-      <li class="flex w-full border-white-dark border-b"><span>Perms</span> <span class="ml-auto">$42</span></li>
-      <li class="flex w-full border-white-dark border-b"><span>Braiding</span> <span class="ml-auto">$34</span></li>
       <li class="flex w-full border-white-dark border-b">
-        <span>Color Correction</span>
-        <span class="ml-auto">$85</span>
+        <span class="font-cormorant font-semibold">Extensions</span>
+        <span class="font-montserrat font-semibold ml-auto">$32</span>
       </li>
-      <li class="flex w-full border-white-dark border-b"><span>Hair Plugs</span> <span class="ml-auto">$99</span></li>
+      <li class="flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">Styling</span>
+        <span class="font-montserrat font-semibold ml-auto">$19</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">Perms</span>
+        <span class="font-montserrat font-semibold ml-auto">$42</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">Braiding</span>
+        <span class="font-montserrat font-semibold ml-auto">$34</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">Color Correction</span>
+        <span class="font-montserrat font-semibold ml-auto">$85</span>
+      </li>
+      <li class="flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">Hair Plugs</span>
+        <span class="font-montserrat font-semibold ml-auto">$99</span>
+      </li>
     </ul>
   </div>
   <div
@@ -114,12 +152,17 @@
       src="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
     <div class="px-8 py-8">
-      <h6 class="font-light uppercase tabular-nums"><sup class="">5</sup> / <sub class="mr-2">7</sub> Gallery</h6>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
+        <sup class="">5</sup>
+        /
+        <sub class="mr-2">7</sub>
+        Gallery
+      </h6>
+      <p class="font-cormorant font-bold pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
       </p>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
       </p>
@@ -129,8 +172,8 @@
       src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
     <div class="px-8 py-8">
-      <h3 class="text-2xl">12K</h3>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <h3 class="font-montserrat font-light text-2xl">12K</h3>
+      <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
       </p>
     </div>
@@ -151,15 +194,15 @@
       src="https://images.unsplash.com/photo-1500336624523-d727130c3328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
     <div class="px-8 py-8">
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="font-cormorant font-bold pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
       </p>
-      <p class="pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+      <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
       </p>
       <br />
       <a
-        class="pt-16 underline font-bold"
+        class="font-montserrat font-semibold pt-16 underline"
         href="https://www.instagram.com/benaventepeluqueros"
         target="_blank"
         rel="noopener noreferrer"
@@ -167,7 +210,7 @@
     </div>
   </div>
   <div class="w-full text-black-dark bg-white-gray">
-    <h6 class="font-light uppercase tabular-nums pt-16 pl-16">
+    <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums pt-16 pl-16">
       <sup class="">6</sup>
       /
       <sub class="mr-2">7</sub>Testimonials
@@ -189,7 +232,8 @@
               d="M118.495 32.973c2.321 0 4.334-1.232 5.352-3.079l-2.652-1.515c-.474.97-1.492 1.563-2.723 1.563-1.824 0-3.174-1.35-3.174-3.221 0-1.895 1.35-3.244 3.174-3.244 1.207 0 2.226.615 2.699 1.586l2.629-1.54c-.971-1.823-2.984-3.054-5.305-3.054-3.599 0-6.252 2.723-6.252 6.252 0 3.528 2.653 6.252 6.252 6.252zM134.277 20.8v1.398c-.853-1.066-2.131-1.729-3.86-1.729-3.15 0-5.755 2.723-5.755 6.252 0 3.528 2.605 6.252 5.755 6.252 1.729 0 3.007-.663 3.86-1.729v1.397h3.055v-11.84h-3.055zm-3.292 9.26c-1.871 0-3.268-1.35-3.268-3.34 0-1.988 1.397-3.338 3.268-3.338 1.895 0 3.292 1.35 3.292 3.339 0 1.99-1.397 3.339-3.292 3.339zM146.875 23.737v-2.936h-2.676v-3.316l-3.055.924V20.8h-2.06v2.936h2.06v4.926c0 3.197 1.445 4.452 5.731 3.978v-2.77c-1.752.094-2.676.07-2.676-1.208v-4.926h2.676zM150.544 19.38c1.042 0 1.895-.853 1.895-1.871s-.853-1.895-1.895-1.895c-1.018 0-1.87.877-1.87 1.895a1.89 1.89 0 001.87 1.87zm-1.515 13.261h3.055v-11.84h-3.055v11.84zM160.516 32.973c3.481 0 6.276-2.724 6.276-6.252 0-3.529-2.795-6.252-6.276-6.252s-6.252 2.723-6.252 6.252c0 3.528 2.771 6.252 6.252 6.252zm0-2.984c-1.8 0-3.197-1.35-3.197-3.268 0-1.918 1.397-3.268 3.197-3.268 1.824 0 3.221 1.35 3.221 3.268 0 1.918-1.397 3.268-3.221 3.268zM175.524 20.469c-1.586 0-2.818.592-3.528 1.658V20.8h-3.055v11.84h3.055v-6.394c0-2.06 1.113-2.936 2.605-2.936 1.373 0 2.344.829 2.344 2.439v6.891H180v-7.27c0-3.15-1.966-4.902-4.476-4.902z" />
           </svg>
           <blockquote class="mt-8">
-            <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
+            <div
+              class="font-montserrat italic font-medium max-w-3xl mx-auto text-center text-2xl leading-9 text-gray-900">
               <p>
                 &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
                 alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
@@ -210,10 +254,14 @@
     </section>
   </div>
   <div class="w-full bg-black-lighter text-white-light px-16 pt-16 pb-32">
-    <h6 class="font-light uppercase tabular-nums"><sup class="">7</sup> / <sub class="mr-2">7</sub>Book a visit</h6>
-    <h2 class="pt-4 text-4xl font-bold tracking-wider">Book your visit now Lorem ipsum dolor mit samet</h2>
+    <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
+      <sup class="">7</sup>
+      /
+      <sub class="mr-2">7</sub>Book a visit
+    </h6>
+    <h2 class="font-cormorant font-bold pt-4 text-4xl">Book your visit now Lorem ipsum dolor mit samet</h2>
     <div class="grid gric-cols-1 grid-rows-4 md:grid-cols-2  md:grid-rows-2 place-items-center">
-      <div class="place-self-start flex items-center">
+      <div class="font-montserrat font-normal place-self-start flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="10 0 24 32"><path
             d="M20.261 29.087c-3.685 0-7.303-3.031-10.752-9.007-2.963-5.13-3.982-9.31-3.029-12.419.858-2.803 3.093-3.89 3.827-4.246.078-.039.14-.067.179-.09a3.015 3.015 0 011.462-.412c.715 0 1.299.329 1.644.926l2.275 3.943c.604 1.044.176 2.121-1.143 2.884l-1.377.796c-1.037.598.133 3.743 1.25 5.68.832 1.44 3.154 4.58 4.295 3.924l1.377-.795c1.293-.748 2.479-.572 3.07.453l2.275 3.941c.656 1.136-.061 2.343-1.107 2.947-.04.023-.096.062-.168.11-.553.375-2.02 1.365-4.078 1.365zM11.947 3.733c-.335 0-.72.109-1.052.303a6.008 6.008 0 01-.23.115c-.724.353-2.647 1.288-3.402 3.75-.883 2.885.111 6.844 2.956 11.769 3.246 5.624 6.719 8.597 10.042 8.597 1.808 0 3.076-.857 3.619-1.224.094-.063.166-.111.217-.142.482-.277 1.273-1.02.807-1.826l-2.275-3.941c-.375-.652-1.072-.658-1.949-.154l-1.378.796a1.469 1.469 0 01-.746.198c-2.089 0-4.563-4.24-4.667-4.422-.131-.225-3.156-5.528-.951-6.801l1.377-.795c.637-.367 1.3-.973.843-1.764L12.88 4.249c-.2-.348-.505-.516-.933-.516z" /></svg>
         <span class="text-2xl">+65 512 125 151</span>
@@ -234,26 +282,33 @@
             d="M28.5 22.9c-1.6.9-3.3 1.2-5.2 1.2-4.8 0-8.9-3.5-8.9-9.2 0-6.1 4.2-11.3 10.7-11.3 5.1 0 8.5 3.6 8.5 8.5 0 4.4-2.5 7-5.2 7-1.2 0-2.3-.8-2.2-2.6h-.1c-1 1.7-2.4 2.6-4.1 2.6-1.7 0-3.2-1.4-3.2-3.7 0-3.6 2.9-7 7-7 1.3 0 2.4.3 3.1.6l-1 5.3c-.4 2.2-.1 3.3.9 3.3 1.5 0 3.2-2 3.2-5.4C32 8 29.4 5 24.9 5 20.1 5 16 8.8 16 14.7c0 4.9 3.2 7.9 7.5 7.9 1.7 0 3.2-.4 4.4-1l.6 1.3zm-1.6-12.7c-.3-.1-.8-.2-1.5-.2-2.6 0-4.7 2.4-4.7 5.3 0 1.3.6 2.2 1.9 2.2 1.7 0 3.3-2.2 3.6-4l.7-3.3z" /></svg>
         <span class="text-2xl">noreply@envato.com</span>
       </div>
-      <p>
+      <p class="font-montserrat font-medium">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim.
       </p>
-      <button class="px-4 py-4 uppercase border-white-light border-2 border-solid">Book a Visit</button>
+      <button class="font-montserrat font-medium px-4 py-4 uppercase border-white-light border-2 border-solid">Book a
+        Visit</button>
     </div>
   </div>
   <footer class="w-full border-t border-white-dark text-white-light mx-16 pt-16 pb-4 flex flex-wrap">
     <div class="w-full flex flex-col md:flex-row pb-20">
       <div class="pr-32 pb-16 md:pb-0">
-        <h4 class="text-xl font-medium">Call us now</h4>
-        <span class="text-3xl pt-16">+00 740 540 00</span>
+        <h4 class="text-xl font-cormorant font-semibold">Call us now</h4>
+        <span class="text-3xl font-cormorant font-bold pt-16">+00 740 540 00</span>
       </div>
-      <div class="flex flex-col pb-8 md:pb-0">
+      <div class="flex font-cormorant font-semibold flex-col pb-8 md:pb-0">
         <h4 class="text-xl font-medium">Opening hours:</h4>
-        <div class="flex flex-col pt-4"><span class="font-bold">Monday - Friday</span> <span>10AM - 8PM</span></div>
-        <div class="flex flex-col pt-4"><span class="font-bold">Saturday</span> <span>10AM - 2PM</span></div>
+        <div class="flex flex-col pt-4">
+          <span class="font-montserrat font-bold">Monday - Friday</span>
+          <span class="font-montserrat font-medium">10AM - 8PM</span>
+        </div>
+        <div class="flex flex-col pt-4">
+          <span class="font-montserrat font-bold">Saturday</span>
+          <span class="font-montserrat font-medium">10AM - 2PM</span>
+        </div>
       </div>
-      <div class="flex flex-col md:ml-auto">
-        <h4 class="text-xl font-medium">Localization</h4>
+      <div class="flex font-montserrat font-medium flex-col md:ml-auto">
+        <h4 class="text-xl font-cormorant font-semibold">Localization</h4>
         <span class="pt-4">Level 13,</span>
         <span class="pt-2 text-sm">2 Elizabeth St,</span>
         <span class="pt-2 text-sm">Melbourne, Victoria 30</span>
@@ -261,7 +316,7 @@
       </div>
     </div>
     <div class="w-full flex flex-col items-center md:flex-row">
-      <span class="whitespace-no-wrap">© 2020 Benavente Peluqueros</span>
+      <span class="font-montserrat font-medium whitespace-no-wrap">© 2020 Benavente Peluqueros</span>
       <div class="pt-2 md:pt-0 md:ml-auto md:block md:text-center md:mt-auto">
         <a
           class="inline-block px-2 py-2 text-white-dark hover:text-white-gray focus:text-white-gray"

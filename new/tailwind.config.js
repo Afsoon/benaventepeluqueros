@@ -10,8 +10,17 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        cormorant: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
+        montserrat: ['Montserrat', ...defaultTheme.fontFamily.serif],
       },
     },
+    typography: (theme) => ({
+      default: {
+        css: {
+          color: theme('colors.black.lighter'),
+        },
+      },
+    }),
     colors: {
       black: {
         dark: '#000',
