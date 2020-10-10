@@ -13,6 +13,9 @@ module.exports = {
         cormorant: ['Cormorant Garamond', ...defaultTheme.fontFamily.serif],
         montserrat: ['Montserrat', ...defaultTheme.fontFamily.serif],
       },
+      width: {
+        '15ch': '15ch',
+      },
     },
     typography: (theme) => ({
       default: {
@@ -21,6 +24,21 @@ module.exports = {
         },
       },
     }),
+    maxHeight: {
+      ...defaultTheme.maxHeight,
+      xl: '900px',
+      xs: '500px',
+      sm: '650px',
+      lg: '750px',
+    },
+    minHeight: {
+      ...defaultTheme.minHeight,
+      xs: '150px',
+    },
+    fontSize: {
+      ...defaultTheme.fontSize,
+      '7xl': '6.5rem',
+    },
     colors: {
       black: {
         dark: '#000',

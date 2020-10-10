@@ -5,6 +5,19 @@
 .grid-rows-auto {
   grid-auto-rows: 1fr;
 }
+
+/* postcss-100vh-fix not working with postcss 8*/
+.h-screen-ios {
+  height: 100vh;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen-ios {
+    /* The hack for Safari */
+    height: -webkit-fill-available;
+  }
+}
+
 /* montserrat-300 - latin */
 @font-face {
   font-family: 'Montserrat';

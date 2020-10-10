@@ -1,4 +1,5 @@
 <script>
+  import List from '../../components/List.svelte';
 </script>
 
 <style>
@@ -9,14 +10,16 @@
 </svelte:head>
 
 <main class="w-full flex flex-wrap overflow-y-auto overflow-x-hidden">
-  <div class="w-full relative bg-black-lighter text-white-light">
-    <div class="absolute origin-top-left top-0 left-0 w-full pl-4 pt-8 md:pl-16 md:pt-16 text-xl z-10">
-      <h3 class="font-cormorant font-medium">Wear your hair with prider</h3>
+  <div class="w-full relative bg-black-lighter text-white-light xl:max-h-xl">
+    <div class="absolute origin-top-left top-0 left-0 w-full pl-4 pt-8 md:pl-8 md:pt-8 xl:pl-16 xl:pt-16 text-xl z-10">
+      <h3 class="w-15ch text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-cormorant font-medium">
+        Wear your hair with pride
+      </h3>
       <h1
-        class="font-cormorant font font-medium absolute md:pl-16 pt-16 text-3xl md:text-6xl leading-none inline-block uppercase tracking-widest">
+        class="font-cormorant font font-medium absolute md:pl-16 pt-4 sm:pt-8 md:pt-12 lg:pt-16 text-3xl sm:text-6xl md:text-6xl xl:text-7xl leading-none inline-block uppercase tracking-widest">
         Benavente
         <span class="block w-full">
-          <span class="font-semibold font-montserrat uppercase tabular-nums text-base tracking-normal"><sup
+          <span class="font-semibold font-montserrat uppercase tabular-nums tracking-normal text-sm sm:text-base"><sup
               class="">1</sup>
             /
             <sub class="mr-2">7</sub></span>
@@ -37,9 +40,9 @@
       </defs>
       <rect x="0" class="h-full w-1/3" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
     </svg>
-    <img class="float-right w-1/2" src="/images/start-photo.jpg" alt="" />
+    <img class="float-right w-1/2 object-cover h-full" src="/images/start-photo.jpg" alt="" />
     <div
-      class="hidden md:font-montserrat md:font-semibold md:block absolute origin-bottom-left bottom-0 left-0  pl-16 pb-16 text-lg">
+      class="hidden md:font-montserrat md:font-semibold md:block absolute origin-bottom-left bottom-0 left-0 md:pl-8 md:pb-8 xl:pl-16 xl:pb-16 text-lg">
       <span> Quanto mitrae valiando petreum</span>
       <a href="#1" alt="" class="font-montserrat underline ml-4 pb-2">more details</a>
     </div>
@@ -48,7 +51,7 @@
     <img
       src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       alt=""
-      class="w-full md:w-1/2 object-cover" />
+      class="w-full md:w-1/2 xl:max-h-lg object-cover" />
     <div class="w-full md:w-1/2 px-16 py-16">
       <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
         <sup class="">2</sup>
@@ -86,7 +89,7 @@
     <img
       src="https://images.unsplash.com/photo-1520078452277-0832598937e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
       alt=""
-      class="w-full md:w-1/2 object-cover" />
+      class="w-full md:w-1/2 xl:max-h-lg object-cover" />
   </div>
   <div class="w-full px-16 py-16 relative bg-white-gray">
     <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
@@ -114,44 +117,15 @@
     <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
       Exemplary prices for individual hair styling needs
     </h2>
-    <ul class="pt-16 grid gap-8 grid-cols-1 grid-flow-row tabular-nums md:grid-cols-2">
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Simple Haircut</span>
-        <span class="font-montserrat font-semibold ml-auto">$12</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Extensions</span>
-        <span class="font-montserrat font-semibold ml-auto">$32</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Styling</span>
-        <span class="font-montserrat font-semibold ml-auto">$19</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Perms</span>
-        <span class="font-montserrat font-semibold ml-auto">$42</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Braiding</span>
-        <span class="font-montserrat font-semibold ml-auto">$34</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Color Correction</span>
-        <span class="font-montserrat font-semibold ml-auto">$85</span>
-      </li>
-      <li class="flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">Hair Plugs</span>
-        <span class="font-montserrat font-semibold ml-auto">$99</span>
-      </li>
-    </ul>
+    <List hydrate-client={{}} />
   </div>
   <div
-    class="w-full text-black-dark bg-white-lighter grid grid-cols-1 grid-rows-auto content-center items-center md:grid-cols-3 md:grid-rows-3">
+    class="w-full text-black-dark bg-white-lighter grid grid-cols-1 grid-flow-row content-center items-center md:grid-cols-3 md:grid-rows-3">
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1496440737103-cd596325d314?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
-    <div class="px-8 py-8">
+    <div class="min-h-xs md:min-h-sm px-8 py-8">
       <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
         <sup class="">5</sup>
         /
@@ -168,32 +142,32 @@
       </p>
     </div>
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
-    <div class="px-8 py-8">
+    <div class="min-h-xs md:min-h-sm px-8 py-8">
       <h3 class="font-montserrat font-light text-2xl">12K</h3>
       <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
       </p>
     </div>
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1597923858411-08783a40f31f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
       alt="" />
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1476360806206-b2f7af3fbda4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=80"
       alt="" />
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
     <img
-      class="object-cover h-full"
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1500336624523-d727130c3328?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
-    <div class="px-8 py-8">
+    <div class="min-h-xs md:min-h-sm px-8 py-8">
       <p class="font-cormorant font-bold pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
         Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
       </p>
@@ -218,19 +192,14 @@
     <section class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
-          <svg class="mx-auto h-10" fill="none" viewBox="0 0 180 40">
+          <svg
+            version="1.0"
+            xmlns="http://www.w3.org/2000/svg"
+            class="text-black-dark fill-current mx-auto h-24"
+            viewBox="0 0 500 500"><path
+              d="M0 250v250h328l.1-66.8c.1-36.7.1-69.6.1-73.2 0-3.6.4-7 .9-7.6 1.2-1.4 8.1-.7 9.2.9.5.7 5.5 9.4 11.2 19.5 5.6 10.1 10.5 18 10.7 17.5.3-.4.4-2.2.3-3.8-.1-1.7-.3-89.3-.4-194.8L360 0H0v250zm104.7 103.3c4.2 2.2 6.3 6.4 6.3 12.3 0 3.9-.5 5.1-3.5 8.1-2 2-3.4 3.7-3.3 3.8.2.1 1.4.8 2.6 1.5 1.3.6 3.3 3.2 4.4 5.7 3.7 8.4-.1 16.8-8.8 19.2-2.1.6-8.9 1.1-15 1.1H76.2l-.1-26.4c-.2-20.9.1-26.5 1.1-26.9.7-.3 6.5-.4 12.8-.3 8.7.1 12.3.6 14.7 1.9zm46.1.9l.3 2.8H125l-.1 6.2c0 3.5-.2 7.3-.3 8.5-.3 2.2 0 2.3 9.1 2.3h9.3V379.7l-9-.1c-4.9-.1-9 .1-9 .4-.1.3-.2 4.8-.2 10l-.2 9.5 13.7.3 13.7.3v4.9h-33.5l-.3-26.1c-.3-21-.1-26.3 1-27.1.7-.4 8.1-.7 16.3-.6l15 .3.3 2.7zm29.2 17.5l11.5 20.1.3-20.4.2-20.4 2.3.4c1.2.3 2.5.5 3 .5.4.1.6 11.9.5 26.3l-.3 26.3-2.6.3c-2.4.3-3.5-1.3-15.4-22.3-7-12.4-13.1-22.7-13.4-22.9-.3-.2-.5 9.9-.3 22.5l.2 22.9h-6v-54.1l4.3.3 4.2.3 11.5 20.2zm49.4-19.6c.3.3 11.8 37.2 15.6 50.1.8 2.7.7 2.8-2.4 2.8-3.3 0-3.3-.1-5.8-8.3l-2.4-8.2h-18.9l-2.5 8.2c-2.4 8.2-2.5 8.3-5.8 8.3-3 0-3.3-.2-2.6-2.3.4-1.2 4-12.9 8-25.9 4-13 7.5-24.2 7.8-24.7.6-.9 8.2-.9 9 0zm17.4-.2c.8.5 4.2 10.2 7.6 21.6 3.5 11.4 6.5 20.4 6.8 19.9.3-.5 3.1-9.7 6.3-20.4 3.2-10.7 6.3-20.1 6.8-20.7.9-1.2 5.7-1.4 5.7-.3 0 .3-3.6 12.2-8 26.4s-8 26-8 26.2c0 .2-1.3.4-2.9.4-3.3 0-1.8 4-14.5-37.3-2.5-8.2-4.4-15.3-4-15.8.7-1.1 2.5-1.1 4.2 0zm71 2.3l.3 2.8H292v17h18v6l-8.7-.2-8.8-.3-.3 10.3-.3 10.2H319v5h-33v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" />
             <path
-              fill="#2D3748"
-              d="M59.267 32.642h3.718L66.087 21.7l3.126 10.94h3.718l4.642-16.576h-3.434l-3.173 12.29-3.481-12.29H64.69l-3.457 12.29-3.174-12.29h-3.433l4.641 16.576zM83.551 32.973c3.481 0 6.276-2.723 6.276-6.252 0-3.528-2.794-6.252-6.276-6.252-3.48 0-6.252 2.724-6.252 6.252 0 3.529 2.771 6.252 6.252 6.252zm0-2.984c-1.8 0-3.197-1.35-3.197-3.268 0-1.918 1.398-3.268 3.197-3.268 1.824 0 3.221 1.35 3.221 3.268 0 1.918-1.397 3.268-3.22 3.268zM95.031 22.837v-2.036h-3.055v11.84h3.055v-5.66c0-2.486 2.013-3.196 3.6-3.007v-3.41c-1.492 0-2.984.663-3.6 2.273zM111.334 32.642l-4.902-5.992 4.76-5.85h-3.647l-4.073 5.21v-9.946h-3.055v16.578h3.055v-5.376l4.31 5.376h3.552z" />
-            <path
-              fill="#5850EC"
-              fill-rule="evenodd"
-              d="M42.342 17.45l-7.596-4.385v20.371h8.88v1.974H.21v-1.974h3.947v-12.55l-3.678.92L0 19.89l20.81-5.202h3.08a9.421 9.421 0 00-.67 2.525l-.477 3.922 5.096-2.942v15.243h4.933v-20.37l-7.594 4.385a7.402 7.402 0 012.531-4.736h-4.064a7.39 7.39 0 016.557-2.933l-5.517-3.186a7.388 7.388 0 016.607.397 7.366 7.366 0 012.468 2.316 7.363 7.363 0 012.467-2.316 7.39 7.39 0 016.608-.397l-5.518 3.186a7.389 7.389 0 016.558 2.933h-4.066a7.399 7.399 0 012.533 4.735zm-18.45 6.119h-5.92v9.867h5.92v-9.867zm-10.854 1.973a1.974 1.974 0 11-3.947 0 1.974 1.974 0 013.947 0z"
-              clip-rule="evenodd" />
-            <path
-              fill="#5850EC"
-              d="M118.495 32.973c2.321 0 4.334-1.232 5.352-3.079l-2.652-1.515c-.474.97-1.492 1.563-2.723 1.563-1.824 0-3.174-1.35-3.174-3.221 0-1.895 1.35-3.244 3.174-3.244 1.207 0 2.226.615 2.699 1.586l2.629-1.54c-.971-1.823-2.984-3.054-5.305-3.054-3.599 0-6.252 2.723-6.252 6.252 0 3.528 2.653 6.252 6.252 6.252zM134.277 20.8v1.398c-.853-1.066-2.131-1.729-3.86-1.729-3.15 0-5.755 2.723-5.755 6.252 0 3.528 2.605 6.252 5.755 6.252 1.729 0 3.007-.663 3.86-1.729v1.397h3.055v-11.84h-3.055zm-3.292 9.26c-1.871 0-3.268-1.35-3.268-3.34 0-1.988 1.397-3.338 3.268-3.338 1.895 0 3.292 1.35 3.292 3.339 0 1.99-1.397 3.339-3.292 3.339zM146.875 23.737v-2.936h-2.676v-3.316l-3.055.924V20.8h-2.06v2.936h2.06v4.926c0 3.197 1.445 4.452 5.731 3.978v-2.77c-1.752.094-2.676.07-2.676-1.208v-4.926h2.676zM150.544 19.38c1.042 0 1.895-.853 1.895-1.871s-.853-1.895-1.895-1.895c-1.018 0-1.87.877-1.87 1.895a1.89 1.89 0 001.87 1.87zm-1.515 13.261h3.055v-11.84h-3.055v11.84zM160.516 32.973c3.481 0 6.276-2.724 6.276-6.252 0-3.529-2.795-6.252-6.276-6.252s-6.252 2.723-6.252 6.252c0 3.528 2.771 6.252 6.252 6.252zm0-2.984c-1.8 0-3.197-1.35-3.197-3.268 0-1.918 1.397-3.268 3.197-3.268 1.824 0 3.221 1.35 3.221 3.268 0 1.918-1.397 3.268-3.221 3.268zM175.524 20.469c-1.586 0-2.818.592-3.528 1.658V20.8h-3.055v11.84h3.055v-6.394c0-2.06 1.113-2.936 2.605-2.936 1.373 0 2.344.829 2.344 2.439v6.891H180v-7.27c0-3.15-1.966-4.902-4.476-4.902z" />
-          </svg>
+              d="M83 365.5v8.5h7.9c7.1 0 8.3-.3 11-2.6 2.5-2.1 3.1-3.4 3.1-6.4 0-6.1-3.2-8-13.6-8H83v8.5zM83.5 379.8c-.3.3-.5 5-.5 10.5v9.9l8.4-.3c10.7-.5 13.9-2.5 14.4-8.7.4-5-.9-7.7-4.8-9.7-2.8-1.5-16.4-2.8-17.5-1.7zM220.8 369.3c-2 7.3-3.5 13.3-3.3 13.5.1.2 3.6.2 7.7 0l7.5-.3-3.6-12.7c-2-7-3.8-12.9-4.1-13.2-.3-.2-2.2 5.5-4.2 12.7zM366 202.5V405h-2.4c-2.2 0-4.2-3-16-23.7L334 357.5V500h166V0H366v202.5zm40.7 149.2c.7.3 1.3 1.6 1.3 2.9 0 2.3-.2 2.4-8 2.4h-8v48h-7l.3-24 .2-23.9-7.9-.3c-7-.3-7.9-.5-8.2-2.3-.2-1.1.2-2.3.9-2.7 1.2-.8 34.4-.8 36.4-.1zm39.1 2.5l.3 2.8H420v17h9.5c9.4 0 9.5 0 9.5 2.4 0 3.1-.9 3.4-10.5 3.3l-8-.1-.3 10.2-.3 10.2H448v5h-34v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" /></svg>
           <blockquote class="mt-8">
             <div
               class="font-montserrat italic font-medium max-w-3xl mx-auto text-center text-2xl leading-9 text-gray-900">
@@ -260,34 +229,19 @@
       <sub class="mr-2">7</sub>Book a visit
     </h6>
     <h2 class="font-cormorant font-bold pt-4 text-4xl">Book your visit now Lorem ipsum dolor mit samet</h2>
-    <div class="grid gric-cols-1 grid-rows-4 md:grid-cols-2  md:grid-rows-2 place-items-center">
+    <div class="grid gric-cols-1 pt-10 grid-rows-4 md:grid-cols-2  md:grid-rows-2 place-items-center">
       <div class="font-montserrat font-normal place-self-start flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="10 0 24 32"><path
             d="M20.261 29.087c-3.685 0-7.303-3.031-10.752-9.007-2.963-5.13-3.982-9.31-3.029-12.419.858-2.803 3.093-3.89 3.827-4.246.078-.039.14-.067.179-.09a3.015 3.015 0 011.462-.412c.715 0 1.299.329 1.644.926l2.275 3.943c.604 1.044.176 2.121-1.143 2.884l-1.377.796c-1.037.598.133 3.743 1.25 5.68.832 1.44 3.154 4.58 4.295 3.924l1.377-.795c1.293-.748 2.479-.572 3.07.453l2.275 3.941c.656 1.136-.061 2.343-1.107 2.947-.04.023-.096.062-.168.11-.553.375-2.02 1.365-4.078 1.365zM11.947 3.733c-.335 0-.72.109-1.052.303a6.008 6.008 0 01-.23.115c-.724.353-2.647 1.288-3.402 3.75-.883 2.885.111 6.844 2.956 11.769 3.246 5.624 6.719 8.597 10.042 8.597 1.808 0 3.076-.857 3.619-1.224.094-.063.166-.111.217-.142.482-.277 1.273-1.02.807-1.826l-2.275-3.941c-.375-.652-1.072-.658-1.949-.154l-1.378.796a1.469 1.469 0 01-.746.198c-2.089 0-4.563-4.24-4.667-4.422-.131-.225-3.156-5.528-.951-6.801l1.377-.795c.637-.367 1.3-.973.843-1.764L12.88 4.249c-.2-.348-.505-.516-.933-.516z" /></svg>
         <span class="text-2xl">+65 512 125 151</span>
       </div>
-      <div class="flex items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="0 -4 48 60"><g
-            fill="none"
-            stroke="#FFF"
-            stroke-width="1"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10">
-            <path d="M47 20.9V47H1V20.9" />
-            <path d="M8.1 25.7V1h31.8v24.7" />
-            <path d="M1 20.9l23 15.4 23-15.4M39.9 15.4l7.1 5.5M1 20.9l7.1-5.5" />
-          </g>
-          <path
-            d="M28.5 22.9c-1.6.9-3.3 1.2-5.2 1.2-4.8 0-8.9-3.5-8.9-9.2 0-6.1 4.2-11.3 10.7-11.3 5.1 0 8.5 3.6 8.5 8.5 0 4.4-2.5 7-5.2 7-1.2 0-2.3-.8-2.2-2.6h-.1c-1 1.7-2.4 2.6-4.1 2.6-1.7 0-3.2-1.4-3.2-3.7 0-3.6 2.9-7 7-7 1.3 0 2.4.3 3.1.6l-1 5.3c-.4 2.2-.1 3.3.9 3.3 1.5 0 3.2-2 3.2-5.4C32 8 29.4 5 24.9 5 20.1 5 16 8.8 16 14.7c0 4.9 3.2 7.9 7.5 7.9 1.7 0 3.2-.4 4.4-1l.6 1.3zm-1.6-12.7c-.3-.1-.8-.2-1.5-.2-2.6 0-4.7 2.4-4.7 5.3 0 1.3.6 2.2 1.9 2.2 1.7 0 3.3-2.2 3.6-4l.7-3.3z" /></svg>
-        <span class="text-2xl">noreply@envato.com</span>
-      </div>
+      <button
+        class="font-montserrat font-medium px-4 py-4 uppercase row-span-2 border-white-light border-2 border-solid">Book
+        a Visit</button>
       <p class="font-montserrat font-medium">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim.
       </p>
-      <button class="font-montserrat font-medium px-4 py-4 uppercase border-white-light border-2 border-solid">Book a
-        Visit</button>
     </div>
   </div>
   <footer class="w-full border-t border-white-dark text-white-light mx-16 pt-16 pb-4 flex flex-wrap">
