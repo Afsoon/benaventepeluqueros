@@ -10,7 +10,7 @@
 </svelte:head>
 
 <main class="w-full flex flex-wrap overflow-y-auto overflow-x-hidden">
-  <div class="w-full relative bg-black-lighter text-white-light xl:max-h-xl">
+  <div name="start" class="w-full relative bg-black-lighter text-white-light xl:max-h-sm">
     <div class="absolute origin-top-left top-0 left-0 w-full pl-4 pt-8 md:pl-8 md:pt-8 xl:pl-16 xl:pt-16 text-xl z-10">
       <h3 class="w-15ch text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-cormorant font-medium">
         Wear your hair with pride
@@ -43,83 +43,76 @@
     <img class="float-right w-1/2 object-cover h-full" src="/images/start-photo.jpg" alt="" />
     <div
       class="hidden md:font-montserrat md:font-semibold md:block absolute origin-bottom-left bottom-0 left-0 md:pl-8 md:pb-8 xl:pl-16 xl:pb-16 text-lg">
-      <span> Quanto mitrae valiando petreum</span>
-      <a href="#1" alt="" class="font-montserrat underline ml-4 pb-2">more details</a>
+      <a href="#1" alt="" class="font-montserrat underline ml-4 pb-2">Saber más</a>
+      <span> sobre nosotros</span>
     </div>
   </div>
-  <div class="w-full bg-white-lighter flex flex-col md:flex-row md:flex-wrap">
+  <div name="about" class="w-full bg-white-lighter flex flex-col md:flex-row md:flex-wrap">
     <img
       src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
       alt=""
-      class="w-full md:w-1/2 xl:max-h-lg object-cover" />
+      class="w-full md:w-1/2 object-cover" />
     <div class="w-full md:w-1/2 px-16 py-16">
       <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
         <sup class="">2</sup>
         /
         <sub class="mr-2">7</sub>
-        About us
+        Sobre nosotros
       </h6>
-      <h2 class="font-cormorant font-bold pt-4 text-4xl">Beautiful hair is a process</h2>
+      <h2 class="font-cormorant font-bold pt-4 text-4xl">Experiencia</h2>
       <p class="pt-4 font-montserrat font-bold prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
+        Corría el año 2015 cuando Fernando Benavente abría sus puertas en una antigua bodega situada en la calle
+        Panadés.
       </p>
       <p class="pt-4 font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Tortor condimentum lacinia quis vel eros donec ac odio. In vitae turpis massa sed elementum.
-        Sagittis vitae et leo duis ut diam quam nulla.
+        Su personal visión, que adapta al cabello mediterráneo el estilo norteamericano con una mezcla de estilos
+        cultivados en su formación en Italia y numerosas técnicas de corte y color, pronto caló entre los vecinos de
+        Leganés. Posteriormente, su estilo se iría extendiendo hacia todas partes y conseguiría clientes fieles en todo
+        el mundo.
       </p>
     </div>
     <div class="w-full md:w-1/2 px-16 py-16">
-      <h2 class="pt-4 font-cormorant font-bold text-4xl tracking-normal">
-        Beautiful hair is a process lorem dolor omnia
-      </h2>
+      <h2 class="pt-4 font-cormorant font-bold text-4xl tracking-normal">Proceso + Fusión</h2>
       <p class="pt-4 font-montserrat font-bold prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+        Su visión técnica sobre la importancia del corte y su forma de dar siempre en el clavo son consecuencia de sus
+        especialidades en morfología y visagismo.
       </p>
       <p class="pt-4 font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.
+        Esto, sumado a su amplia experiencia como técnico en color, hace que la fusión entre la parte técnica y la
+        artística dé como resultado un trabajo óptimo.
       </p>
       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class=" pt-4 w-44 h-w-44" viewBox="0 0 298 202"><path
           d="M135.5 18.5c-8.4 1.8-14 4.2-21.5 9C101.3 35.8 92.9 47 88.3 62c-2.9 9.4-4 11.3-6 10.6-.7-.3-1.3-.1-1.3.5 0 1.6-27.8 14.7-35 16.5-4.4 1.1-8.7 1.5-13.2 1.1-3.7-.3-7-.2-7.3.3-.3.5 3.2 3.3 7.8 6.3 4.5 2.9 9.9 6.8 12 8.7 8.4 7.4 27.8 36.3 29.3 43.7l.6 3-10.7.7c-24.9 1.6-44.2 7.6-42.1 13.1 1.5 4.1 11.4 4.2 38.6.5 7.4-1 13.8-1.6 14.2-1.4.4.3.8 2 .8 3.8 0 4.9 2.6 12.5 5.1 15.2 2.9 3.1 5.9 3.2 6 .1.2-5-.4-9.4-2.1-15-1.3-4.2-1.5-5.9-.7-6.2 1.8-.5 19-3.5 20.5-3.5.7 0 1.2 1.3 1.2 3.1 0 1.7.4 2.8 1 2.4.6-.3 1-1.9 1-3.4 0-2.6.4-2.9 5.6-4 5.1-1 5.9-.9 8.4.9 5.7 4.1 16 8.2 21.8 8.7 11.1 1 23.7-6.6 30.7-18.6 3.5-5.9-.9-4.3 44-16.1 17.1-4.5 36.2-9.6 42.5-11.5 6.4-1.9 12.8-3.6 14.3-3.9 5.4-1 9.7-2.8 9.7-4.1 0-2.5-2.6-2.3-14 1.1-6.3 1.9-25 7-41.5 11.3-16.5 4.4-34.2 9.1-39.4 10.5-5.2 1.4-9.6 2.4-9.8 2.3-.1-.2.8-4.6 2.1-9.7 2.2-8.9 2.5-9.4 5.2-9.7 1.6-.2 4.4-1.9 6.3-3.7l3.4-3.4 4.9 2.5c6.4 3.2 19.7 4.5 34 3.4 18.6-1.5 25.2-7.1 25.2-21.1 0-17.3-17.9-39.6-47.3-58.9-26.2-17.2-55.9-24.6-78.6-19.6zm32.5 4.1c20.6 3.9 43.2 15.7 63 32.8 16.9 14.7 26 28.9 26.7 41.8.5 9.5-1.4 12.9-9.4 16.5l-5.6 2.6-15.6-1.1c-16.8-1.2-21.5-2.1-25.4-5.2l-2.5-2 1.9-5.1c3.5-9.3 2.5-18-1.8-15.3-5 3.1-8.1 14.2-5.4 19.2.9 1.7.7 2.6-1.5 5.1-1.4 1.7-3.6 3.1-4.7 3.1-2.2 0-2.2-.3-2.2-14.2 0-19.9-3.7-32.4-12.1-41.8-5.2-5.7-10.3-8-18.4-8-7.7 0-15.6 3.3-23.4 9.7-4.5 3.8-5 4-8.3 3.1-2-.5-6.2-.8-9.3-.6-3.2.2-5.6 0-5.4-.3.2-.3 4.4-2.9 9.2-5.8 10-5.7 12.7-8.1 9.4-8.1-2.4 0-13.2 5.5-26.2 13.5-5.1 3.1-9.5 5.3-9.8 5-.9-.9 1.8-8.7 5.6-16 7.8-14.8 24.9-26.9 42.2-29.8 6.1-1 21.5-.6 29 .9zm-5.6 32.5c11 3 20.6 20.1 20.6 36.7 0 4.5-.4 6.4-1.4 6.8-.8.3-3.3 6-5.6 12.7-5.3 16.1-5.7 16.5-6.5 8.1-1-10.3-1.8-12.9-4.1-13.2-2.1-.3-4.4 3.1-4.4 6.6 0 .9-1.6-1.6-3.6-5.5-3.5-7.3-6.8-10.3-11.3-10.3-1.6 0-2.1-.9-2.7-5.8-1-8.6-3.9-15.3-8.6-20-4.1-4.2-4.1-4.2-2.2-6.3 2.7-3.1 11.5-8.6 15.5-9.7 4.6-1.4 9.6-1.4 14.3-.1zm-41.6 11.5c3 .8 2.8 1.7-1.7 7.7-2.1 2.9-5.4 8.1-7.1 11.7-1.8 3.6-3.4 6-3.6 5.5-.1-.6-.5-3.6-.9-6.8-.4-3.1-1.1-5.7-1.7-5.7-.7 0-.8 3.3-.3 9.9.5 7.1.4 10.5-.5 12.1-.7 1.3-2.5 7.3-4 13.4l-2.8 11.1-3-6.6c-5.6-12-7.8-24.4-6.7-36.9l.7-8 5.2-3c2.9-1.6 7-3.4 9.2-3.9 4.6-1.1 13.9-1.3 17.2-.5zm11 6.6c4.2 4.5 7 11.1 7.7 18.8.7 6.5.6 6.5-2.7 9.1-2.6 2-4.9 2.7-10.6 3.2-5.3.4-8.6 1.3-11.7 3.1-2.4 1.5-4.6 2.6-4.9 2.6-.3 0-.6-2.1-.6-4.6 0-3.4 1.2-7.1 4.4-13.8 4.1-8.7 12.7-21.6 14.4-21.6.4 0 2.2 1.5 4 3.2zM79.6 84.7c-.3 3.2-1.2 14.8-2.1 25.8-.9 11-1.9 22.8-2.1 26.3l-.6 6.3-5.1-8.6c-7.9-13.2-20-28.7-26.7-34.1-6-4.9-6-4.9-3.3-5.6 1.6-.4 5.9-1.4 9.7-2.4 3.9-.9 12.2-4.3 18.5-7.5 6.4-3.2 11.7-5.8 11.9-5.8.2-.1.1 2.5-.2 5.6zm4.9 4.9c0 9.1-.2 10.2-1.2 7.7-1.6-3.6-1.6-12.5-.1-15.8.6-1.4 1.2-2.5 1.2-2.5.1 0 .1 4.8.1 10.6zm114.1 11.5l-1.4 3.4-.1-4.3c-.1-2.4.5-5.3 1.2-6.5 1.2-2.1 1.2-2.1 1.5.9.2 1.7-.4 4.7-1.2 6.5zm-112.5 7.6c2.3 4.9 5.8 12.4 8 16.8 3.6 7.4 3.9 8.6 3.9 16.7 0 11.7 0 11.8-7 11.8-3.2 0-7.2-.3-9-.7l-3.3-.6.6-19.1C80 114.1 81 100 81.7 100c.2 0 2.2 3.9 4.4 8.7zm63-6.7c1 .6 3.1 3.4 4.6 6.3 2.1 4.3 2.7 7.1 3.2 15.7.5 8.9.9 10.5 2.4 10.8 1.4.3 1.7-.4 1.7-4.5 0-5.9 1.8-17.5 2.9-18.6.5-.5 1.2 2.2 1.5 6 1 9.9 1.5 12.1 3.3 12.7 2.5 1 5.1-2.2 6.9-8.3.9-3.1 2.5-8.1 3.5-11.1l1.7-5.5.1 6.9c.1 7.2-1.9 17.2-4.9 24.2-2 4.6 1.3 3.5-34 11.4-21.4 4.8-21.4 4.8-24.1 2.9-4.2-2.9-8.9-8.8-8.9-10.9 0-1.4.7-2 2.3-2 2.9-.1 9-2.3 12.4-4.6 2.3-1.5 4.4-1.8 11.9-1.5 9.9.3 14.3-1 16.4-5 1.7-3.1-1.3-10.8-5.9-15.3-3.8-3.7-4-4.6-2.5-9.4.4-1.5 2.9-1.6 5.5-.2zm-10.5 3.7c-1 1-1.9-.5-1-1.8.6-1.1.8-1.1 1.2 0 .2.7.1 1.5-.2 1.8zm-9.6 2.7c0 .3-1.5 2.8-3.2 5.7-2.7 4.3-3.3 6.2-3.2 10.5.2 5.3.1 5.3-4 7.4-2.3 1.1-5.4 2-6.9 2H109v-9.9c0-9.8 0-10 2.9-12 1.6-1.2 3.9-2.5 5.2-3 2.4-1 11.9-1.5 11.9-.7zm6.6 1c1.9 1.5 1.9 1.6-.6 6.2-2.7 5.2-8.1 11.4-9.9 11.4-1.4 0-1.4-5-.1-8.6 1.2-3 6.8-10.4 7.9-10.4.4 0 1.6.6 2.7 1.4zm-29.9 4.8c-.3.8-.6.5-.6-.6-.1-1.1.2-1.7.5-1.3.3.3.4 1.2.1 1.9zm41.8 6.3c.7 2.2 1.1 4.4.8 5.1-.8 2.1-5.3 3.4-11.9 3.4h-6.6l3.6-4.2c2-2.3 4.6-6.1 5.7-8.6l2.2-4.4 2.4 2.4c1.3 1.4 3 4.2 3.8 6.3zm-40.6 8.7c0 2.7-.3 4.8-.7 4.8-3.1 0-4.3-7.5-2-12.6l1.3-2.8.6 3c.4 1.6.7 5 .8 7.6zm0 21.3l-.1 5-1.9-5.5c-1.8-5.2-1.9-4.5-.4 2.6.5 2.8.3 3.2-2 3.6-2.1.5-2.5.2-1.9-1.1 1.1-2.6 2.5-13.2 1.8-14.4-.3-.7.6.1 2 1.8 2.1 2.4 2.6 4 2.5 8zm62.5-.8c-7.6 10-14 13.7-23.9 13.7-6.1 0-7.9-.5-14-3.6l-7-3.6 4-1c11.8-2.9 43.1-9.8 43.4-9.6.2.2-.9 2-2.5 4.1zm-56.5 1.7l2.2 2.3-2.3.7c-3.6.9-3.8.8-3.8-2.4 0-3.6.9-3.8 3.9-.6zM75 157.9c0 2.4-.5 3-2.7 3.5-7.7 1.5-25.1 3.6-35.3 4.2-10.5.7-11.4.6-10.2-.9 1.8-2.1 10.9-5.5 19.7-7.2 9.5-1.9 11.8-2.2 20.8-2.4l7.7-.1v2.9zm13.8-.9c3 0-.2 1.8-3.8 2.2-2.7.2-3.5-.1-3.8-1.6-.4-1.6 0-1.8 2.8-1.2 1.8.3 4 .6 4.8.6zM82 168.7c1.6 5.5 2.8 14.3 1.8 13.7-.8-.5-3.2-8.6-4.2-14.2-.8-4.4 1.1-4.1 2.4.5z" />
         <path d="M70.5 112.7c-5 2.6-10.2 8.3-7.7 8.3 1.9 0 13.3-8.1 12.7-9-.8-1.3-1.4-1.2-5 .7z" /></svg>
     </div>
-    <img
-      src="https://images.unsplash.com/photo-1520078452277-0832598937e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
-      alt=""
-      class="w-full md:w-1/2 xl:max-h-lg object-cover" />
+    <img src="/images/photo.png" alt="" class="w-full md:w-1/2 object-cover" />
   </div>
-  <div class="w-full px-16 py-16 relative bg-white-gray">
+  <div name="whyus" class="w-full px-16 py-16 relative bg-white-gray">
     <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
       <sup class="">3</sup>
       /
       <sub class="mr-2">7</sub>
-      Why Choose Us
+      ¿Por qué elegirnos?
     </h6>
-    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
-      Choose the hair that suits your lifestyle and needs
-    </h2>
+    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">Conseguimos el corte de pelo que visualizas</h2>
     <div class="pt-4 flex flex-col md:flex-row">
       <p class="font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
+        Nuestros clientes saben lo que quieren; nuestra labor es interpretarlo y adaptarlo para que el resultado sea el
+        soñado.
       </p>
     </div>
   </div>
-  <div class="w-full bg-black-lighter text-white-light px-16 py-16">
+  <div name="pricing" class="w-full bg-black-lighter text-white-light px-16 py-16">
     <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
       <sup class="">4</sup>
       /
-      <sub class="mr-2">7</sub>Pricing
+      <sub class="mr-2">7</sub>Precios
     </h6>
-    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
-      Exemplary prices for individual hair styling needs
-    </h2>
+    <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">Listado de precios de nuestros servicios</h2>
     <List hydrate-client={{}} />
   </div>
   <div
+    name="gallery"
     class="w-full text-black-dark bg-white-lighter grid grid-cols-1 grid-flow-row content-center items-center md:grid-cols-3 md:grid-rows-3">
     <img
       class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
@@ -130,27 +123,23 @@
         <sup class="">5</sup>
         /
         <sub class="mr-2">7</sub>
-        Gallery
+        Galería
       </h6>
       <p class="font-cormorant font-bold pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
+        Nuestro amor por la naturaleza nos lleva a buscar el máximo compromiso con el medio ambiente.
       </p>
       <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim vee eu fugiat. Lorem ipsum dolor sit amet.
+        La utilización de productos veganos, entre otras acciones, marca la diferencia.
       </p>
     </div>
     <img
       class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1541216970279-affbfdd55aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
       alt="" />
-    <div class="min-h-xs md:min-h-sm px-8 py-8">
-      <h3 class="font-montserrat font-light text-2xl">12K</h3>
-      <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
-      </p>
-    </div>
+    <img
+      class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
+      src="https://images.unsplash.com/photo-1467632499275-7a693a761056?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+      alt="" />
     <img
       class="max-h-xs sm:max-h-sm object-cover w-full md:w-auto md:max-h-full md:h-full"
       src="https://images.unsplash.com/photo-1597923858411-08783a40f31f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -169,10 +158,10 @@
       alt="" />
     <div class="min-h-xs md:min-h-sm px-8 py-8">
       <p class="font-cormorant font-bold pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
+        Estos son algunos de los trabajos realizados por Fernando Benavente.
       </p>
       <p class="font-montserrat font-medium pt-4 prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
-        Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci. Lorem ipsum dolor mit samet.
+        Si quieres ver más trabajos suyos, con su antes y después, puedes hacer clic en el siguiente enlace:
       </p>
       <br />
       <a
@@ -183,36 +172,36 @@
         alt="Ver más imagenes de trabajos realizados en Instagram">Ver más en Instragram</a>
     </div>
   </div>
-  <div class="w-full text-black-dark bg-white-gray">
+  <div name="testimonials" class="w-full text-black-dark bg-white-gray">
     <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums pt-16 pl-16">
       <sup class="">6</sup>
       /
-      <sub class="mr-2">7</sub>Testimonials
+      <sub class="mr-2">7</sub>Testimonios
     </h6>
     <section class="py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24">
       <div class="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="relative">
           <svg
-            version="1.0"
             xmlns="http://www.w3.org/2000/svg"
             class="text-black-dark fill-current mx-auto h-24"
-            viewBox="0 0 500 500"><path
-              d="M0 250v250h328l.1-66.8c.1-36.7.1-69.6.1-73.2 0-3.6.4-7 .9-7.6 1.2-1.4 8.1-.7 9.2.9.5.7 5.5 9.4 11.2 19.5 5.6 10.1 10.5 18 10.7 17.5.3-.4.4-2.2.3-3.8-.1-1.7-.3-89.3-.4-194.8L360 0H0v250zm104.7 103.3c4.2 2.2 6.3 6.4 6.3 12.3 0 3.9-.5 5.1-3.5 8.1-2 2-3.4 3.7-3.3 3.8.2.1 1.4.8 2.6 1.5 1.3.6 3.3 3.2 4.4 5.7 3.7 8.4-.1 16.8-8.8 19.2-2.1.6-8.9 1.1-15 1.1H76.2l-.1-26.4c-.2-20.9.1-26.5 1.1-26.9.7-.3 6.5-.4 12.8-.3 8.7.1 12.3.6 14.7 1.9zm46.1.9l.3 2.8H125l-.1 6.2c0 3.5-.2 7.3-.3 8.5-.3 2.2 0 2.3 9.1 2.3h9.3V379.7l-9-.1c-4.9-.1-9 .1-9 .4-.1.3-.2 4.8-.2 10l-.2 9.5 13.7.3 13.7.3v4.9h-33.5l-.3-26.1c-.3-21-.1-26.3 1-27.1.7-.4 8.1-.7 16.3-.6l15 .3.3 2.7zm29.2 17.5l11.5 20.1.3-20.4.2-20.4 2.3.4c1.2.3 2.5.5 3 .5.4.1.6 11.9.5 26.3l-.3 26.3-2.6.3c-2.4.3-3.5-1.3-15.4-22.3-7-12.4-13.1-22.7-13.4-22.9-.3-.2-.5 9.9-.3 22.5l.2 22.9h-6v-54.1l4.3.3 4.2.3 11.5 20.2zm49.4-19.6c.3.3 11.8 37.2 15.6 50.1.8 2.7.7 2.8-2.4 2.8-3.3 0-3.3-.1-5.8-8.3l-2.4-8.2h-18.9l-2.5 8.2c-2.4 8.2-2.5 8.3-5.8 8.3-3 0-3.3-.2-2.6-2.3.4-1.2 4-12.9 8-25.9 4-13 7.5-24.2 7.8-24.7.6-.9 8.2-.9 9 0zm17.4-.2c.8.5 4.2 10.2 7.6 21.6 3.5 11.4 6.5 20.4 6.8 19.9.3-.5 3.1-9.7 6.3-20.4 3.2-10.7 6.3-20.1 6.8-20.7.9-1.2 5.7-1.4 5.7-.3 0 .3-3.6 12.2-8 26.4s-8 26-8 26.2c0 .2-1.3.4-2.9.4-3.3 0-1.8 4-14.5-37.3-2.5-8.2-4.4-15.3-4-15.8.7-1.1 2.5-1.1 4.2 0zm71 2.3l.3 2.8H292v17h18v6l-8.7-.2-8.8-.3-.3 10.3-.3 10.2H319v5h-33v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" />
+            viewBox="0 0 180 180">
+            <path d="M0 0h180v180H0z" />
             <path
-              d="M83 365.5v8.5h7.9c7.1 0 8.3-.3 11-2.6 2.5-2.1 3.1-3.4 3.1-6.4 0-6.1-3.2-8-13.6-8H83v8.5zM83.5 379.8c-.3.3-.5 5-.5 10.5v9.9l8.4-.3c10.7-.5 13.9-2.5 14.4-8.7.4-5-.9-7.7-4.8-9.7-2.8-1.5-16.4-2.8-17.5-1.7zM220.8 369.3c-2 7.3-3.5 13.3-3.3 13.5.1.2 3.6.2 7.7 0l7.5-.3-3.6-12.7c-2-7-3.8-12.9-4.1-13.2-.3-.2-2.2 5.5-4.2 12.7zM366 202.5V405h-2.4c-2.2 0-4.2-3-16-23.7L334 357.5V500h166V0H366v202.5zm40.7 149.2c.7.3 1.3 1.6 1.3 2.9 0 2.3-.2 2.4-8 2.4h-8v48h-7l.3-24 .2-23.9-7.9-.3c-7-.3-7.9-.5-8.2-2.3-.2-1.1.2-2.3.9-2.7 1.2-.8 34.4-.8 36.4-.1zm39.1 2.5l.3 2.8H420v17h9.5c9.4 0 9.5 0 9.5 2.4 0 3.1-.9 3.4-10.5 3.3l-8-.1-.3 10.2-.3 10.2H448v5h-34v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" /></svg>
+              d="M35.61 136.668v6.672h3.66c.558 0 1.07-.059 1.546-.176a3.524 3.524 0 001.239-.559c.351-.25.629-.582.832-.988.207-.406.312-.91.312-1.504 0-.668-.11-1.238-.324-1.707a2.817 2.817 0 00-.887-1.125 3.381 3.381 0 00-1.347-.586 7.304 7.304 0 00-1.692-.132zm0-8.125v5.992l2.73-.105a11.31 11.31 0 001.566-.164c.504-.09.953-.243 1.348-.457.394-.215.71-.52.945-.907.235-.386.352-.894.352-1.523 0-.559-.106-1.02-.313-1.379a2.45 2.45 0 00-.82-.863 3.54 3.54 0 00-1.203-.457 7.335 7.335 0 00-1.418-.137zm6.347 6.887a9.708 9.708 0 011.566.765c.485.297.907.645 1.266 1.04.356.398.633.843.82 1.34.192.491.29 1.038.29 1.632 0 .953-.169 1.773-.497 2.457a4.649 4.649 0 01-1.37 1.688c-.587.441-1.274.765-2.071.972-.8.207-1.664.309-2.598.309H32.91V126.3h6.375c.735 0 1.465.086 2.184.258.722.171 1.36.445 1.918.824a4.301 4.301 0 011.351 1.484c.34.613.512 1.36.512 2.242 0 .52-.09.993-.27 1.414a4.51 4.51 0 01-.714 1.165c-.297.347-.645.66-1.04.93-.398.269-.82.503-1.269.702zm0 0M48.41 126.3h11.582v2.298H51.11v5.832h7.18v2.187h-7.18v6.64h9.153v2.376H48.41zm0 0M65.992 132.703a13.246 13.246 0 01-.652-1.176c-.2-.406-.371-.77-.516-1.093-.18-.38-.34-.758-.484-1.133h-.106l.051 1.242.055 1.281c.015.477.027.957.027 1.442l.078 12.367h-2.402V126.3h3.215l6.586 11.422c.254.449.492.902.715 1.351l.609 1.215c.2.43.387.844.566 1.242h.11c-.04-.379-.063-.773-.082-1.187a45.727 45.727 0 01-.055-2.54l-.082-11.503h2.434v19.332h-2.567zm0 0M82.402 137.965h5.102l-1.996-6.613a23.595 23.595 0 01-.38-1.434 4.302 4.302 0 01-.108-.594h-.106c-.02.18-.055.38-.11.594-.074.363-.199.848-.378 1.46zm5.75 2.105h-6.398l-1.703 5.563h-2.48l6.152-19.332h2.945l6.184 19.332h-3zm0 0M98.766 145.633L92.367 126.3H95.2l3.645 11.234c.18.574.351 1.14.515 1.7.16.558.305 1.07.43 1.538.145.54.27 1.063.379 1.567h.11c.124-.504.257-1.035.402-1.594.129-.465.265-.984.422-1.55.148-.571.316-1.114.496-1.633l3.617-11.262h2.62l-6.507 19.332zm0 0M109.348 126.3h11.582v2.298h-8.883v5.832h7.183v2.187h-7.183v6.64h9.152v2.376h-11.851zm0 0M125.387-8102V8281m0-16383V8281M122.98-8102V8281m11.586-16383V8281m2.426-16383V8281m-2.426-16383V8281m2.426-16382.969v16383M126.93 132.7a13.067 13.067 0 01-.653-1.172c-.199-.406-.37-.77-.511-1.093a14.781 14.781 0 01-.489-1.133h-.109c.02.375.035.789.055 1.238.015.379.035.809.054 1.285.016.477.028.957.028 1.446l.082 50.296h-2.407v-57.265h3.215l6.586 11.422c.254.449.492.898.715 1.351l.61 1.215c.199.43.386.844.566 1.242h.11c-.04-.379-.063-.773-.083-1.187a46.752 46.752 0 01-.039-1.192 49.73 49.73 0 01-.015-1.347l-.079-140.45h2.426v148.278h-2.562zm0 0M146.39 145.633h-2.808v-17.035h-5.48V126.3h13.77v2.297h-5.481zm0 0M152.977 126.3h11.585v2.298h-8.882v5.832h7.18v2.187h-7.18v6.64h9.152v2.376h-11.855zm0 0"
+              class="text-white-light fill-current" /></svg>
           <blockquote class="mt-8">
             <div
               class="font-montserrat italic font-medium max-w-3xl mx-auto text-center text-2xl leading-9 text-gray-900">
               <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
+                &ldquo;Tiene una gran capacidad, para captar los gustos de las clientas y sobre todo con unos cortes de
+                pelo muy modernos y mucho estilo.&rdquo;
               </p>
             </div>
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
                 <div class="md:flex-shrink-0">
                   <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                    <div class="text-base leading-6 font-medium text-gray-900">Judith Black</div>
+                    <div class="text-base leading-6 font-medium text-gray-900">Caballería de MorCab</div>
                   </div>
                 </div>
               </div>
@@ -222,55 +211,73 @@
       </div>
     </section>
   </div>
-  <div class="w-full bg-black-lighter text-white-light px-16 pt-16 pb-32">
+  <div name="book" class="w-full bg-black-lighter text-white-light px-16 pt-16 pb-32">
     <h6 class="font-montserrat font-medium tracking-widest uppercase tabular-nums">
       <sup class="">7</sup>
       /
-      <sub class="mr-2">7</sub>Book a visit
+      <sub class="mr-2">7</sub>Reserve una cita
     </h6>
-    <h2 class="font-cormorant font-bold pt-4 text-4xl">Book your visit now Lorem ipsum dolor mit samet</h2>
+    <h2 class="font-cormorant font-bold pt-4 text-4xl">¿Preparado para vivir una experiencia única?</h2>
     <div class="grid gric-cols-1 pt-10 grid-rows-4 md:grid-cols-2  md:grid-rows-2 place-items-center">
-      <div class="font-montserrat font-normal place-self-start flex items-center">
+      <a
+        href="tel:696242904"
+        alt="telefono móvil para reservar una cita"
+        class="font-montserrat font-normal place-self-start flex items-center">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 fill-current" viewBox="10 0 24 32"><path
             d="M20.261 29.087c-3.685 0-7.303-3.031-10.752-9.007-2.963-5.13-3.982-9.31-3.029-12.419.858-2.803 3.093-3.89 3.827-4.246.078-.039.14-.067.179-.09a3.015 3.015 0 011.462-.412c.715 0 1.299.329 1.644.926l2.275 3.943c.604 1.044.176 2.121-1.143 2.884l-1.377.796c-1.037.598.133 3.743 1.25 5.68.832 1.44 3.154 4.58 4.295 3.924l1.377-.795c1.293-.748 2.479-.572 3.07.453l2.275 3.941c.656 1.136-.061 2.343-1.107 2.947-.04.023-.096.062-.168.11-.553.375-2.02 1.365-4.078 1.365zM11.947 3.733c-.335 0-.72.109-1.052.303a6.008 6.008 0 01-.23.115c-.724.353-2.647 1.288-3.402 3.75-.883 2.885.111 6.844 2.956 11.769 3.246 5.624 6.719 8.597 10.042 8.597 1.808 0 3.076-.857 3.619-1.224.094-.063.166-.111.217-.142.482-.277 1.273-1.02.807-1.826l-2.275-3.941c-.375-.652-1.072-.658-1.949-.154l-1.378.796a1.469 1.469 0 01-.746.198c-2.089 0-4.563-4.24-4.667-4.422-.131-.225-3.156-5.528-.951-6.801l1.377-.795c.637-.367 1.3-.973.843-1.764L12.88 4.249c-.2-.348-.505-.516-.933-.516z" /></svg>
-        <span class="text-2xl">+65 512 125 151</span>
-      </div>
-      <button
-        class="font-montserrat font-medium px-4 py-4 uppercase row-span-2 border-white-light border-2 border-solid">Book
-        a Visit</button>
+        <span class="text-2xl">696 242 904</span>
+      </a>
+      <a
+        href="/book"
+        alt="Página de reserva online"
+        class="font-montserrat font-medium px-4 py-4 uppercase row-span-2 border-white-dark bg-white-dark text-black-lighter hover:bg-black-lighter focus:bg-black-lighter hover:text-white-light focus:text-white-light  border-2 border-solid">
+        Reservar online
+      </a>
       <p class="font-montserrat font-medium">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim.
+        No espere más, llámenos o reserve online una cita para ponerle fecha a su nueva experiencia.
       </p>
     </div>
   </div>
   <footer class="w-full border-t border-white-dark text-white-light mx-16 pt-16 pb-4 flex flex-wrap">
     <div class="w-full flex flex-col md:flex-row pb-20">
-      <div class="pr-32 pb-16 md:pb-0">
-        <h4 class="text-xl font-cormorant font-semibold">Call us now</h4>
-        <span class="text-3xl font-cormorant font-bold pt-16">+00 740 540 00</span>
+      <div class="md:pr-32 pb-16 md:pb-0">
+        <h4 class="text-xl font-cormorant font-semibold">Llamenos ahora</h4>
+        <a class="block" href="tel:916881810" alt="telefono fijo para reservar una cita">
+          <span class="text-2xl font-cormorant font-bold pt-16 pr-4">Fijo:</span>
+          <span class="text-3xl font-montserrat font-semibold pt-16">91 688 18 10</span>
+        </a>
+        <a href="tel:696242904" alt="telefono móvil para reservar una cita">
+          <span class="text-2xl font-cormorant font-bold pt-16 pr-4">Móvil:</span>
+          <span class="text-3xl font-montserrat font-semibold pt-16">696 242 904</span>
+        </a>
       </div>
       <div class="flex font-cormorant font-semibold flex-col pb-8 md:pb-0">
-        <h4 class="text-xl font-medium">Opening hours:</h4>
+        <h4 class="text-xl font-medium">Horario de apertura:</h4>
         <div class="flex flex-col pt-4">
-          <span class="font-montserrat font-bold">Monday - Friday</span>
-          <span class="font-montserrat font-medium">10AM - 8PM</span>
+          <span class="font-montserrat font-bold">Lunes - Viernes</span>
+          <span class="font-montserrat font-medium">10:00 - 19:00</span>
         </div>
         <div class="flex flex-col pt-4">
-          <span class="font-montserrat font-bold">Saturday</span>
-          <span class="font-montserrat font-medium">10AM - 2PM</span>
+          <span class="font-montserrat font-bold">Sábado</span>
+          <span class="font-montserrat font-medium">10:00 - 14:00</span>
         </div>
       </div>
-      <div class="flex font-montserrat font-medium flex-col md:ml-auto">
-        <h4 class="text-xl font-cormorant font-semibold">Localization</h4>
-        <span class="pt-4">Level 13,</span>
-        <span class="pt-2 text-sm">2 Elizabeth St,</span>
-        <span class="pt-2 text-sm">Melbourne, Victoria 30</span>
-        <span class="pt-2 text-sm">Australia</span>
-      </div>
+      <a
+        href="https://goo.gl/maps/ecwYBJDidJoS4FBD9"
+        target="_blank"
+        rel="noopener noreferrer"
+        alt="Enlance a Google Maps de la localización"
+        class="flex font-montserrat font-medium flex-col md:ml-auto">
+        <h4 class="text-xl font-cormorant font-semibold">Localización</h4>
+        <span class="pt-4">Benavente Peluqueros,</span>
+        <span class="pt-2 text-sm">Calle Panadés, 22,</span>
+        <span class="pt-2 text-sm">28915, Leganés</span>
+        <span class="pt-2 text-sm">Madrid</span>
+      </a>
     </div>
     <div class="w-full flex flex-col items-center md:flex-row">
       <span class="font-montserrat font-medium whitespace-no-wrap">© 2020 Benavente Peluqueros</span>
+      <span class="pl-4 font-montserrat font-medium whitespace-no-wrap">Telephone by Lucas Boe from the Noun Project</span>
       <div class="pt-2 md:pt-0 md:ml-auto md:block md:text-center md:mt-auto">
         <a
           class="inline-block px-2 py-2 text-white-dark hover:text-white-gray focus:text-white-gray"

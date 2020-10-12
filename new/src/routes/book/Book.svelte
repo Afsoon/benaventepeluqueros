@@ -34,13 +34,11 @@
       <rect x="0" class="h-full w-1/3" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
     </svg>
     <img class="float-right w-1/2 object-cover h-full" src="/images/start-photo.jpg" alt="" />
-    <div
-      class="hidden md:font-montserrat md:font-semibold md:block absolute origin-bottom-left bottom-0 left-0 md:pl-8 md:pb-8 xl:pl-16 xl:pb-16 text-lg">
-      <span> Quanto mitrae valiando petreum</span>
-      <a href="#1" alt="" class="font-montserrat underline ml-4 pb-2">more details</a>
-    </div>
   </div>
-  <div class="pt-16 w-full bg-white-lighter lg:flex lg:justify-center">
+  <div class="pt-16 w-full bg-white-lighter lg:flex lg:flex-col lg:items-center lg:justify-center">
+    <span class="lg:max-w-xl pb-4 lg:pb-12"><strong>ATENCIÓN:</strong>
+      Debido a la nueva normativa aprobada, el uso de mascarilla es obligatoria para acudir a la cita. Si antes de la
+      cita presenta sintomas compatibles con el COVID-19, por favor cancele la cita o llamenos.</span>
     <iframe
       src="https://app.acuityscheduling.com/schedule.php?owner=19539723"
       title="Schedule Appointment"

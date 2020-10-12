@@ -1,6 +1,7 @@
 <script>
   import { scale } from 'svelte/transition';
   import { cubicIn, cubicOut } from 'svelte/easing';
+  import Link from './Link.svelte';
 
   let showMenu = false;
 
@@ -12,15 +13,15 @@
 
 <header class="relative bg-black-lighter lg:flex-auto lg:h-full md:px-8">
   <div class="flex justify-between items-center px-4 pt-3 pb-2 lg:pt-6 lg:pb-4 sm:px-6 lg:flex-col lg:h-full">
-    <a href="#1" class="flex md:px-4 md:py-4">
+    <a href="/" alt="Página de inicio" class="flex md:px-4 md:py-4">
       <svg
-        version="1.0"
         xmlns="http://www.w3.org/2000/svg"
-        class="text-white-light fill-current h-16 w-auto lg:h-32"
-        viewBox="0 0 500 500"><path
-          d="M0 250v250h328l.1-66.8c.1-36.7.1-69.6.1-73.2 0-3.6.4-7 .9-7.6 1.2-1.4 8.1-.7 9.2.9.5.7 5.5 9.4 11.2 19.5 5.6 10.1 10.5 18 10.7 17.5.3-.4.4-2.2.3-3.8-.1-1.7-.3-89.3-.4-194.8L360 0H0v250zm104.7 103.3c4.2 2.2 6.3 6.4 6.3 12.3 0 3.9-.5 5.1-3.5 8.1-2 2-3.4 3.7-3.3 3.8.2.1 1.4.8 2.6 1.5 1.3.6 3.3 3.2 4.4 5.7 3.7 8.4-.1 16.8-8.8 19.2-2.1.6-8.9 1.1-15 1.1H76.2l-.1-26.4c-.2-20.9.1-26.5 1.1-26.9.7-.3 6.5-.4 12.8-.3 8.7.1 12.3.6 14.7 1.9zm46.1.9l.3 2.8H125l-.1 6.2c0 3.5-.2 7.3-.3 8.5-.3 2.2 0 2.3 9.1 2.3h9.3V379.7l-9-.1c-4.9-.1-9 .1-9 .4-.1.3-.2 4.8-.2 10l-.2 9.5 13.7.3 13.7.3v4.9h-33.5l-.3-26.1c-.3-21-.1-26.3 1-27.1.7-.4 8.1-.7 16.3-.6l15 .3.3 2.7zm29.2 17.5l11.5 20.1.3-20.4.2-20.4 2.3.4c1.2.3 2.5.5 3 .5.4.1.6 11.9.5 26.3l-.3 26.3-2.6.3c-2.4.3-3.5-1.3-15.4-22.3-7-12.4-13.1-22.7-13.4-22.9-.3-.2-.5 9.9-.3 22.5l.2 22.9h-6v-54.1l4.3.3 4.2.3 11.5 20.2zm49.4-19.6c.3.3 11.8 37.2 15.6 50.1.8 2.7.7 2.8-2.4 2.8-3.3 0-3.3-.1-5.8-8.3l-2.4-8.2h-18.9l-2.5 8.2c-2.4 8.2-2.5 8.3-5.8 8.3-3 0-3.3-.2-2.6-2.3.4-1.2 4-12.9 8-25.9 4-13 7.5-24.2 7.8-24.7.6-.9 8.2-.9 9 0zm17.4-.2c.8.5 4.2 10.2 7.6 21.6 3.5 11.4 6.5 20.4 6.8 19.9.3-.5 3.1-9.7 6.3-20.4 3.2-10.7 6.3-20.1 6.8-20.7.9-1.2 5.7-1.4 5.7-.3 0 .3-3.6 12.2-8 26.4s-8 26-8 26.2c0 .2-1.3.4-2.9.4-3.3 0-1.8 4-14.5-37.3-2.5-8.2-4.4-15.3-4-15.8.7-1.1 2.5-1.1 4.2 0zm71 2.3l.3 2.8H292v17h18v6l-8.7-.2-8.8-.3-.3 10.3-.3 10.2H319v5h-33v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" />
+        class="text-black-dark fill-current h-16 w-auto lg:h-32"
+        viewBox="0 0 180 180">
+        <path d="M0 0h180v180H0z" />
         <path
-          d="M83 365.5v8.5h7.9c7.1 0 8.3-.3 11-2.6 2.5-2.1 3.1-3.4 3.1-6.4 0-6.1-3.2-8-13.6-8H83v8.5zM83.5 379.8c-.3.3-.5 5-.5 10.5v9.9l8.4-.3c10.7-.5 13.9-2.5 14.4-8.7.4-5-.9-7.7-4.8-9.7-2.8-1.5-16.4-2.8-17.5-1.7zM220.8 369.3c-2 7.3-3.5 13.3-3.3 13.5.1.2 3.6.2 7.7 0l7.5-.3-3.6-12.7c-2-7-3.8-12.9-4.1-13.2-.3-.2-2.2 5.5-4.2 12.7zM366 202.5V405h-2.4c-2.2 0-4.2-3-16-23.7L334 357.5V500h166V0H366v202.5zm40.7 149.2c.7.3 1.3 1.6 1.3 2.9 0 2.3-.2 2.4-8 2.4h-8v48h-7l.3-24 .2-23.9-7.9-.3c-7-.3-7.9-.5-8.2-2.3-.2-1.1.2-2.3.9-2.7 1.2-.8 34.4-.8 36.4-.1zm39.1 2.5l.3 2.8H420v17h9.5c9.4 0 9.5 0 9.5 2.4 0 3.1-.9 3.4-10.5 3.3l-8-.1-.3 10.2-.3 10.2H448v5h-34v-26.3c0-14.5.3-26.7.7-27.1.4-.4 7.5-.6 15.8-.4l15 .3.3 2.7z" /></svg>
+          d="M35.61 136.668v6.672h3.66c.558 0 1.07-.059 1.546-.176a3.524 3.524 0 001.239-.559c.351-.25.629-.582.832-.988.207-.406.312-.91.312-1.504 0-.668-.11-1.238-.324-1.707a2.817 2.817 0 00-.887-1.125 3.381 3.381 0 00-1.347-.586 7.304 7.304 0 00-1.692-.132zm0-8.125v5.992l2.73-.105a11.31 11.31 0 001.566-.164c.504-.09.953-.243 1.348-.457.394-.215.71-.52.945-.907.235-.386.352-.894.352-1.523 0-.559-.106-1.02-.313-1.379a2.45 2.45 0 00-.82-.863 3.54 3.54 0 00-1.203-.457 7.335 7.335 0 00-1.418-.137zm6.347 6.887a9.708 9.708 0 011.566.765c.485.297.907.645 1.266 1.04.356.398.633.843.82 1.34.192.491.29 1.038.29 1.632 0 .953-.169 1.773-.497 2.457a4.649 4.649 0 01-1.37 1.688c-.587.441-1.274.765-2.071.972-.8.207-1.664.309-2.598.309H32.91V126.3h6.375c.735 0 1.465.086 2.184.258.722.171 1.36.445 1.918.824a4.301 4.301 0 011.351 1.484c.34.613.512 1.36.512 2.242 0 .52-.09.993-.27 1.414a4.51 4.51 0 01-.714 1.165c-.297.347-.645.66-1.04.93-.398.269-.82.503-1.269.702zm0 0M48.41 126.3h11.582v2.298H51.11v5.832h7.18v2.187h-7.18v6.64h9.153v2.376H48.41zm0 0M65.992 132.703a13.246 13.246 0 01-.652-1.176c-.2-.406-.371-.77-.516-1.093-.18-.38-.34-.758-.484-1.133h-.106l.051 1.242.055 1.281c.015.477.027.957.027 1.442l.078 12.367h-2.402V126.3h3.215l6.586 11.422c.254.449.492.902.715 1.351l.609 1.215c.2.43.387.844.566 1.242h.11c-.04-.379-.063-.773-.082-1.187a45.727 45.727 0 01-.055-2.54l-.082-11.503h2.434v19.332h-2.567zm0 0M82.402 137.965h5.102l-1.996-6.613a23.595 23.595 0 01-.38-1.434 4.302 4.302 0 01-.108-.594h-.106c-.02.18-.055.38-.11.594-.074.363-.199.848-.378 1.46zm5.75 2.105h-6.398l-1.703 5.563h-2.48l6.152-19.332h2.945l6.184 19.332h-3zm0 0M98.766 145.633L92.367 126.3H95.2l3.645 11.234c.18.574.351 1.14.515 1.7.16.558.305 1.07.43 1.538.145.54.27 1.063.379 1.567h.11c.124-.504.257-1.035.402-1.594.129-.465.265-.984.422-1.55.148-.571.316-1.114.496-1.633l3.617-11.262h2.62l-6.507 19.332zm0 0M109.348 126.3h11.582v2.298h-8.883v5.832h7.183v2.187h-7.183v6.64h9.152v2.376h-11.851zm0 0M125.387-8102V8281m0-16383V8281M122.98-8102V8281m11.586-16383V8281m2.426-16383V8281m-2.426-16383V8281m2.426-16382.969v16383M126.93 132.7a13.067 13.067 0 01-.653-1.172c-.199-.406-.37-.77-.511-1.093a14.781 14.781 0 01-.489-1.133h-.109c.02.375.035.789.055 1.238.015.379.035.809.054 1.285.016.477.028.957.028 1.446l.082 50.296h-2.407v-57.265h3.215l6.586 11.422c.254.449.492.898.715 1.351l.61 1.215c.199.43.386.844.566 1.242h.11c-.04-.379-.063-.773-.083-1.187a46.752 46.752 0 01-.039-1.192 49.73 49.73 0 01-.015-1.347l-.079-140.45h2.426v148.278h-2.562zm0 0M146.39 145.633h-2.808v-17.035h-5.48V126.3h13.77v2.297h-5.481zm0 0M152.977 126.3h11.585v2.298h-8.882v5.832h7.18v2.187h-7.18v6.64h9.152v2.376h-11.855zm0 0"
+          class="text-white-light fill-current" /></svg>
     </a>
     <div class="-mr-2 -my-2 lg:hidden ">
       <button
@@ -35,41 +36,13 @@
     </div>
     <nav
       class="hidden font-montserrat font-semibold whitespace-no-wrap text-white-dark lg:flex md:pt-16 md:flex-col md:items-start">
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light">
-        Inicio
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        Sobre Nosotros
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        ¿Por qué elegirnos?
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        Precios
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        Gallería
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        Testimonios
-      </a>
-      <a
-        href="#1"
-        class="-m-3 p-6 flex items-center space-x-4 rounded-lg hover:text-white-light focus:text-white-light transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-        Pedir cita
-      </a>
+      <Link name="start" label="Inicio" />
+      <Link name="about" label="Sobre Nosotros" />
+      <Link name="whyus" label="¿Por qué elegirnos?" />
+      <Link name="pricing" label="Precios" />
+      <Link name="gallery" label="Galería" />
+      <Link name="testimonials" label="Testimonios" />
+      <Link name="book" label="Pedir cita" />
     </nav>
     <div class="hidden lg:w-full lg:block lg:text-center lg:mt-auto">
       <a
@@ -99,12 +72,16 @@
         <div class="rounded-lg shadow-xs bg-black-dark text-white-dark divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5 space-y-6">
             <div class="flex items-center justify-between">
-              <div>
-                <img
-                  class="h-8 w-auto"
-                  src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg"
-                  alt="Workflow" />
-              </div>
+              <a href="/" alt="Página de inicio">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="text-black-dark fill-current h-16 w-auto lg:h-32"
+                  viewBox="0 0 180 180">
+                  <path d="M0 0h180v180H0z" />
+                  <path
+                    d="M35.61 136.668v6.672h3.66c.558 0 1.07-.059 1.546-.176a3.524 3.524 0 001.239-.559c.351-.25.629-.582.832-.988.207-.406.312-.91.312-1.504 0-.668-.11-1.238-.324-1.707a2.817 2.817 0 00-.887-1.125 3.381 3.381 0 00-1.347-.586 7.304 7.304 0 00-1.692-.132zm0-8.125v5.992l2.73-.105a11.31 11.31 0 001.566-.164c.504-.09.953-.243 1.348-.457.394-.215.71-.52.945-.907.235-.386.352-.894.352-1.523 0-.559-.106-1.02-.313-1.379a2.45 2.45 0 00-.82-.863 3.54 3.54 0 00-1.203-.457 7.335 7.335 0 00-1.418-.137zm6.347 6.887a9.708 9.708 0 011.566.765c.485.297.907.645 1.266 1.04.356.398.633.843.82 1.34.192.491.29 1.038.29 1.632 0 .953-.169 1.773-.497 2.457a4.649 4.649 0 01-1.37 1.688c-.587.441-1.274.765-2.071.972-.8.207-1.664.309-2.598.309H32.91V126.3h6.375c.735 0 1.465.086 2.184.258.722.171 1.36.445 1.918.824a4.301 4.301 0 011.351 1.484c.34.613.512 1.36.512 2.242 0 .52-.09.993-.27 1.414a4.51 4.51 0 01-.714 1.165c-.297.347-.645.66-1.04.93-.398.269-.82.503-1.269.702zm0 0M48.41 126.3h11.582v2.298H51.11v5.832h7.18v2.187h-7.18v6.64h9.153v2.376H48.41zm0 0M65.992 132.703a13.246 13.246 0 01-.652-1.176c-.2-.406-.371-.77-.516-1.093-.18-.38-.34-.758-.484-1.133h-.106l.051 1.242.055 1.281c.015.477.027.957.027 1.442l.078 12.367h-2.402V126.3h3.215l6.586 11.422c.254.449.492.902.715 1.351l.609 1.215c.2.43.387.844.566 1.242h.11c-.04-.379-.063-.773-.082-1.187a45.727 45.727 0 01-.055-2.54l-.082-11.503h2.434v19.332h-2.567zm0 0M82.402 137.965h5.102l-1.996-6.613a23.595 23.595 0 01-.38-1.434 4.302 4.302 0 01-.108-.594h-.106c-.02.18-.055.38-.11.594-.074.363-.199.848-.378 1.46zm5.75 2.105h-6.398l-1.703 5.563h-2.48l6.152-19.332h2.945l6.184 19.332h-3zm0 0M98.766 145.633L92.367 126.3H95.2l3.645 11.234c.18.574.351 1.14.515 1.7.16.558.305 1.07.43 1.538.145.54.27 1.063.379 1.567h.11c.124-.504.257-1.035.402-1.594.129-.465.265-.984.422-1.55.148-.571.316-1.114.496-1.633l3.617-11.262h2.62l-6.507 19.332zm0 0M109.348 126.3h11.582v2.298h-8.883v5.832h7.183v2.187h-7.183v6.64h9.152v2.376h-11.851zm0 0M125.387-8102V8281m0-16383V8281M122.98-8102V8281m11.586-16383V8281m2.426-16383V8281m-2.426-16383V8281m2.426-16382.969v16383M126.93 132.7a13.067 13.067 0 01-.653-1.172c-.199-.406-.37-.77-.511-1.093a14.781 14.781 0 01-.489-1.133h-.109c.02.375.035.789.055 1.238.015.379.035.809.054 1.285.016.477.028.957.028 1.446l.082 50.296h-2.407v-57.265h3.215l6.586 11.422c.254.449.492.898.715 1.351l.61 1.215c.199.43.386.844.566 1.242h.11c-.04-.379-.063-.773-.083-1.187a46.752 46.752 0 01-.039-1.192 49.73 49.73 0 01-.015-1.347l-.079-140.45h2.426v148.278h-2.562zm0 0M146.39 145.633h-2.808v-17.035h-5.48V126.3h13.77v2.297h-5.481zm0 0M152.977 126.3h11.585v2.298h-8.882v5.832h7.18v2.187h-7.18v6.64h9.152v2.376h-11.855zm0 0"
+                    class="text-white-light fill-current" /></svg>
+              </a>
               <div class="-mr-2">
                 <button
                   on:click={handleClick}
@@ -123,41 +100,34 @@
             </div>
             <div>
               <nav class="grid grid-cols-1 gap-7 font-montserrat font-semibold">
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light">
-                  Inicio
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  Sobre Nosotros
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  ¿Por qué elegirnos?
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  Precios
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  Gallería
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  Testimonios
-                </a>
-                <a
-                  href="#1"
-                  class="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900">
-                  Pedir cita
-                </a>
+                <Link
+                  name="start"
+                  label="Inicio"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="about"
+                  label="Sobre Nosotros"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="whyus"
+                  label="¿Por qué elegirnos?"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="pricing"
+                  label="Precios"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="gallery"
+                  label="Galería"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="testimonials"
+                  label="Testimonios"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
+                <Link
+                  name="book"
+                  label="Pedir cita"
+                  className="-m-3 p-3 flex items-center space-x-4 rounded-lg hover:bg-gray-50 transition ease-in-out duration-150 text-base leading-6 text-gray-900 text-white-light" />
               </nav>
             </div>
           </div>

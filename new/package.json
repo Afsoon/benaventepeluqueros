@@ -44,6 +44,7 @@
     "sirv": "^1.0.5",
     "svelte": "^3.24.0",
     "svelte-preprocess": "^4.0.9",
+    "svelte-scrollto": "^0.2.0",
     "systemjs": "^6.5.0",
     "tailwindcss": "^1.8.10"
   },
