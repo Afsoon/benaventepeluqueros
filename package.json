@@ -1,60 +1,53 @@
 {
-  "name": "benaventepeluqueros",
-  "version": "0.1.0",
+  "name": "@onwidget/astrowind",
+  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "version": "1.0.0-beta.13",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "jest"
-  },
-  "engines": {
-    "node": "12.16"
-  },
-  "browserslist": [
-    ">0.3%",
-    "not ie 11",
-    "not dead",
-    "not op_mini all"
-  ],
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "prettier -w .",
+    "lint:eslint": "eslint . --ext .js,.ts,.astro"
   },
   "dependencies": {
-    "classnames": "^2.2.6",
-    "next": "9.3.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-hook-form": "^5.5.0",
-    "react-transition-group": "^4.3.0"
+    "@astrojs/rss": "^4.0.1",
+    "@astrojs/sitemap": "^3.0.4",
+    "@astrolib/analytics": "^0.5.0",
+    "@astrolib/seo": "^1.0.0-beta.5",
+    "@fontsource-variable/inter": "^5.0.16",
+    "astro": "^4.1.1",
+    "astro-icon": "^1.0.2",
+    "limax": "4.1.0",
+    "lodash.merge": "^4.6.2",
+    "typescript-esbuild": "^0.3.5",
+    "unpic": "^3.16.0"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "@tailwindcss/ui": "^0.1.3",
-    "@testing-library/jest-dom": "^5.3.0",
-    "@testing-library/react": "^10.0.2",
-    "@types/jest": "^25.2.1",
-    "@types/node": "^13.11.0",
-    "@types/react": "^16.9.32",
-    "@types/react-dom": "^16.9.6",
-    "@typescript-eslint/eslint-plugin": "^2.26.0",
-    "@typescript-eslint/parser": "^2.26.0",
-    "autoprefixer": "^9.7.5",
-    "cssnano": "^4.1.10",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react-hooks": "^3.0.0",
-    "globby": "^11.0.0",
-    "jest": "^25.2.7",
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.2.0",
-    "typescript": "^3.8.3"
+    "@astrojs/mdx": "^2.0.3",
+    "@astrojs/partytown": "^2.0.3",
+    "@astrojs/tailwind": "5.1.0",
+    "@iconify-json/flat-color-icons": "^1.1.10",
+    "@iconify-json/tabler": "^1.1.103",
+    "@tailwindcss/typography": "^0.5.10",
+    "@types/lodash.merge": "^4.6.9",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-astro": "^0.31.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "js-yaml": "^4.1.0",
+    "mdast-util-to-string": "^4.0.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-astro": "^0.12.3",
+    "reading-time": "^1.5.0",
+    "tailwind-merge": "^2.2.0",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.14.1"
   }
 }
