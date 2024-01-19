@@ -31,7 +31,7 @@ const config = yaml.load(fs.readFileSync('src/config.yaml', 'utf8')) as {
   ui?: unknown;
 };
 
-const DEFAULT_SITE_NAME = 'Website';
+const DEFAULT_SITE_NAME = 'Benavente Peluqueros';
 
 const getSite = () => {
   const _default = {

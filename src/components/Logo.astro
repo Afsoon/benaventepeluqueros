@@ -1,7 +1,8 @@
 ---
 import { SITE } from '~/utils/config';
+import Image from './common/Image.astro';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
+<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-lg md:text-xl font-bold text-white-ligth whitespace-nowrap dark:text-white inline-flex gap-2 items-center">
+  <Image width={48} widths={[48]} height={48} src="~/assets/images/logo.webp" alt="" /> {SITE?.name}
 </span>

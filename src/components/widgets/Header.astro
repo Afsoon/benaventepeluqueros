@@ -35,22 +35,20 @@ const {
   isFullWidth = false,
   position = "center",
 } = Astro.props;
-
-const currentPath = `/${trimSlash(new URL(Astro.url).pathname)}`
 ---
 
 <header
   class:list={[
     { sticky: isSticky, relative: !isSticky, dark: isDark },
-    "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out",
+    "top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out bg-black",
   ]}
   {...isSticky ? { "data-aw-sticky-header":  true } : {}}
   {...id ? { id } : {}}
 >
-  <div class="absolute inset-0"></div>
+  <div class="absolute inset-0 "></div>
   <div
     class:list={[
-      "relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between",
+      "relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between text-white-lighter",
       {
         "max-w-7xl": !isFullWidth,
       },
