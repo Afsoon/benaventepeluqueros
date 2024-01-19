@@ -1,0 +1,39 @@
+---
+import PricesDetails from "../ui/PricesDetails.astro";
+import EnumSection from "./EnumSection.astro";
+
+interface PriceItem {
+  name: string;
+  price: string;
+}
+
+interface Prices {
+  title: string;
+  services: Array<PriceItem>
+}
+
+export interface Props {
+  menPrices: Prices;
+  womenPrices: Prices;
+}
+
+const { menPrices, womenPrices } = Astro.props;
+---
+<div class="@container w-full max-w-7xl mx-auto">
+<div class="w-full bg-black-lighter text-white-light px-16 py-16">
+  <EnumSection sectionNumber={4} numberOfSections={7} sectionTitle="Precios" />
+  <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">
+    Listado de precios de nuestros servicios
+  </h2>
+  <div class="flex flex-col gap-4 @[900px]:flex-row pt-4">
+    <PricesDetails
+      title={womenPrices.title}
+      services={womenPrices.services}
+    />
+    <PricesDetails
+      title={menPrices.title}
+      services={menPrices.services}
+    />
+  </div>
+</div>
+</div>

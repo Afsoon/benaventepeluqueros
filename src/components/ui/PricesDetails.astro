@@ -1,0 +1,24 @@
+---
+interface PriceItem {
+  name: string;
+  price: string;
+}
+
+export interface Props {
+  title: string;
+  services: Array<PriceItem>
+}
+
+const { title, services } = Astro.props;
+---
+<details class="inline-block @[900px]:w-1/2 cursor-default">
+  <summary class="text-4xl hover:underline hover:underline-offset-4">{title}</summary>
+  <ul class="pt-4 flex flex-col">
+    {services.map(({name, price}) => {
+      return <li class="px-2 py-2 flex w-full border-white-dark border-b">
+        <span class="font-cormorant font-semibold">{name}</span>
+    <span class="font-montserrat font-semibold ml-auto">{price}</span>
+        </li>
+    })}
+  </ul>
+</details>
