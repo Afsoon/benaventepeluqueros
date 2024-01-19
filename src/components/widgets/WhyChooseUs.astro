@@ -1,0 +1,78 @@
+---
+import EnumSection from "./EnumSection.astro";
+import Image from "../common/Image.astro";
+---
+<div class="@container w-full">
+<div class="w-full px-16 py-16 relative bg-white-gray">
+  <EnumSection
+    numberOfSections={7}
+    sectionNumber={3}
+    sectionTitle="¿Por qué elegirnos?"
+  />
+  <div class="grid grid-cols-1 grid-rows-2 @[900px]:grid-cols-2 @[900px]:grid-rows-1 gap-4">
+    <div>
+      <h2 class="font-cormorant pt-4 text-4xl font-bold tracking-normal">Conseguimos el corte de pelo que visualizas</h2>
+      <div class="pt-4 flex flex-col md:flex-row">
+        <p class="font-montserrat font-medium prose prose-sm sm:prose lg:prose-lg xl:prose-xl max-w-prose">
+          Nuestros clientes saben lo que quieren; nuestra labor es interpretarlo y adaptarlo para que el resultado sea el
+          soñado.
+        </p>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 grid-rows-2 gap-4">
+      <div class="flex items-center gap-4">
+        <div class="max-w-[60px] max-h-[60px] sm:max-w-[84px] sm:max-h-[84px] w-full h-full">
+          <Image
+            class="w-full h-full object-cover aspect-square"
+            widths={[60, 84]}
+            loading="eager"
+            width={84}
+            src="~/assets/images/wedding.png"
+            alt="secador de pelo"
+          />
+        </div>
+        <h3 class="font-montserrat font-medium text-lg text-center">Estilos para bodas</h3>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="max-w-[60px] max-h-[60px] sm:max-w-[84px] sm:max-h-[84px] w-full h-full">
+          <Image
+            class="w-full h-full object-cover aspect-square"
+            widths={[60, 84]}
+            loading="eager"
+            width={84}
+            src="~/assets/images/daily.png"
+            alt="secador de pelo"
+          />
+        </div>
+        <h3 class="font-montserrat font-medium text-lg text-center">Estilos para el dia</h3>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="max-w-[60px] max-h-[60px] sm:max-w-[84px] sm:max-h-[84px] w-full h-full">
+          <Image
+            class="w-full h-full object-cover aspect-square"
+            widths={[60, 84]}
+            loading="eager"
+            width={84}
+            src="~/assets/images/bussiness.png"
+            alt="secador de pelo"
+          />
+        </div>
+        <h3 class="font-montserrat font-medium text-lg text-center">Estilos para negocios</h3>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="max-w-[60px] max-h-[60px] sm:max-w-[84px] sm:max-h-[84px] w-full h-full">
+          <Image
+            class="w-full h-full object-cover aspect-square"
+            widths={[60, 84]}
+            loading="eager"
+            width={84}
+            src="~/assets/images/casual.png"
+            alt="secador de pelo"
+          />
+        </div>
+        <h3 class="font-montserrat font-medium text-lg text-center">Estilos casual</h3>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
