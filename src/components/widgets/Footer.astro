@@ -28,21 +28,21 @@ const { socialLinks, schedule, footNote = "" } = Astro.props;
 >
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300">
     <div class="flex flex-col sm:flex-row gap-4 py-4">
-      <div class="flex font-cormorant font-semibold flex-col pb-8 md:pb-0">
+      <div class="flex font-['Cormorant_Garamond'] font-semibold flex-col pb-8 md:pb-0">
         <h4 class="text-xl font-medium">Horario de apertura</h4>
         {
           schedule.map(({ days, hours }) => {
             return (
               <div class="flex flex-col pt-4">
-                <span class="font-montserrat font-bold">{days}</span>
-                <span class="font-montserrat font-medium">{hours}</span>
+                <span class="font-['Montserrat'] font-bold">{days}</span>
+                <span class="font-['Montserrat'] font-medium">{hours}</span>
               </div>
             );
           })
         }
       </div>
-      <div class="flex font-montserrat font-medium flex-col">
-        <h4 class="text-xl font-cormorant font-medium">Localización</h4>
+      <div class="flex font-['Montserrat'] font-medium flex-col">
+        <h4 class="text-xl font-['Cormorant_Garamond'] font-medium">Localización</h4>
         <span class="pt-4">Benavente Peluqueros,</span>
         <span class="pt-2 text-sm">Calle Panadés, 22,</span>
         <span class="pt-2 text-sm">28915, Leganés</span>

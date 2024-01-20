@@ -16,8 +16,8 @@ const { title, services } = Astro.props;
   <ul class="pt-4 flex flex-col">
     {services.map(({name, price}) => {
       return <li class="px-2 py-2 flex w-full border-white-dark border-b">
-        <span class="font-cormorant font-semibold">{name}</span>
-    <span class="font-montserrat font-semibold ml-auto">{price}</span>
+        <span class="font-['Cormorant_Garamond'] font-semibold">{name}</span>
+    <span class="font-['Montserrat'] font-semibold ml-auto">{price}</span>
         </li>
     })}
   </ul>
