@@ -1,6 +1,6 @@
 site:
   name: Benavente Peluqueros
-  site: 'https://astrowind.vercel.app'
+  site: 'https://benaventepeluqueros.com'
   base: '/'
   trailingSlash: false
 
@@ -11,24 +11,22 @@ metadata:
   title:
     default: Benavente Peluqueros
     template: '%s — Benavente Peluqueros'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Benavente Peluqueros tú peluqueria unisex de confianza en la ciudad de Leganés."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Benavente Peluqueros
     images:
-      - url: '~/assets/images/default.png'
+      - url: '/public/og.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 ui:

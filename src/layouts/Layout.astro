@@ -1,15 +1,15 @@
 ---
-import '~/assets/styles/tailwind.css';
+import "~/assets/styles/tailwind.css";
 
-import { I18N } from '~/utils/config';
+import { I18N } from "~/utils/config";
 
-import CommonMeta from '~/components/common/CommonMeta.astro';
-import Favicons from '~/components/Favicons.astro';
-import CustomStyles from '~/components/CustomStyles.astro';
-import Metadata from '~/components/common/Metadata.astro';
-import SiteVerification from '~/components/common/SiteVerification.astro';
+import CommonMeta from "~/components/common/CommonMeta.astro";
+import Favicons from "~/components/Favicons.astro";
+import CustomStyles from "~/components/CustomStyles.astro";
+import Metadata from "~/components/common/Metadata.astro";
+import SiteVerification from "~/components/common/SiteVerification.astro";
 
-import type { MetaData as MetaDataType } from '~/types';
+import type { MetaData as MetaDataType } from "~/types";
 
 export interface Props {
   metadata?: MetaDataType;
@@ -23,10 +23,72 @@ const { language, textDirection } = I18N;
 <html lang={language} dir={textDirection} class="2xl:text-[20px]">
   <head>
     <CommonMeta />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#181818" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <Favicons />
     <CustomStyles />
     <Metadata {...metadata} />
     <SiteVerification />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "image": ["https://benaventepeluqueros.com/logo.webp"],
+        "@id": "https://benaventepeluqueros.com/leganesZarza",
+        "name": "Benavente Peluqueros",
+        "description": "Peluquería unisex en el barrio de Zarzaquemada, Leganés",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Panades, 22",
+          "addressLocality": "Leganés",
+          "addressRegion": "ES-MD",
+          "postalCode": "28915",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 40.337487,
+          "longitude": -3.7559442
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4,4",
+          "reviewCount": "39"
+        },
+        "url": "https://benaventepeluqueros.com/",
+        "telephone": "+34916881810",
+        "email": "benaventepeluqueros@gmail.com",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "14:00"
+          }
+        ]
+      }
+    </script>
 
     <!-- Uncomment line below to activate View Transitions -->
     <!-- <ViewTransitions fallback="swap" /> -->
