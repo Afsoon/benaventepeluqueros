@@ -1,0 +1,19 @@
+---
+
+export interface Props {
+  numberOfSections: number;
+  sectionNumber: number;
+  sectionTitle: string;
+}
+
+const { numberOfSections, sectionNumber, sectionTitle } = Astro.props;
+
+---
+
+
+<h6 class="font-['Montserrat'] font-medium tracking-widest uppercase tabular-nums">
+  <sup class="">{sectionNumber}</sup>
+  /
+  <sub class="mr-2">{numberOfSections}</sub>
+  {sectionTitle}
+</h6>

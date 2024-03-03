@@ -1,0 +1,37 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import AboutUs from '~/components/widgets/AboutUs.astro';
+import WhyChooseUs from '~/components/widgets/WhyChooseUs.astro';
+import Gallery from '~/components/widgets/Gallery.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+import Book from '~/components/widgets/Book.astro';
+import Prices from '~/components/widgets/Prices.astro';
+
+import { menPrices, womenPrices } from '~/prices';
+
+const metadata = {
+  title: 'Benavente Peluqueros',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero />
+
+  <AboutUs />
+
+  <WhyChooseUs />
+
+  <Prices
+    menPrices={menPrices}
+    womenPrices={womenPrices}
+  />
+
+  <Gallery />
+
+  <Testimonials />
+
+  <Book />
+</Layout>
