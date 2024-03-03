@@ -8,14 +8,14 @@ import Image from "../common/Image.astro";
     <div
       class="w-full grid grid-rows-4 grid-cols-1 @[900px]:grid-cols-2 @[900px]:grid-rows-2"
     >
-      <div class="h-[576px] @[900px]:h-auto w-full">
+      <div class="h-[576px] @[900px]:h-[700px] w-full">
         <Image
           class="w-full h-full object-cover aspect-square"
           widths={[400, 768, 1024, 2040]}
           sizes="(max-width: 767px) 400px, (max-width: 1023px) 768px, (max-width: 2039px) 1024px, 2040px"
           loading="eager"
           width={1024}
-          src="https://images.unsplash.com/photo-1562322140-8baeececf3df"
+          src="~/assets/images/about.png"
           alt="foto del local"
         />
       </div>
