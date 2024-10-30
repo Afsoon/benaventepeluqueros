@@ -13,7 +13,7 @@ export const womenPrices = {
     {name: "Decoloración", price: "Desde 20,00€"},
     {name: "Matices", price: "Desde 20,00€"},
     {name: "Moldeador", price: "Desde 45,00€"},
-    {name: "Mechas plata, pincel, étc", price: "Desde 40,00€"},
+    {name: "Mechas plata, pincel, étc", price: "Desde 45,00€"},
     {name: "Richi", price: "80,00€"},
     {name: "Alisado Nanolis", price: "Desde 200,00€"},
     {name: "Tratamientos de hidratación, antioxidante, volumen, étc", price: "16,00€"},
