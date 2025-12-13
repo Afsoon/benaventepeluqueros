@@ -1,25 +1,25 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
+import path from "path";
+import { fileURLToPath } from "url";
 
-import { defineConfig, squooshImageService } from 'astro/config';
+import { defineConfig, squooshImageService } from "astro/config";
 
-import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
-import mdx from '@astrojs/mdx';
-import partytown from '@astrojs/partytown';
-import icon from 'astro-icon';
-import tasks from './src/utils/tasks';
+import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+import mdx from "@astrojs/mdx";
+import partytown from "@astrojs/partytown";
+import icon from "astro-icon";
+import tasks from "./src/utils/tasks";
 
-import { SITE } from './src/utils/config.ts';
+import { SITE } from "./src/utils/config.ts";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   site: SITE.site,
   base: SITE.base,
-  trailingSlash: SITE.trailingSlash ? 'always' : 'never',
+  trailingSlash: SITE.trailingSlash ? "always" : "never",
 
-  output: 'static',
+  output: "static",
 
   integrations: [
     tailwind({
@@ -28,17 +28,17 @@ export default defineConfig({
     sitemap(),
     icon({
       include: {
-        tabler: ['*'],
-        'flat-color-icons': [
-          'template',
-          'gallery',
-          'approval',
-          'document',
-          'advertising',
-          'currency-exchange',
-          'voice-presentation',
-          'business-contact',
-          'database',
+        tabler: ["*"],
+        "flat-color-icons": [
+          "template",
+          "gallery",
+          "approval",
+          "document",
+          "advertising",
+          "currency-exchange",
+          "voice-presentation",
+          "business-contact",
+          "database",
         ],
       },
     }),
@@ -53,7 +53,7 @@ export default defineConfig({
   vite: {
     resolve: {
       alias: {
-        '~': path.resolve(__dirname, './src'),
+        "~": path.resolve(__dirname, "./src"),
       },
     },
   },
